@@ -17,5 +17,36 @@ Transparency:
 (light) box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.10);
 
 
-
 */
+body{   
+    font-family: 'proza libre', serif;
+    font-size: 16px;
+    word-spacing: 1.6px;
+    line-height: 1.4;
+}
+
+h1{
+    font-family: 'Marmelad', serif;
+}
+a{
+    color:#1A4654;
+    text-decoration: underline;
+
+}
+a:visited{
+    color:#232551;
+
+}
+a:hover{
+    font-size: 1.2rem;
+
+}
+a:active{
+    color:#781313;
+
+}
+a:focus{
+    outline: 2px solid #781313;
+    outline-offset: .1rem;
+
+}
