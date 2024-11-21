@@ -18,6 +18,17 @@ Transparency:
 
 
 */
+:root{
+    --off-white: #FFFAF1;
+    --black: #351B00;
+    --teal: #7FEAE9;
+    --teal-text:#00507D;
+    --pink:#FD7A8E;
+    --pink-text:#781313;
+    --yellow:#FFC81A;
+    --vistited-link:#4D2233;
+
+}
 body{   
     font-family: 'proza libre', serif;
     font-size: 16px;
@@ -29,24 +40,33 @@ h1{
     font-family: 'Marmelad', serif;
 }
 a{
-    color:#1A4654;
+    color: var(--teal-text);
     text-decoration: underline;
-
 }
 a:visited{
-    color:#232551;
-
+    color:var(--vistited-link);
 }
 a:hover{
     font-size: 1.2rem;
-
 }
 a:active{
-    color:#781313;
+    color:var(--pink-text);
 
 }
 a:focus{
-    outline: 2px solid #781313;
+    outline: 2px solid var(--pink-text);
     outline-offset: .1rem;
-
+}
+.button {
+    display: inline-block;
+    background-color: white;
+    color: var(--black);
+    padding: 10px;
+    text-decoration: none;
+    border: 2px solid var(--pink);
+    border-radius: 10px;
+}
+.button:hover{
+    font-size: 1.2rem;
+    box-shadow: 0px 0px 5px 1px rgba(253, 122, 142, 0.16);
 }
