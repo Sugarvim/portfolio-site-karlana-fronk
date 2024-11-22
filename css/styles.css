@@ -18,55 +18,79 @@ Transparency:
 
 
 */
-:root{
+:root {
     --off-white: #FFFAF1;
     --black: #351B00;
     --teal: #7FEAE9;
-    --teal-text:#00507D;
-    --pink:#FD7A8E;
-    --pink-text:#781313;
-    --yellow:#FFC81A;
-    --vistited-link:#4D2233;
+    --teal-text: #00507D;
+    --pink: #FD7A8E;
+    --pink-text: #781313;
+    --yellow: #FFC81A;
+    --vistited-link: #4D2233;
+    --text-hover: #043653;
 
 }
-body{   
+
+body {
     font-family: 'proza libre', serif;
     font-size: 16px;
     word-spacing: 1.6px;
     line-height: 1.4;
 }
-
-h1{
+img {
+    width: 100%;
+}
+h1 {
     font-family: 'Marmelad', serif;
 }
-a{
+
+a {
     color: var(--teal-text);
     text-decoration: underline;
-}
-a:visited{
-    color:var(--vistited-link);
-}
-a:hover{
-    font-size: 1.2rem;
-}
-a:active{
-    color:var(--pink-text);
+    display: inline-flex;
 
 }
-a:focus{
+
+a:visited {
+    color: var(--vistited-link);
+}
+
+a:hover {
+    transform: scale(1.05);
+    color: var(--text-hover);
+}
+
+a:focus {
     outline: 2px solid var(--pink-text);
     outline-offset: .1rem;
 }
+
+a:active {
+    color: var(--pink-text);
+}
+
 .button {
-    display: inline-block;
     background-color: white;
     color: var(--black);
-    padding: 10px;
+    padding: 15px;
     text-decoration: none;
     border: 2px solid var(--pink);
     border-radius: 10px;
+    font-size: 18px;
 }
-.button:hover{
-    font-size: 1.2rem;
+
+.button:hover {
     box-shadow: 0px 0px 5px 1px rgba(253, 122, 142, 0.16);
+}
+.download-button{
+    background-color: white;
+    color: var(--black);
+    padding: 15px;
+    text-decoration: none;
+    border: 2px solid var(--yellow);
+    border-radius: 10px;
+    font-size: 18px;
+}
+.download-button:hover {
+    background-color: hsl(46, 100%, 95%);
 }
