@@ -28,22 +28,37 @@ Transparency:
     --yellow: #FFC81A;
     --vistited-link: #4D2233;
     --text-hover: #043653;
-
 }
-
+*{
+    box-sizing:  border-box;
+}
+.container{
+    padding: 0 15px;
+}
 body {
     font-family: 'proza libre', serif;
     font-size: 16px;
     word-spacing: 1.6px;
     line-height: 1.4;
 }
+header{
+    background-color: var(--off-white);
+    padding: 10px;
+    margin: 10px;
+    border-bottom: 5px solid var(--pink);
+}
+footer{
+    background-color: var(--off-white);
+}
 img {
     width: 100%;
+}
+img[src$=".svg"]{
+    width: 50px;
 }
 h1 {
     font-family: 'Marmelad', serif;
 }
-
 a {
     color: var(--teal-text);
     text-decoration: underline;

@@ -35,9 +35,7 @@ main{
 .green{
     color: #6DAD04;
 }
-img[src$=".svg"]{
-    width: 50px;
-}
+
 img[src*="windy-app-icon"]{
     width: 50px;
 }
