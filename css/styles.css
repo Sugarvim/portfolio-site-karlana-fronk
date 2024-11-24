@@ -15,7 +15,7 @@ Transparency:
     --pink: #FD7A8E;
     --pink-text: #781313;
     --yellow: #FFC81A;
-    --vistited-link: #4D2233;
+    --visited-link: #4D2233;
     --text-hover: #043653;
 }
 
@@ -25,13 +25,15 @@ Transparency:
 
 .container {
     padding: 0 15px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 body {
     font-family: 'proza libre', sans-serif;
-    font-size: 1em;
+    font-size: 16px;
     word-spacing: 1.6px;
-    line-height: 1.4;
+    line-height: 1.5;
 }
 
 header {
@@ -160,7 +162,7 @@ a {
 }
 
 a:visited {
-    color: var(--vistited-link);
+    color: var(--visited-link);
 }
 
 a:hover {
@@ -205,13 +207,13 @@ a:active {
     background-color: hsl(46, 100%, 95%);
 }
 
-@media (min-width: 767px) {
+/* medium device size */
+@media only screen and (min-width: 640px) {
     main {
-        margin: 50px 200px;
+        margin: 20px 100px;
     }
-
     .why {
-        width: 40%;
+        width: 60%;
     }
     .skills {
         display:flex;
@@ -231,4 +233,13 @@ a:active {
     .gap{
         margin: 0 1.5vw;
     }
+}
+@media only screen and (min-width: 1024px){
+    main {
+        margin: 50px 200px;
+    }
+    .why {
+        width: 40%;
+    }
+
 }
