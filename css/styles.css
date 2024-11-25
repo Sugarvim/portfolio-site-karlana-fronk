@@ -307,5 +307,8 @@ a.logo:hover {
         width: 100%;
         padding: 1vh 2vw;
     }
+    #project-section .col-6{
+        width: 50%;
+    }
 
 }
