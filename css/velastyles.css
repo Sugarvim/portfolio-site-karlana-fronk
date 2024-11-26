@@ -112,7 +112,7 @@ img[src*="arrow-transition"] {
 }
 
 /* small screen size */
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 639px) {
     .ellipse {
         height: 80px;
         width: 80px;
