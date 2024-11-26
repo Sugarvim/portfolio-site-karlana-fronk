@@ -93,6 +93,12 @@ h1 {
 }
 
 /* index css */
+h1 + span{
+    font-size: large;
+    font-weight: 500;
+    display:inline-block;
+    margin-bottom: 2vh;
+}
 #hero-section {
     padding: 20px 0;
     display: inline-block;
@@ -201,7 +207,7 @@ a.logo{
     
 }
 a.logo svg g{
-    animation: color-change alternate 3s infinite linear;
+    animation: 3s color-change alternate infinite linear;
 }
 a.logo:hover {
     transform: scale(1.25);
