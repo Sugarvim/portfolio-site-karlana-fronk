@@ -16,27 +16,35 @@
         rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="css/velastyles.css">
+    <script src="https://kit.fontawesome.com/e2137e9ec3.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header>
+    <header class="box-shadow-dark">
+        <div class="navtoggle" id="myNavtoggle">
         <a class="logo" href="index.html">
-            <svg viewBox="0 0 269.88 243.68"> 
+            <svg aria-label="return to homepage" viewBox="0 0 269.88 243.68">
                 <g fill="#fd7a8e">
-                <path d="m98.67 218.66s-47.368-39.498-67.928-66.937c-21.828-29.13-33.335-53.189-29.914-86.602 3.6369-35.533 28.26-53.715 40.984-60.656 23.354-11.558 44.659 2.8941 57.109 15.374 4.1857 56.998-0.25039 198.82-0.25039 198.82z" />
-                <path d="m144.62 132.55s19.176-27.439 46.273-44.787c14.399-9.2185 46.603-10.581 59.329-0.17189 26.066 23.236 26.804 57.943-6.6016 80.494-7.4374 5.4541-19.926 18.49-36.932 23.514-20.513-15.311-62.068-59.05-62.068-59.05z" />
-                <path d="m123.96 232.27 4.7924-72.845s16.886 22.576 53.036 54.953c-11.959 10.317-30.533 19.58-45.688 29.394-1.7164-3.0756-12.141-11.502-12.141-11.502z" />
-                <path d="m121.8 48.969s-2.7552 34.385 3.0533 62.696c23.697-14.436 56.018-43.002 70.451-41.515-7.0603-4.6359-20.522-7.4552-25.351-7.5993-2.5409 2.4171-8.9888 6.2999-15.633 11.788-6.2044-1.6438-22.452-6.6765-22.452-6.6765l-2.2636-15.633c-7.5339-7.5237-7.8046-3.0595-7.8046-3.0595zm9.6135 29.707s9.9132 3.17 15.087 4.2141l-15.299 12z" />
-               </g>
-              </svg>
-              </a>
+                    <path
+                        d="m98.67 218.66s-47.368-39.498-67.928-66.937c-21.828-29.13-33.335-53.189-29.914-86.602 3.6369-35.533 28.26-53.715 40.984-60.656 23.354-11.558 44.659 2.8941 57.109 15.374 4.1857 56.998-0.25039 198.82-0.25039 198.82z" />
+                    <path
+                        d="m144.62 132.55s19.176-27.439 46.273-44.787c14.399-9.2185 46.603-10.581 59.329-0.17189 26.066 23.236 26.804 57.943-6.6016 80.494-7.4374 5.4541-19.926 18.49-36.932 23.514-20.513-15.311-62.068-59.05-62.068-59.05z" />
+                    <path
+                        d="m123.96 232.27 4.7924-72.845s16.886 22.576 53.036 54.953c-11.959 10.317-30.533 19.58-45.688 29.394-1.7164-3.0756-12.141-11.502-12.141-11.502z" />
+                    <path
+                        d="m121.8 48.969s-2.7552 34.385 3.0533 62.696c23.697-14.436 56.018-43.002 70.451-41.515-7.0603-4.6359-20.522-7.4552-25.351-7.5993-2.5409 2.4171-8.9888 6.2999-15.633 11.788-6.2044-1.6438-22.452-6.6765-22.452-6.6765l-2.2636-15.633c-7.5339-7.5237-7.8046-3.0595-7.8046-3.0595zm9.6135 29.707s9.9132 3.17 15.087 4.2141l-15.299 12z" />
+                </g>
+            </svg>
+        </a>
         <nav>
             <ul>
+                <li><a href="javascript:void(0)" class="icon" onclick="menuToggle()"> <i class="fa-solid fa-bars"></i> </a></li>
                 <li><a href="projects.html">Work</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="#contact-me">Contact</a></li>
             </ul>
         </nav>
+        </div>
     </header>
     <main>
         <section id="introduction">
@@ -85,7 +93,7 @@
                     <p>Vela is a specialized weather app that supplies weather forecast data with the intent of
                         assisting wind and water sport participants in making informed decisions.</p>
                 </div>
-                <div class="shadow-light-green">
+                <div class="the-problem box-shadow-dark">
                     <h2>The Problem</h2>
                     <p><span class="medium">The difference between a good or a bad time often rides on the
                             weather.</span><br><br>
@@ -112,43 +120,39 @@
             <h2><span class="green">Design Thinking</span> Process</h2>
             <div class="flex">
                 <div class="ellipse-text">
-                    <div class="ellipse">
+                    <div class="ellipse box-shadow-light">
                         <img src="img/Vela/icons/understand-icon.svg" alt="green icon face with a question mark">
                     </div>
                     <h3>Understand</h3>
-                    </div>
-                    <div>
-                        <img src="img/Vela/icons/arrow-transition-dark-icon.svg"
-                            alt="green arrows pointing to the right">
-                    </div>
-                    <div class="ellipse-text">
-                        <div class="ellipse">
-                            <img src="img/Vela/icons/define-icon.svg"
-                                alt="computer window with magnifying glass over it">
-                        </div>
-                        <h3>Define</h3>
-                    </div>
-                    <div>
-                        <img src="img/Vela/icons/arrow-transition-med-icon.svg"
-                            alt="green arrows pointing to the right">
-                    </div>
-                    <div class="ellipse-text">
-                        <div class="ellipse">
-                            <img src="img/Vela/icons/ideate-icon.svg" alt="green lightbulb">
-                        </div>
-                        <h3>Ideate</h3>
-                    </div>
-                    <div>
-                        <img src="img/Vela/icons/arrow-transition-light-icon.svg"
-                            alt="green arrows pointing to the right">
-                    </div>
-                    <div class="ellipse-text">
-                        <div class="ellipse">
-                            <img src="img/Vela/icons/design-icon.svg" alt="paintbrush in front of a circle and square">
-                        </div>
-                        <h3>Design</h3>
-                    </div>
                 </div>
+                <div>
+                    <img src="img/Vela/icons/arrow-transition-dark-icon.svg" alt="green arrows pointing to the right">
+                </div>
+                <div class="ellipse-text">
+                    <div class="ellipse box-shadow-light">
+                        <img src="img/Vela/icons/define-icon.svg" alt="computer window with magnifying glass over it">
+                    </div>
+                    <h3>Define</h3>
+                </div>
+                <div>
+                    <img src="img/Vela/icons/arrow-transition-med-icon.svg" alt="green arrows pointing to the right">
+                </div>
+                <div class="ellipse-text">
+                    <div class="ellipse box-shadow-light">
+                        <img src="img/Vela/icons/ideate-icon.svg" alt="green lightbulb">
+                    </div>
+                    <h3>Ideate</h3>
+                </div>
+                <div>
+                    <img src="img/Vela/icons/arrow-transition-light-icon.svg" alt="green arrows pointing to the right">
+                </div>
+                <div class="ellipse-text">
+                    <div class="ellipse box-shadow-light">
+                        <img src="img/Vela/icons/design-icon.svg" alt="paintbrush in front of a circle and square">
+                    </div>
+                    <h3>Design</h3>
+                </div>
+            </div>
         </section>
 
         <section id="understand">
@@ -248,14 +252,18 @@
                         </div>
                         <div>
                             <h3>Research Goals</h3>
-                            <div class="goal goal-one">To learn what different weather conditions mean to the user.
+                            <div class="goal box-shadow-light goal-one">To learn what different weather conditions mean
+                                to the user.
                             </div>
-                            <div class="goal goal-two">To learn how the user typically obtains information about the
+                            <div class="goal box-shadow-light goal-two">To learn how the user typically obtains
+                                information about the
                                 weather.
                             </div>
-                            <div class="goal goal-three">To learn the user's engagement level with wind/water sports.
+                            <div class="goal box-shadow-light goal-three">To learn the user's engagement level with
+                                wind/water sports.
                             </div>
-                            <div class="goal goal-four">To learn how to introduce new people to wind/water sports.</div>
+                            <div class="goal box-shadow-light goal-four">To learn how to introduce new people to
+                                wind/water sports.</div>
                         </div>
                         <div>
                             <h3>Participants</h3>
@@ -387,7 +395,7 @@
                                             out or
                                             not.”</p>
                                     </div>
-                                    <div class="persona">
+                                    <div class="persona box-shadow-light">
                                         <h4 class="medium green">Goals/Needs</h4>
                                         <ul>
                                             <li>A way to know about safety on the water</li>
@@ -396,7 +404,7 @@
                                             <li>Feel confident going out onto the water</li>
                                         </ul>
                                     </div>
-                                    <div class="persona">
+                                    <div class="persona box-shadow-light">
                                         <h4 class="medium green">Frustrations</h4>
                                         <ul>
                                             <li>Not technologically proficient</li>
@@ -404,7 +412,7 @@
                                             <li>Looking for an app that has a focus on safety</li>
                                         </ul>
                                     </div>
-                                    <div class="persona">
+                                    <div class="persona box-shadow-light">
                                         <h4 class="medium green">Motivations</h4>
                                         <ul>
                                             <li>Spend more time with grandkids</li>
@@ -455,7 +463,7 @@
                                         <p class="medium">“I do a thorough analysis of all the weather apps I have.”</p>
                                         <p class="medium">“I don't go out on the water unless I check the forecast.”</p>
                                     </div>
-                                    <div class="persona">
+                                    <div class="persona box-shadow-light">
                                         <h4 class="medium green">Goals/Needs</h4>
                                         <ul>
                                             <li>An app that provides data on meteorological activities</li>
@@ -464,14 +472,14 @@
                                             <li>An app that does not have superfluous information</li>
                                         </ul>
                                     </div>
-                                    <div class="persona">
+                                    <div class="persona box-shadow-light">
                                         <h4 class="medium green">Frustrations</h4>
                                         <ul>
                                             <li>Apps don't provide all the information he needs</li>
                                             <li>Paywalls that restrict information</li>
                                         </ul>
                                     </div>
-                                    <div class="persona">
+                                    <div class="persona box-shadow-light">
                                         <h4 class="medium green">Motivations</h4>
                                         <ul>
                                             <li>Wants to spend a peaceful time out on the water</li>
@@ -821,6 +829,8 @@
             </div>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
 </body>
 

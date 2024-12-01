@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Karlana Fronk">
-    <meta name="keywords" content="Karlana, Karlana Fronk, Boston area, Massachusetts, UX design, UI design, Frontend development">
+    <meta name="keywords"
+        content="Karlana, Karlana Fronk, Boston area, Massachusetts, UX design, UI design, Frontend development">
     <meta name="description" content="Karlana Fronk is a UX/UI designer in the Boston area. ">
     <meta name="theme-color" content="#FFFAF1">
     <title>Portfolio website homepage</title>
@@ -18,28 +19,36 @@
         href="https://fonts.googleapis.com/css2?family=Glory:ital,wght@0,100..800;1,100..800&family=Marmelad&family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/e2137e9ec3.js" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
-    <header>
-        <a class="logo" href="index.html">
-            <svg viewBox="0 0 269.88 243.68"> 
-                <g fill="#fd7a8e">
-                <path d="m98.67 218.66s-47.368-39.498-67.928-66.937c-21.828-29.13-33.335-53.189-29.914-86.602 3.6369-35.533 28.26-53.715 40.984-60.656 23.354-11.558 44.659 2.8941 57.109 15.374 4.1857 56.998-0.25039 198.82-0.25039 198.82z" />
-                <path d="m144.62 132.55s19.176-27.439 46.273-44.787c14.399-9.2185 46.603-10.581 59.329-0.17189 26.066 23.236 26.804 57.943-6.6016 80.494-7.4374 5.4541-19.926 18.49-36.932 23.514-20.513-15.311-62.068-59.05-62.068-59.05z" />
-                <path d="m123.96 232.27 4.7924-72.845s16.886 22.576 53.036 54.953c-11.959 10.317-30.533 19.58-45.688 29.394-1.7164-3.0756-12.141-11.502-12.141-11.502z" />
-                <path d="m121.8 48.969s-2.7552 34.385 3.0533 62.696c23.697-14.436 56.018-43.002 70.451-41.515-7.0603-4.6359-20.522-7.4552-25.351-7.5993-2.5409 2.4171-8.9888 6.2999-15.633 11.788-6.2044-1.6438-22.452-6.6765-22.452-6.6765l-2.2636-15.633c-7.5339-7.5237-7.8046-3.0595-7.8046-3.0595zm9.6135 29.707s9.9132 3.17 15.087 4.2141l-15.299 12z" />
-               </g>
-              </svg>
-        </a>
-        <nav>
-            <ul>
-                <li><a href="projects.html">Work</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="#contact-me">Contact</a></li>
-            </ul>
-        </nav>
+    <header class="box-shadow-dark">
+        <div class="navtoggle" id="myNavtoggle">
+            <a class="logo" href="index.html">
+                <svg aria-label="return to homepage" viewBox="0 0 269.88 243.68">
+                    <g fill="#fd7a8e">
+                        <path
+                            d="m98.67 218.66s-47.368-39.498-67.928-66.937c-21.828-29.13-33.335-53.189-29.914-86.602 3.6369-35.533 28.26-53.715 40.984-60.656 23.354-11.558 44.659 2.8941 57.109 15.374 4.1857 56.998-0.25039 198.82-0.25039 198.82z" />
+                        <path
+                            d="m144.62 132.55s19.176-27.439 46.273-44.787c14.399-9.2185 46.603-10.581 59.329-0.17189 26.066 23.236 26.804 57.943-6.6016 80.494-7.4374 5.4541-19.926 18.49-36.932 23.514-20.513-15.311-62.068-59.05-62.068-59.05z" />
+                        <path
+                            d="m123.96 232.27 4.7924-72.845s16.886 22.576 53.036 54.953c-11.959 10.317-30.533 19.58-45.688 29.394-1.7164-3.0756-12.141-11.502-12.141-11.502z" />
+                        <path
+                            d="m121.8 48.969s-2.7552 34.385 3.0533 62.696c23.697-14.436 56.018-43.002 70.451-41.515-7.0603-4.6359-20.522-7.4552-25.351-7.5993-2.5409 2.4171-8.9888 6.2999-15.633 11.788-6.2044-1.6438-22.452-6.6765-22.452-6.6765l-2.2636-15.633c-7.5339-7.5237-7.8046-3.0595-7.8046-3.0595zm9.6135 29.707s9.9132 3.17 15.087 4.2141l-15.299 12z" />
+                    </g>
+                </svg>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="javascript:void(0)" class="icon" onclick="menuToggle()"> <i class="fa-solid fa-bars"></i> </a></li>
+                    <li><a href="projects.html">Work</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#contact-me" onclick="menuToggle()">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
@@ -59,20 +68,21 @@
             <div class="container">
                 <h2>My Project(s)</h2>
                 <div class="row">
-                <div class="project-box col-6 col-7">
-                    <picture>
-                        <source srcset="img/Vela/project-img-1x/vela-project-image-1x.jpg" media="(max-width:767px)">
-                        <img src="img/Vela/project-img-2x/vela-project-image-2x.jpg"
-                            alt="Two screens of Vela app displayed on phones">
-                    </picture>
-                </div>
-                <div class="col-6 col-5">
-                    <h3>Vela</h3>
-                    <p>Vela is a specialized weather app that supplies weather forecast data with the intent of
-                        assisting wind and water sport participants in making informed decisions.
-                    </p>
-                    <a href="projects.html" class="button">View Project</a>
-                </div>
+                    <div class="project-box col-6 col-7">
+                        <picture>
+                            <source srcset="img/Vela/project-img-1x/vela-project-image-1x.jpg"
+                                media="(max-width:767px)">
+                            <img src="img/Vela/project-img-2x/vela-project-image-2x.jpg"
+                                alt="Two screens of Vela app displayed on phones">
+                        </picture>
+                    </div>
+                    <div class="col-6 col-5">
+                        <h3>Vela</h3>
+                        <p>Vela is a specialized weather app that supplies weather forecast data with the intent of
+                            assisting wind and water sport participants in making informed decisions.
+                        </p>
+                        <a href="projects.html" class="button">View Project</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -105,6 +115,8 @@
             </div>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
 </body>
 
