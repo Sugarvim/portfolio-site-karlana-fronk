@@ -22,9 +22,9 @@
     box-sizing: border-box;
 }
 
-.container {
+.container{
     padding: 0 1em;
-    max-width: 80%;
+    max-width: calc(80% + 6vw);
     margin: 0 auto;
 }
 
@@ -33,6 +33,7 @@ body {
     font-size: 16px;
     word-spacing: 1.6px;
     line-height: 1.5;
+    overflow-x: hidden;
 }
 
 header {
@@ -44,10 +45,7 @@ header {
     top:0;
     z-index: 1;
 }
-main{
-    padding: 80px 0 15%;
-    position: relative;
-}
+
 img {
     width: 100%;
 }
@@ -238,6 +236,10 @@ a.logo:hover {
 
 /* small screen size */
 @media only screen and (max-width: 639px){
+    main {
+        padding: 80px 0 15%;
+        position: relative;
+    }
     .navtoggle li:not(:first-child){
         display: none;
     }
@@ -274,7 +276,7 @@ a.logo:hover {
 }
 /* medium device size */
 @media only screen and (min-width: 640px) {
-    main {
+    main{
         margin: 3% 3vw;
         padding: 0 0 5vh;
     }
@@ -328,7 +330,7 @@ a.logo:hover {
 }
 /* large screen size */
 @media only screen and (min-width: 1024px){
-    main {
+    main{
         margin: 3% 7vw;
     }
     .container{

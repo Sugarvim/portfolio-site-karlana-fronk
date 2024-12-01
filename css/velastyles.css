@@ -21,7 +21,7 @@ h2 {
 }
 
 h4 {
-    margin: 2% 0;
+    margin: 2% 0 1%;
 }
 
 main {
@@ -33,13 +33,15 @@ main {
 .green {
     color: var(--teal-text);
 }
-.wrapper{
-    display: grid;
 
+.bust-out{
+    margin: auto calc(50% - 50vw);
+    transform: translateX(calc(50vw - 50%));
 }
-.light-blue-stripe{
-    background-color: var(--light-teal);
-
+.bust-out .inside-bust-out{
+    padding: 0 1em;
+  max-width: calc(.8*(100% - 6vw));
+  margin: 0 auto;
 }
 
 .border {
@@ -138,6 +140,15 @@ background-color: #FF8D4F;;
 .competitive  p{
     margin: 0;
 }
+.light-blue-stripe{
+    background-color: var(--light-teal);
+    padding: 1vh 0 1.5vh;
+}
+.light-blue-stripe h3{
+    font-size: 1.5rem;
+    margin: 1% 0;
+
+}
 
 /* user interviews */
 .goal {
@@ -208,7 +219,6 @@ background-color: #FF8D4F;;
         position: relative;
         align-items: center;
         row-gap: 10px;
-
     }
 
     img[src*="arrow-transition"] {
@@ -216,11 +226,25 @@ background-color: #FF8D4F;;
         scale: 70%;
         height: 30px;
     }
+    .competitive{
+        flex-direction: column;
+    }
+    .no-shrink{
+        width: 100%;
+    }
+    img[src*="windy-app-icon"] {
+        width: 3rem;
+        height: 3rem;
+    }
+    img[src*="accuweather-icon"]{
+        width: 6rem;
+        height: 3.5rem;
+    }
 }
 
 /* medium width size */
 @media only screen and (min-width: 640px) {
-    main {
+    main{
         margin: 1vh 3vw;
         font-size: 16px;
     }
@@ -269,7 +293,7 @@ background-color: #FF8D4F;;
 
 /* large screen size */
 @media only screen and (min-width: 1024px) {
-    main {
+    main > * {
         margin: 10vh 5vw;
     }
 
