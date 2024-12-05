@@ -88,9 +88,9 @@ img {
   width: 100%;
 }
 
-img[src$="icon.svg"] {
+/* img[src$="icon.svg"] {
   width: 50px;
-}
+} */
 
 header svg {
   height: 60px;
