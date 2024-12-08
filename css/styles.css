@@ -289,11 +289,7 @@ a.logo:hover {
 }
 
 /* small screen size */
-@media only screen and (width <= 639px) {
-  main {
-    padding: 80px 0 15%;
-    position: relative;
-  }
+@media screen and (max-width: 639px) {
 
   .navtoggle li:not(:first-child) {
     display: none;
@@ -341,7 +337,9 @@ a.logo:hover {
 }
 
 /* medium device size */
-@media only screen and (width >= 640px) {
+@media screen and (min-width: 640px)
+and (max-width: 1023px) {
+
   main {
     margin: 3% 3vw;
     padding: 0 0 5vh;
@@ -410,16 +408,41 @@ a.logo:hover {
 }
 
 /* large screen size */
-@media screen and (-webkit-min-device-pixel-ratio: 1)
-and (min-device-width >= 1024px) {
+@media screen and (min-width: 1024px) {
 
   main {
     margin: 3% 7vw;
+    padding: 0 0 5vh;
   }
-
-  .container {
+  .container{
     margin-left: auto;
     margin-right: auto;
+  }
+
+  header {
+    position: static;
+    box-shadow: none;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  nav ul {
+    display: flex;
+  }
+
+  nav ul li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:first-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:first-child {
+    display: none;
   }
 
   .me-picture {

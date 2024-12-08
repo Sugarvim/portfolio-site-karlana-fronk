@@ -332,7 +332,8 @@ img[src*="accuweather-icon"] {
 
 
 /* || small screen size */
-@media only screen and (width <= 639px) {
+@media screen and (-webkit-min-device-pixel-ratio: 1)
+and (max-width: 639px) {
   /* || design thinking small */
   .ellipse {
     height: 80px;
@@ -403,7 +404,9 @@ img[src*="accuweather-icon"] {
 }
 
 /* || medium width size */
-@media only screen and (width >= 640px) {
+@media screen and (-webkit-min-device-pixel-ratio: 1)
+and (min-width: 640px)
+and (max-width: 1023px) {
   main {
     margin: 1vh 3vw;
     font-size: 16px;
@@ -461,7 +464,8 @@ img[src*="accuweather-icon"] {
 }
 
 /* || large screen size */
-@media only screen and (width >= 1024px) {
+@media screen and (-webkit-min-device-pixel-ratio: 1)
+and (min-width: 1024px) {
   main > * {
     margin: 10vh 5vw;
   }
@@ -494,6 +498,13 @@ img[src*="accuweather-icon"] {
     background: var(--light-teal);
     border-radius: 9999px;
     position: relative;
+  }
+  .flex {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    justify-content: space-around;
   }
   /* ||wireframes large */
   .low-fidelity{
