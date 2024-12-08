@@ -334,10 +334,14 @@ a.logo:hover {
   nav ul {
     margin: 0;
   }
+.row{
+  margin-bottom: 4vh;
+}
 
   [class*="col-"] {
     width: auto;
   }
+  
 }
 
 /* medium device size */
@@ -384,24 +388,23 @@ and (max-width: 1023px) {
     margin: 0 1.5vw;
   }
 
-  #project-section h3 {
-    margin-top: 2vh;
+  .col-7,
+  .col-5 {
+    width: auto;
+  }
+  .project-box{
+margin-top: 3vh;
   }
 
   .col-6 {
     width: 50%;
     float: left;
-    padding: 1vh 4vw;
+    padding: 1vh 2vh;
     position: relative;
   }
 
-  .col-7,
-  .col-5 {
-    width: auto;
-  }
-
   .col-6 h3 {
-    margin-top: 1vh;
+    margin-top: 2vh;
   }
 
   .row::after {
