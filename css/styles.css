@@ -295,6 +295,9 @@ a.logo:hover {
 /* small screen size */
 @media screen and (max-width: 639px) {
 
+  main{
+    padding-top: 80px;
+  }
   .navtoggle li:not(:first-child) {
     display: none;
   }
@@ -349,7 +352,7 @@ a.logo:hover {
 and (max-width: 1023px) {
 
   main {
-    margin: 3% 3vw;
+    margin: 0 3vw 3%;
     padding: 0 0 5vh;
   }
 
@@ -418,7 +421,7 @@ margin-top: 3vh;
 @media screen and (min-width: 1024px) {
 
   main {
-    margin: 3% 7vw;
+    margin: 0 7vw 3%;
     padding: 0 0 5vh;
   }
   .container{

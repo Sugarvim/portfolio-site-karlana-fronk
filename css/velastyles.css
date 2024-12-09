@@ -499,6 +499,13 @@ and (min-width: 1024px) {
     border-radius: 9999px;
     position: relative;
   }
+  .ellipse-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
   .flex {
     display: flex;
     flex-direction: row;
