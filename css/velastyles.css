@@ -163,7 +163,9 @@ img[src*="accuweather-icon"] {
   padding: 2vh 2vh 4vh;
   gap: 11px;
 }
-
+/* .compare-col{
+  flex: 1;
+} */
 .light-blue {
   background-color: #add5e8;
 }
@@ -183,6 +185,7 @@ img[src*="accuweather-icon"] {
 .no-shrink {
   flex-shrink: 0;
   width: 40%;
+
 }
 
 .competitive {
@@ -191,6 +194,7 @@ img[src*="accuweather-icon"] {
   gap: 4vh;
   justify-content: center;
   margin-bottom: 5vh;
+  align-items: stretch;
 }
 
 .competitive ul {
