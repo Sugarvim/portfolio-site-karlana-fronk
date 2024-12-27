@@ -18,10 +18,17 @@ h1,
 h2 {
   font-family: Marmelad, sans-serif;
   text-align: center;
+  font-size: 2em;
+}
+h3 {
+  font-size: 1.5em;
 }
 
 h4 {
   margin: 2% 0 1%;
+}
+.col-6{
+  width: 50%;
 }
 
 main {
@@ -53,6 +60,9 @@ main {
   text-align: center;
 }
 
+.text-left {
+  text-align: left;
+}
 .medium {
   font-weight: 500;
 }
@@ -60,31 +70,78 @@ main {
 .semibold {
   font-weight: 600;
 }
+.bottom-border {
+  border-bottom: 2px solid var(--black-vela);
+  padding-top: 0.5vh;
+}
 
 .sub-heading {
   font-family: Glory, sans-serif;
   font-weight: 400;
-}
-
-.the-problem {
-  background-color: var(--light-teal);
-  padding: 1% 4vw;
-  border-radius: 25px;
+  font-size: 1.5em;
+  max-width: 60%;
+  color: #5e6b81;
 }
 
 .grid {
   display: grid;
 }
-
+.space-under-small{
+  margin-bottom: 4vh;
+}
 .space-under {
   margin-bottom: 6vh;
+}
+/* || Introduction */
+
+.vela-head {
+  margin-bottom: 0.25em;
+  padding-top: 2vh;
+}
+
+.the-problem {
+  background-color: var(--light-teal);
+  padding: 1% 2vw;
+  border-radius: 25px;
+
+}
+.grid div{
+  padding-left: 2vw;
 }
 
 img[src*="arrow-transition"] {
   width: 83.001px;
   height: 33.2px;
 }
+h3.semibold {
+  font-size: 1.2em;
+}
+#introduction ul {
+  padding: 0;
+}
+#introduction h3 {
+  margin: 1vh 0;
+}
+#introduction .intro-top.col-6 {
+  padding-top: 4vh;
+}
 
+#introduction .inline-flex h3 {
+  float: left;
+}
+#introduction .intro-img {
+  float: right;
+
+}
+.row {
+  position: relative;
+}
+
+.icons img {
+  padding-left: 2vw;
+  max-width: 75%;
+
+}
 
 /* || competitive research */
 img[src*="windy-app-icon"] {
@@ -220,17 +277,17 @@ img[src*="accuweather-icon"] {
   right: 70%;
   z-index: 1;
 }
-.ellipse-jim{
-    background-color: #ade4bc;
+.ellipse-jim {
+  background-color: #ade4bc;
 }
-.ellipse-steve{
-    background-color: #97CBD2;
+.ellipse-steve {
+  background-color: #97cbd2;
 }
-.ellipse-skip{
-    background-color: #E6E7AE;
+.ellipse-skip {
+  background-color: #e6e7ae;
 }
-.ellipse-jeff{
-    background-color: #EFBE74;
+.ellipse-jeff {
+  background-color: #efbe74;
 }
 .quote {
   z-index: 0;
@@ -258,82 +315,79 @@ img[src*="accuweather-icon"] {
   align-items: flex-start;
   display: inline-flex;
 }
-.persona-quote svg{
+.persona-quote svg {
   filter: drop-shadow(0 2px 10px rgb(0 0 0 / 10%));
 }
-.persona-container{
+.persona-container {
   padding: 2vh 6vw;
   position: relative;
 }
-.center-image{
+.center-image {
   position: relative;
   top: 5vh;
   left: 3vw;
 }
-.center-image-kip{
+.center-image-kip {
   position: relative;
   top: 5vh;
   left: 1vw;
 }
-.clip-circle{
+.clip-circle {
   clip-path: circle(25% at 50% 40%);
 }
-.persona-box{
-  display:flex;
+.persona-box {
+  display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 4vw;
 }
-.persona-space{
-  display:grid;
+.persona-space {
+  display: grid;
   row-gap: 1.5vw;
 }
 
 /* || wireframes */
 
-.wireframe{
-  position:relative;
+.wireframe {
+  position: relative;
 }
-.light-stripe{
-  position:relative;
+.light-stripe {
+  position: relative;
   background-color: var(--light-teal);
   top: 11vh;
 }
-.med-stripe{
-  position:relative;
-  background-color: #78A2BA;
+.med-stripe {
+  position: relative;
+  background-color: #78a2ba;
   padding-top: 20vh;
   top: 26vh;
 }
-.dark-stripe{
+.dark-stripe {
   background-color: var(--teal-text);
   padding-top: 20vh;
   margin-top: 30vh;
 }
-.in-front{
-  position:absolute;
+.in-front {
+  position: absolute;
   z-index: 1;
   scale: 80%;
 }
-.low-fidelity{
+.low-fidelity {
   top: 0;
 }
-.med-fidelity{
+.med-fidelity {
   top: 60vh;
 }
-.high-fidelity{
+.high-fidelity {
   top: 110vh;
 }
-.flex-wireframe{
-  display:flex;
+.flex-wireframe {
+  display: flex;
   flex-direction: column;
 }
 
-
-
 /* || small screen size */
-@media screen and (-webkit-min-device-pixel-ratio: 1)
-and (max-width: 639px) {
+@media screen and (-webkit-min-device-pixel-ratio: 1) and (max-width: 639px) {
   /* || design thinking small */
   .ellipse {
     height: 80px;
@@ -379,7 +433,7 @@ and (max-width: 639px) {
     scale: 70%;
     height: 30px;
   }
-/* || competitive research small */
+  /* || competitive research small */
   .competitive {
     flex-direction: column;
   }
@@ -398,20 +452,38 @@ and (max-width: 639px) {
     height: 3.5rem;
   }
   /* || user persona small */
-  .persona-box{
+  .persona-box {
     gap: 16vw;
   }
 }
 
 /* || medium width size */
-@media screen and (-webkit-min-device-pixel-ratio: 1)
-and (min-width: 640px)
-and (max-width: 1023px) {
-  main {
-    margin: 1vh 3vw;
-    font-size: 16px;
+@media screen and (-webkit-min-device-pixel-ratio: 1) and (min-width: 640px) and (max-width: 1023px) {
+  main > * {
+    margin: 5vh 4vw;
   }
-/* || design thinking medium */
+  #introduction .row h2{
+    margin: 1vw 0;
+    font-size: 1.5em;
+  }
+  #introduction .intro-img {
+    padding-top: 8vh;
+  }
+  #introduction .col-6.right-edge {
+    padding-right: 0;
+  }
+  
+  #introduction .col-6.left-edge {
+    padding-left: 0;
+  }
+  #introduction div.col-5 {
+    width: 41.66%;
+  }
+  #introduction div.col-7 {
+    width: 58.33%;
+  }
+
+  /* || design thinking medium */
   .ellipse {
     height: 80px;
     width: 80px;
@@ -457,31 +529,54 @@ and (max-width: 1023px) {
     padding: 2vh 2vw;
     position: relative;
   }
+  #introduction .inline-flex {
+    display: inline-flex;
+    float: none;
+  }
+  #introduction .inline-flex.col-8 {
+    padding-top: 0;
+  }
   /* ||wireframes medium */
-  .low-fidelity{
+  .low-fidelity {
     top: 3vh;
   }
 }
 
 /* || large screen size */
-@media screen and (-webkit-min-device-pixel-ratio: 1)
-and (min-width: 1024px) {
+@media screen and (-webkit-min-device-pixel-ratio: 1) and (min-width: 1024px) {
   main > * {
     margin: 10vh 5vw;
   }
-/* ||design thinking large */
-  #understand .col-6 {
-    width: 50%;
+  #introduction {
+    margin-top: 8vh;
+  }
+  #introduction .col-6.left-edge {
+    padding-left: 0;
+  }
+  #introduction .col-6.right-edge {
+    padding-right: 0;
   }
 
-  .col-4 {
+  #introduction .inline-flex {
+    display: inline-flex;
+    float: none;
+  }
+
+  /* ||design thinking large */
+
+  #introduction div.col-4 {
     width: 33.33%;
   }
 
-  .col-8 {
+  #introduction div.col-8 {
     width: 66.66%;
   }
-
+  #introduction .inline-flex {
+    display: inline-flex;
+  }
+  #introduction .inline-flex.col-8 {
+    padding-top: 0;
+  }
   .ellipse > img {
     width: 78px;
     height: 78px;
@@ -514,41 +609,41 @@ and (min-width: 1024px) {
     justify-content: space-around;
   }
   /* ||wireframes large */
-  .low-fidelity{
+  .low-fidelity {
     top: 0;
   }
-  .med-fidelity{
+  .med-fidelity {
     top: 60vh;
   }
-  .light-stripe{
-    position:relative;
+  .light-stripe {
+    position: relative;
     background-color: var(--light-teal);
     padding-top: 18vh;
     top: 11vh;
   }
-  .med-stripe{
+  .med-stripe {
     position: relative;
-    background-color: #78A2BA;
+    background-color: #78a2ba;
     padding-top: 20vh;
     top: 26vh;
   }
-  .dark-stripe{
+  .dark-stripe {
     background-color: var(--teal-text);
     padding-top: 20vh;
     margin-top: 30vh;
   }
-  .in-front{
-    position:absolute;
+  .in-front {
+    position: absolute;
     z-index: 1;
     scale: 80%;
   }
-  .low-fidelity{
+  .low-fidelity {
     top: 0;
   }
-  .med-fidelity{
+  .med-fidelity {
     top: 60vh;
   }
-  .high-fidelity{
+  .high-fidelity {
     top: 110vh;
   }
 }
