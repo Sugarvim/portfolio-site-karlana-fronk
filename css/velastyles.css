@@ -103,10 +103,6 @@ main {
   background-color: var(--light-teal);
   padding: 1% 2vw;
   border-radius: 25px;
-
-}
-.grid div{
-  padding-left: 2vw;
 }
 
 img[src*="arrow-transition"] {
@@ -119,6 +115,10 @@ h3.semibold {
 #introduction ul {
   padding: 0;
 }
+#introduction.grid div{
+  padding-left: 2vw;
+}
+
 #introduction h3 {
   margin: 1vh 0;
 }
@@ -233,7 +233,11 @@ img[src*="accuweather-icon"] {
   gap: 16px;
   display: inline-flex;
 }
+.quote {
+  z-index: 0;
+  padding: 2vh 2vw;
 
+}
 .flex-goals {
   display: flex;
   flex-direction: column;
@@ -263,23 +267,28 @@ img[src*="accuweather-icon"] {
   justify-content: flex-end;
   margin-bottom: 2vh;
 }
+#user-interviews img[src*="icon.svg"]{
+  max-width: 4vw;
+}
 .icon-location {
-  margin-left: 9vw;
+  margin-left: 1vw;
   margin-top: 1vh;
-  width: 10%;
 }
 .icon-location-b {
   width: 10%;
 }
-.ellipse-user {
+.ellipse-user-left, .ellipse-user-right {
   border-radius: 9999px;
-  width: 25%;
-  padding-top: 25%;
-  display: block;
+  display: inline-block;
   position: absolute;
-  bottom: 35%;
-  right: 70%;
-  z-index: 1;
+}
+.ellipse-user-left{
+  width: 22.575%;
+  padding-top: 22.575%;
+}
+.ellipse-user-right{
+  width: 33%;
+  padding-top: 33%;
 }
 .ellipse-jim {
   background-color: #ade4bc;
@@ -293,11 +302,7 @@ img[src*="accuweather-icon"] {
 .ellipse-jeff {
   background-color: #efbe74;
 }
-.quote {
-  z-index: 0;
-  padding: 2vh 2vw;
-  margin-left: 8vw;
-}
+
 .text-user {
   display: block;
   position: relative;
@@ -466,6 +471,7 @@ img[src*="accuweather-icon"] {
   main > * {
     margin: 5vh 4vw;
   }
+  /* || introduction medium */
   #introduction .row h2{
     margin: 1vw 0;
     font-size: 1.5em;
@@ -486,7 +492,6 @@ img[src*="accuweather-icon"] {
   #introduction div.col-7 {
     width: 58.33%;
   }
-
   /* || design thinking medium */
   .ellipse {
     height: 80px;
@@ -527,7 +532,6 @@ img[src*="accuweather-icon"] {
     box-sizing: content-box;
     padding: 0 0 4vh;
   }
-
   [class*="col-"] {
     float: left;
     padding: 2vh 2vw;
@@ -539,6 +543,16 @@ img[src*="accuweather-icon"] {
   }
   #introduction .inline-flex.col-8 {
     padding-top: 0;
+  }
+  /* || user interviews medium */
+  .ellipse-user-left, .ellipse-user-right{
+    position: relative;
+  }
+  #understand .col-7{
+    width: 58.33%;
+  }
+  #understand .col-5{
+    width: 41.66%;
   }
   /* ||wireframes medium */
   .low-fidelity {
@@ -565,7 +579,6 @@ img[src*="accuweather-icon"] {
     display: inline-flex;
     float: none;
   }
-
   /* ||design thinking large */
 
   #introduction div.col-4 {
@@ -581,6 +594,7 @@ img[src*="accuweather-icon"] {
   #introduction .inline-flex.col-8 {
     padding-top: 0;
   }
+
   .ellipse > img {
     width: 78px;
     height: 78px;
@@ -590,19 +604,49 @@ img[src*="accuweather-icon"] {
     top: 50%;
     transform: translate(-50%, -50%);
   }
-
   .ellipse {
     width: 153px;
     height: 153px;
     background: var(--light-teal);
     border-radius: 9999px;
     position: relative;
-  }
+  } 
   .ellipse-text {
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
+  }
+    /* || user interviews large */
+  .ellipse-user-left{
+    width: 17.14%;
+    padding-top: 17.14%;
+    bottom: 35%;
+    right: 70%;
+    z-index: 1;
+  }
+  .ellipse-user-right{
+    width: 24%;
+    padding-top: 24%;
+    bottom: 35%;
+    right: 70%;
+    z-index: 1;
+  }
+  .quote-left {
+    margin-left: 8vw;
+    z-index: 0;
+    padding: 2vh 2vw;
+  
+  }
+  .quote-right{
+    margin-left: 5vw;
+    z-index: 0;
+    padding: 2vh 2vw;
+  
+  }
+  .icon-location{
+    margin-left: 9vw;
+    margin-top: 1vh;
   }
 
   .flex {
