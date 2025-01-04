@@ -28,7 +28,7 @@ h4 {
   margin: 2% 0 1%;
   font-size: 1.17em;
 }
-.col-6{
+.col-6 {
   width: 50%;
 }
 
@@ -87,7 +87,7 @@ main {
 .grid {
   display: grid;
 }
-.space-under-small{
+.space-under-small {
   margin-bottom: 4vh;
 }
 .space-under {
@@ -116,7 +116,7 @@ h3.semibold {
 #introduction ul {
   padding: 0;
 }
-#introduction.grid div{
+#introduction.grid div {
   padding-left: 2vw;
 }
 
@@ -132,7 +132,6 @@ h3.semibold {
 }
 #introduction .intro-img {
   float: right;
-
 }
 .row {
   position: relative;
@@ -141,7 +140,6 @@ h3.semibold {
 .icons img {
   padding-left: 2vw;
   max-width: 75%;
-
 }
 
 /* || competitive research */
@@ -186,7 +184,6 @@ img[src*="accuweather-icon"] {
 .no-shrink {
   flex-shrink: 0;
   width: 40%;
-
 }
 
 .competitive {
@@ -236,7 +233,6 @@ img[src*="accuweather-icon"] {
 .quote {
   z-index: 0;
   padding: 2vh 2vw;
-
 }
 .flex-goals {
   display: flex;
@@ -264,11 +260,12 @@ img[src*="accuweather-icon"] {
   display: flex;
   flex-direction: column;
   height: 100%;
-  justify-content: flex-end;
   margin-bottom: 2vh;
 }
-#user-interviews img[src*="icon.svg"]{
-  max-width: 4vw;
+#user-interviews img[src*="icon.svg"] {
+  max-width: 3vw;
+  height:auto;
+  width: auto;
 }
 .icon-location {
   margin-left: 1vw;
@@ -277,16 +274,17 @@ img[src*="accuweather-icon"] {
 .icon-location-b {
   width: 10%;
 }
-.ellipse-user-left, .ellipse-user-right {
+.ellipse-user-left,
+.ellipse-user-right {
   border-radius: 9999px;
   display: inline-block;
   position: absolute;
 }
-.ellipse-user-left{
+.ellipse-user-left {
   width: 22.575%;
   padding-top: 22.575%;
 }
-.ellipse-user-right{
+.ellipse-user-right {
   width: 33%;
   padding-top: 33%;
 }
@@ -305,8 +303,11 @@ img[src*="accuweather-icon"] {
 
 .text-user {
   display: block;
-  position: relative;
-  margin-left: 3vw;
+  position: absolute;
+  margin-left: 1vw;
+  line-height: 1.3;
+  bottom: 10%;
+
 }
 .text-user p {
   margin: 0;
@@ -324,7 +325,7 @@ img[src*="accuweather-icon"] {
   align-items: flex-start;
   display: inline-flex;
 }
-.persona ul{
+.persona ul {
   padding-left: 2vw;
   margin: 1vh 0;
 }
@@ -338,16 +339,15 @@ img[src*="accuweather-icon"] {
   filter: blur(2px);
   filter: drop-shadow(0 2px 10px rgb(0 0 0 / 10%));
 } */
- .persona-block{
+.persona-block {
   display: flex;
   flex-direction: row;
   position: relative;
- }
+}
 .persona-container {
   display: flex;
   flex-direction: column;
   position: relative;
-
 }
 .center-image {
   position: relative;
@@ -366,7 +366,6 @@ img[src*="accuweather-icon"] {
   left: 24vw;
   transform: translate(-50%, 0);
   position: absolute;
-
 }
 .persona-box {
   display: flex;
@@ -378,10 +377,10 @@ img[src*="accuweather-icon"] {
   display: grid;
   row-gap: 1.5vw;
 }
-.persona-space:last-child{
+.persona-space:last-child {
   padding-bottom: 0;
 }
-div.persona-container > h4{
+div.persona-container > h4 {
   padding-top: 80%;
 }
 /* || wireframes */
@@ -501,7 +500,7 @@ div.persona-container > h4{
     margin: 5vh 4vw;
   }
   /* || introduction medium */
-  #introduction .row h2{
+  #introduction .row h2 {
     margin: 1vw 0;
     font-size: 1.5em;
   }
@@ -511,7 +510,7 @@ div.persona-container > h4{
   #introduction .col-6.right-edge {
     padding-right: 0;
   }
-  
+
   #introduction .col-6.left-edge {
     padding-left: 0;
   }
@@ -561,6 +560,9 @@ div.persona-container > h4{
     box-sizing: content-box;
     padding: 0 0 4vh;
   }
+  img[src*="arrow-transition-dark"] {
+    margin-right: 2vw;
+  }
   [class*="col-"] {
     float: left;
     padding: 2vh 2vw;
@@ -574,13 +576,14 @@ div.persona-container > h4{
     padding-top: 0;
   }
   /* || user interviews medium */
-  .ellipse-user-left, .ellipse-user-right{
+  .ellipse-user-left,
+  .ellipse-user-right {
     position: relative;
   }
- .col-7{
+  .col-7 {
     width: 58.33%;
   }
-.col-5{
+  .col-5 {
     width: 41.66%;
   }
   /* ||wireframes medium */
@@ -625,70 +628,83 @@ div.persona-container > h4{
   }
 
   .ellipse > img {
-    width: 78px;
-    height: 78px;
+    width: 5vw;
+    height: 5vw;
     position: absolute;
+    opacity: 0.7;
     flex-shrink: 0;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
   }
   .ellipse {
-    width: 153px;
-    height: 153px;
+    width: 10vw;
+    height: 10vw;
     background: var(--light-teal);
     border-radius: 9999px;
     position: relative;
-  } 
+  }
   .ellipse-text {
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
   }
-    /* || user interviews large */
-  #user-interviews .col-5{
+  img[src*="arrow-transition"] {
+    box-sizing: content-box;
+    padding: 0 0 4vh;
+  }
+  img[src*="arrow-transition-dark"] {
+    margin-right: 2vw;
+  }
+  /* || user interviews large */
+  #user-interviews .col-5 {
     padding-right: 0;
     padding-left: 0;
+    height: 40vh;
   }
-  #user-interviews .col-7{
+  #user-interviews .col-7 {
     padding-left: 0;
     padding-right: 4vw;
+    height: 40vh;
   }
-  .text-user-right{
+  .text-user-right {
     display: block;
-    position: relative;
+    position: absolute;
     margin-left: 0;
+    line-height: 1.3;
+    bottom: 10%;
   }
   .text-user-right p {
     margin: 0;
   }
-  .ellipse-user-left{
-    width: 17.14%;
-    padding-top: 17.14%;
+  .ellipse-user-left {
+    width: 21.425%;
+    padding-top: 21.425%;
     bottom: 35%;
-    right: 75%;
+    right: 78%;
     z-index: 1;
   }
-  .ellipse-user-right{
-    width: 24%;
-    padding-top: 24%;
+  .ellipse-user-right {
+    width: 30%;
+    padding-top: 30%;
     bottom: 35%;
     z-index: 1;
   }
   .quote-left {
-    margin-left: 8vw;
+    margin-left: 6.5vw;
     z-index: 0;
     padding: 2vh 2vw;
-  
   }
-  .quote-right{
-    margin-left: 5vw;
+  .quote-right {
+    margin-left: 6.5vw;
     z-index: 0;
     padding: 2vh 2vw;
-  
   }
-  .icon-location{
+  .quote-jeff{
+    margin-top: 5vh;
+  }
+  .icon-location {
     margin-left: 9vw;
     margin-top: 1vh;
   }
