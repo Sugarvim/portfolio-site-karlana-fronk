@@ -395,22 +395,26 @@ div.persona-container h4 {
 
 .wireframe {
   position: relative;
+height: 108vh;
 }
 .light-stripe {
-  position: relative;
   background-color: var(--light-teal);
-  top: 11vh;
+  padding-top: 20vh;
+}
+.move-left{
+  margin-left: -6vw;
 }
 .med-stripe {
   position: relative;
   background-color: #78a2ba;
   padding-top: 20vh;
-  top: 26vh;
+  top: 10vh;
 }
 .dark-stripe {
+  position:relative;
   background-color: var(--teal-text);
   padding-top: 20vh;
-  margin-top: 30vh;
+top: 18vh;
 }
 .in-front {
   position: absolute;
@@ -421,10 +425,18 @@ div.persona-container h4 {
   top: 0;
 }
 .med-fidelity {
-  top: 60vh;
+  top: 35vh;
+}
+.mid-down{
+  position: relative;
+  top: 10vh;
+}
+.high-down{
+  position: relative;
+  top: 18vh;
 }
 .high-fidelity {
-  top: 110vh;
+  top: 68vh;
 }
 .flex-wireframe {
   display: flex;
@@ -610,9 +622,7 @@ div.persona-container h4 {
     width: 41.66%;
   }
   /* ||wireframes medium */
-  .low-fidelity {
-    top: 3vh;
-  }
+
 }
 
 /* || large screen size */
@@ -745,41 +755,22 @@ div.persona-container h4 {
   }
 
   /* ||wireframes large */
-  .low-fidelity {
-    top: 0;
-  }
-  .med-fidelity {
-    top: 60vh;
-  }
+
   .light-stripe {
-    position: relative;
-    background-color: var(--light-teal);
-    padding-top: 18vh;
-    top: 11vh;
+    padding-top: 22vh;
   }
   .med-stripe {
-    position: relative;
-    background-color: #78a2ba;
-    padding-top: 20vh;
-    top: 26vh;
+    padding-top: 22vh;
+    top: 6vh;
   }
   .dark-stripe {
-    background-color: var(--teal-text);
-    padding-top: 20vh;
     margin-top: 30vh;
   }
-  .in-front {
-    position: absolute;
-    z-index: 1;
-    scale: 80%;
-  }
-  .low-fidelity {
-    top: 0;
-  }
+
   .med-fidelity {
     top: 60vh;
   }
   .high-fidelity {
-    top: 110vh;
+    top: 68vh;
   }
 }
