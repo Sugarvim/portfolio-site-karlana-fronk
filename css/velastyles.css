@@ -56,7 +56,7 @@ main {
 .border {
   border-radius: 25px;
 }
-.inline-block{
+.inline-block {
   display: inline-block;
 }
 
@@ -91,10 +91,10 @@ main {
   display: grid;
 }
 .space-under-small {
-  margin-bottom: 4vh;
+  margin-bottom: 4vw;
 }
 .space-under {
-  margin-bottom: 6vh;
+  margin-bottom: 6vw;
 }
 /* || Introduction */
 
@@ -268,7 +268,7 @@ img[src*="accuweather-icon"] {
 }
 #user-interviews img[src*="icon.svg"] {
   max-width: 3vw;
-  height:auto;
+  height: auto;
   width: auto;
 }
 .icon-location {
@@ -305,15 +305,16 @@ img[src*="accuweather-icon"] {
   background-color: #efbe74;
 }
 
-.text-user, .text-user-right {
+.text-user,
+.text-user-right {
   display: block;
   position: absolute;
   margin-left: 1vw;
   line-height: 1.3;
   bottom: 10%;
-
 }
-.text-user p, .text-user-right p {
+.text-user p,
+.text-user-right p {
   margin: 0;
 }
 
@@ -332,7 +333,7 @@ img[src*="accuweather-icon"] {
   align-items: flex-start;
   display: inline-flex;
 }
-.persona-quote{
+.persona-quote {
   background: white;
 }
 .persona ul {
@@ -382,7 +383,7 @@ img[src*="accuweather-icon"] {
   padding-top: 0;
   padding-bottom: 0;
 }
-.persona-block.space-under{
+.persona-block.space-under {
   margin-bottom: 8vh;
 }
 div.persona-container > h4 {
@@ -395,49 +396,67 @@ div.persona-container h4 {
 
 .wireframe {
   position: relative;
-height: 108vh;
+  display: grid;
+  grid-area: 1/-1;
+  height: 108vh;
 }
-.light-stripe {
-  background-color: var(--light-teal);
-  padding-top: 20vh;
-}
-.move-left{
+.move-left {
   margin-left: -6vw;
 }
+
+.light-stripe {
+  position: relative;
+  background-color: var(--light-teal);
+  padding-top: 18vw;
+  grid-area: 1/-1;
+}
+
 .med-stripe {
   position: relative;
   background-color: #78a2ba;
-  padding-top: 20vh;
-  top: 10vh;
+  padding-top: 18vw;
+  grid-area: 2/-1;
 }
 .dark-stripe {
-  position:relative;
+  position: relative;
   background-color: var(--teal-text);
-  padding-top: 20vh;
-top: 18vh;
+  padding-top: 18vw;
+  grid-area: 3/-1;
 }
 .in-front {
-  position: absolute;
+  position: relative;
   z-index: 1;
   scale: 80%;
+  margin: auto;
 }
 .low-fidelity {
-  top: 0;
+  display: flex;
+  grid-area: 1/-1;
 }
 .med-fidelity {
-  top: 35vh;
-}
-.mid-down{
+  display: flex;
   position: relative;
-  top: 10vh;
-}
-.high-down{
-  position: relative;
-  top: 18vh;
+  grid-area: 2/-1;
 }
 .high-fidelity {
-  top: 68vh;
+  display: flex;
+  grid-area: 3/-1;
 }
+.move-low {
+  grid-area: 1/-1;
+
+}
+.mid-down {
+  position: relative;
+
+  grid-area: 2/-1;
+}
+.high-down {
+  position: relative;
+
+  grid-area: 3/-1;
+}
+
 .flex-wireframe {
   display: flex;
   flex-direction: column;
@@ -600,19 +619,20 @@ top: 18vh;
   .ellipse-user-right {
     position: relative;
   }
-  .text-user, .text-user-right{
+  .text-user,
+  .text-user-right {
     position: relative;
     bottom: 0;
   }
-  .ellipse-user-left{
+  .ellipse-user-left {
     width: calc(22.575% * 0.5);
     padding-top: calc(22.575% * 0.5);
   }
-  .ellipse-user-right{
+  .ellipse-user-right {
     width: calc(33% * 0.5);
     padding-top: calc(33% * 0.5);
   }
-  .goal-box{
+  .goal-box {
     height: 35vh;
   }
   .col-7 {
@@ -622,7 +642,6 @@ top: 18vh;
     width: 41.66%;
   }
   /* ||wireframes medium */
-
 }
 
 /* || large screen size */
@@ -701,14 +720,16 @@ top: 18vh;
     padding-right: 4vw;
     height: 40vh;
   }
-  .text-user, .text-user-right {
+  .text-user,
+  .text-user-right {
     display: block;
     position: absolute;
     margin-left: 0;
     line-height: 1.3;
     bottom: 10%;
   }
-  .text-user, .text-user-right p {
+  .text-user,
+  .text-user-right p {
     margin: 0;
   }
   .ellipse-user-left {
@@ -734,7 +755,7 @@ top: 18vh;
     z-index: 0;
     padding: 2vh 2vw;
   }
-  .quote-jeff{
+  .quote-jeff {
     margin-top: 5vh;
   }
   .icon-location {
@@ -750,13 +771,13 @@ top: 18vh;
     justify-content: space-around;
   }
   /* || user persona large */
-  .clip-circle{
+  .clip-circle {
     left: 22.5vw;
   }
 
   /* ||wireframes large */
 
-  .light-stripe {
+  /* .light-stripe {
     padding-top: 22vh;
   }
   .med-stripe {
@@ -772,5 +793,5 @@ top: 18vh;
   }
   .high-fidelity {
     top: 68vh;
-  }
+  } */
 }
