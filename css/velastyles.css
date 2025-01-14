@@ -393,12 +393,14 @@ div.persona-container h4 {
   margin-top: 2vh;
 }
 /* || wireframes */
-
+#wireframes h4{
+  margin-top: -0.5vw;
+}
 .wireframe {
   position: relative;
   display: grid;
-  grid-area: 1/-1;
-  height: 108vh;
+  gap: 4vh;
+
 }
 .move-left {
   margin-left: -6vw;
@@ -407,26 +409,26 @@ div.persona-container h4 {
 .light-stripe {
   position: relative;
   background-color: var(--light-teal);
-  padding-top: 18vw;
+  padding-top: 16vh;
   grid-area: 1/-1;
 }
 
 .med-stripe {
   position: relative;
   background-color: #78a2ba;
-  padding-top: 18vw;
+  padding-top: 16vh;
   grid-area: 2/-1;
 }
 .dark-stripe {
   position: relative;
   background-color: var(--teal-text);
-  padding-top: 18vw;
+  padding-top: 16vh;
   grid-area: 3/-1;
 }
 .in-front {
   position: relative;
   z-index: 1;
-  scale: 80%;
+  max-width: 80%;
   margin: auto;
 }
 .low-fidelity {
@@ -461,7 +463,42 @@ div.persona-container h4 {
   display: flex;
   flex-direction: column;
 }
-
+/* || usability testing */
+#usability-testing .flex{
+gap: 2vw;
+align-items: normal;
+}
+.usability-background{
+  background-color: var(--light-teal);
+}
+.p1 {
+  background-color: #F8B3B3;
+}
+.p2{
+  background-color: #FFCEAB;
+}
+.p3{
+  background-color: #FFF3B6;
+}
+.p4{
+  background-color: #D5FFBB;
+}
+.p5{
+  background-color: #C3FFED;
+}
+.p6{
+  background-color: #CED6FF;
+}
+.usability-quotes{
+  justify-content: space-between;
+}
+.usability-task{
+  display: flex;
+  flex-direction: column;
+  padding: 2vh 1vw;
+  gap: 2vh;
+  width: 30rem;
+}
 /* || small screen size */
 @media screen and (-webkit-min-device-pixel-ratio: 1) and (max-width: 639px) {
   /* || design thinking small */
@@ -643,6 +680,11 @@ div.persona-container h4 {
   }
   /* ||wireframes medium */
 }
+/* || usability testing medium */
+.usability-task{
+  align-items: normal;
+  align-content: space-evenly;
+}
 
 /* || large screen size */
 @media screen and (-webkit-min-device-pixel-ratio: 1) and (min-width: 1024px) {
@@ -777,21 +819,12 @@ div.persona-container h4 {
 
   /* ||wireframes large */
 
-  /* .light-stripe {
-    padding-top: 22vh;
+  .in-front{
+    max-width: 70%;
   }
-  .med-stripe {
-    padding-top: 22vh;
-    top: 6vh;
+  /* || usability testing large */
+  .usability-task{
+    align-items: normal;
+    align-content: space-evenly;
   }
-  .dark-stripe {
-    margin-top: 30vh;
-  }
-
-  .med-fidelity {
-    top: 60vh;
-  }
-  .high-fidelity {
-    top: 68vh;
-  } */
 }
