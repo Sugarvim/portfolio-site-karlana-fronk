@@ -13,7 +13,9 @@
   --text-hover: #043653;
   --black-vela: #1e1e1e;
 }
-
+.white{
+  background-color: white;
+}
 h1,
 h2 {
   font-family: Marmelad, sans-serif;
@@ -468,6 +470,12 @@ div.persona-container h4 {
 gap: 2vw;
 align-items: normal;
 }
+#usability-testing ul{
+  padding: 0 1vw 0 2vw;
+}
+.usability-head{
+  padding-top: 4vh;
+}
 .usability-background{
   background-color: var(--light-teal);
 }
@@ -489,6 +497,10 @@ align-items: normal;
 .p6{
   background-color: #CED6FF;
 }
+.participant-box{
+  padding: 1rem 2rem;
+  width: 12vw;
+}
 .usability-quotes{
   justify-content: space-between;
 }
@@ -499,6 +511,26 @@ align-items: normal;
   gap: 2vh;
   width: 30rem;
 }
+.error-box{
+  padding: 2vh 0;
+}
+/* || wireframe iterations */
+#wireframe-iterations .iterate{
+  align-items: flex-start;
+  gap: 4vw;
+  justify-content: center;
+}
+.frame-iterate{
+  display:flex;
+  flex-direction: column;
+  flex-basis: 0;
+  flex-grow: 1;
+  align-items: center;
+}
+.final-wireframes{
+  max-width: 40%;
+}
+
 /* || small screen size */
 @media screen and (-webkit-min-device-pixel-ratio: 1) and (max-width: 639px) {
   /* || design thinking small */
