@@ -396,7 +396,7 @@ div.persona-container h4 {
 }
 /* || wireframes */
 #wireframes h4{
-  margin-top: -0.5vw;
+  margin-top: -1.5vw;
 }
 .wireframe {
   position: relative;
@@ -430,7 +430,7 @@ div.persona-container h4 {
 .in-front {
   position: relative;
   z-index: 1;
-  max-width: 80%;
+  max-width: 76%;
   margin: auto;
 }
 .low-fidelity {
@@ -478,6 +478,7 @@ align-items: normal;
 }
 .usability-background{
   background-color: var(--light-teal);
+  padding-bottom: 8vw;
 }
 .p1 {
   background-color: #F8B3B3;
@@ -520,6 +521,13 @@ align-items: normal;
   gap: 4vw;
   justify-content: center;
 }
+#wireframe-iterations .wireframe-box{
+  justify-content: flex-start;
+}
+.version-num{
+  align-self: flex-start;
+  margin-right: 1vw;
+}
 .frame-iterate{
   display:flex;
   flex-direction: column;
@@ -528,11 +536,10 @@ align-items: normal;
   align-items: center;
 }
 .final-wireframes{
-  max-width: 40%;
+  margin-right: calc(2em + 1vw);
 }
-
 /* || small screen size */
-@media screen and (-webkit-min-device-pixel-ratio: 1) and (max-width: 639px) {
+@media screen and (-webkit-min-device-pixel-ratio: 1) and (max-width: 767px) {
   /* || design thinking small */
   .ellipse {
     height: 80px;
@@ -603,7 +610,7 @@ align-items: normal;
 }
 
 /* || medium width size */
-@media screen and (-webkit-min-device-pixel-ratio: 1) and (min-width: 640px) and (max-width: 1023px) {
+@media screen and (-webkit-min-device-pixel-ratio: 1) and (min-width: 768px) and (max-width: 1023px) {
   main > * {
     margin: 5vh 4vw;
   }
