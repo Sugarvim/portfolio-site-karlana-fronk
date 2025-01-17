@@ -710,7 +710,9 @@ align-items: normal;
   }
   .goal-box {
     height: 35vh;
+    justify-content: flex-end;
   }
+
   .col-7 {
     width: 58.33%;
   }
@@ -835,6 +837,9 @@ align-items: normal;
     margin-left: 6.5vw;
     z-index: 0;
     padding: 2vh 2vw;
+  }
+  .quote-down{
+    margin-top: 2vh;
   }
   .quote-jeff {
     margin-top: 5vh;
