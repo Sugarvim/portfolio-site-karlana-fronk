@@ -511,6 +511,7 @@ align-items: normal;
   padding: 2vh 1vw;
   gap: 2vh;
   width: 30rem;
+  background-color: white;
 }
 .error-box{
   padding: 2vh 0;
