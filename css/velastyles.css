@@ -25,6 +25,9 @@ h2 {
 h3 {
   font-size: 1.5em;
 }
+#wrap-up h3{
+  text-align: center;
+}
 
 h4 {
   margin: 2% 0 1%;
@@ -702,12 +705,12 @@ align-items: normal;
     bottom: 0;
   }
   .ellipse-user-left {
-    width: calc(22.575% * 0.5);
-    padding-top: calc(22.575% * 0.5);
+    width: 4vw;
+    padding-top: 4vw;
   }
   .ellipse-user-right {
-    width: calc(33% * 0.5);
-    padding-top: calc(33% * 0.5);
+    width: 4vw;
+    padding-top: 4vw;
   }
   .goal-box {
     height: 35vh;
@@ -797,12 +800,12 @@ align-items: normal;
   #user-interviews .col-5 {
     padding-right: 0;
     padding-left: 0;
-    height: 40vh;
+    height: 45vh;
   }
   #user-interviews .col-7 {
     padding-left: 0;
     padding-right: 4vw;
-    height: 40vh;
+    height: 45vh;
   }
   .text-user,
   .text-user-right {
@@ -817,15 +820,15 @@ align-items: normal;
     margin: 0;
   }
   .ellipse-user-left {
-    width: 21.425%;
-    padding-top: 21.425%;
+    width: 8vw;
+    padding-top: 8vw;
     bottom: 35%;
     right: 78%;
     z-index: 1;
   }
   .ellipse-user-right {
-    width: 30%;
-    padding-top: 30%;
+    width: 8vw;
+    padding-top: 8vw;
     bottom: 35%;
     z-index: 1;
   }
