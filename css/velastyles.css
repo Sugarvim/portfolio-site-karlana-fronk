@@ -2,9 +2,10 @@
 :root {
   --off-white: #fffaf1;
   --black: #351b00;
-  --light-teal: #f5ffff;
   --teal: #7feae9;
-  --teal-text: #00507d;
+  --light-teal: #E1FAFB;
+  --medium-teal: #9BC3DA;
+  --teal-text: #00507d; /*dark blue/teal*/
   --pink: #fd7a8e;
   --pink-text: #781313;
   --yellow: #ffc81a;
@@ -15,6 +16,38 @@
 }
 .white{
   background-color: white;
+}
+.background-decor{
+  background-image: linear-gradient(to right,
+  white 0%,
+  white 50%,
+  var(--teal-text) 50%,
+var(--teal-text)100%
+  );
+}
+.decor-ellipse{
+  position: absolute;
+  background-color: var(--medium-teal);
+  width: 100%;
+  height: 60vw;
+  border-radius: 50%;
+
+}
+.on-top{
+  position: relative;
+
+}
+.fit-ellipse{
+  height: 30vw;
+  margin-top: 5vw;
+  position: relative;
+  display: inline-block;
+}
+.white-bg{
+  background-color: white;
+}
+.light-blue-bg{
+  background-color: var(--light-teal);
 }
 h1,
 h2 {
@@ -49,9 +82,11 @@ main {
 
 .bust-out {
   margin: auto calc(50% - 50vw);
-  transform: translateX(calc(50vw - 50%));
+  /* transform: translateX(calc(50vw - 50%)); */
 }
-
+.bust-out-left{
+  margin-left:calc(50% - 50vw);
+}
 .bust-out .inside-bust-out {
   padding: 0 1em;
   max-width: calc(0.8 * (100% - 6vw));
@@ -420,7 +455,7 @@ div.persona-container h4 {
 
 .med-stripe {
   position: relative;
-  background-color: #78a2ba;
+  background-color: var(--medium-teal);
   padding-top: 16vh;
   grid-area: 2/-1;
 }

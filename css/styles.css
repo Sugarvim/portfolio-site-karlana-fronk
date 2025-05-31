@@ -32,6 +32,7 @@
   /* i wanted the container to be 80% of the page but it was too small
    so I added the margins from the main  - 6vw */
   margin: 0 auto;
+  position: relative;
 }
 
 body {
