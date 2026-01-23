@@ -10,6 +10,8 @@
   --yellow: #ffc81a;
   --visited-link: #4d2233;
   --text-hover: #043653;
+  --dark-blue: #091941;
+  --dark-med-blue: #12316E;
 }
 
 .box-shadow-light {
@@ -27,6 +29,8 @@
 .container {
   padding: 0 1em;
   max-width: calc(80% + 6vw);
+  /* i wanted the container to be 80% of the page but it was too small
+   so I added the margins from the main  - 6vw */
   margin: 0 auto;
 }
 
@@ -46,6 +50,9 @@ header {
   width: 100%;
   top: 0;
   z-index: 1;
+}
+.inline-block {
+  display: inline-block;
 }
 .col-1 {
   width: 8.33%;
@@ -87,9 +94,10 @@ header {
 img {
   width: 100%;
 }
-img[src*="icon.svg"]{
-width: 50px;
-height: 50px;
+img[src*="icon.svg"],
+#contact-me .icon {
+  width: 50px;
+  height: 50px;
 }
 
 header svg {
@@ -115,7 +123,6 @@ nav {
 
 nav ul {
   list-style-type: none;
-  padding: 0;
   gap: 4vw;
 }
 
@@ -167,7 +174,9 @@ h1 + span {
   outline: 2px solid var(--pink);
   padding: 3vw;
 }
-
+#contact-me h2{
+  margin-bottom: .5rem;
+}
 /* about css */
 .my-story {
   background-color: var(--off-white);
@@ -214,7 +223,7 @@ h1 + span {
   margin-top: 8vh;
 }
 
-/* links */
+/* links / || interactive */
 @keyframes color-change {
   0% {
     fill: var(--pink);
@@ -291,12 +300,30 @@ a.logo:hover {
 .download-button:hover {
   background-color: hsl(46deg 100% 95%);
 }
-
+.contact-button{
+  background-color: var(--teal-text);
+  color: var(--off-white);
+  padding: 0.6em 0.8em;
+  text-decoration: none;
+  border: 2px solid var(--text-hover);
+  border-radius: 10px;
+  font-size: 18px;
+  margin-bottom: .75rem;
+}
+a.contact-button:hover{
+color: white;
+}
 /* small screen size */
 @media screen and (max-width: 639px) {
-
-  main{
+  main {
     padding-top: 80px;
+  }
+  .navtoggle li{
+    padding: 10px 10px;
+  }
+
+  .navtoggle li:first-child{
+padding: 0 12px;
   }
   .navtoggle li:not(:first-child) {
     display: none;
@@ -305,18 +332,28 @@ a.logo:hover {
   .navtoggle.responsive li:not(:first-child) {
     display: block;
     text-align: center;
-    padding: 10px 0;
     border-bottom: 1px solid var(--black);
+    border-left: 2px solid var(--pink);
+    border-right: 2px solid var(--pink);
     background-color: var(--off-white);
+  }
+  .navtoggle.responsive li:first-child{
+    padding: 0 10px;
+    padding-bottom: 12px;
   }
 
   .navtoggle.responsive li:last-child {
-    border-bottom: none;
+    border-bottom: 2px solid var(--pink);
+    border-radius: 0 0 10px 10px;
   }
 
   .navtoggle.responsive nav {
     background-color: var(--off-white);
     border-radius: 0 0 10px 10px;
+
+  }
+  .navtoggle li:hover, .navtoggle.responsive li:hover{
+    background-color: var(--white);
   }
 
   .navtoggle li a.icon {
@@ -331,32 +368,43 @@ a.logo:hover {
 
   nav {
     top: 1.8vh;
-    padding: 5px 10px;
   }
-
   nav ul {
     margin: 0;
-  }
-.row{
-  margin-bottom: 4vh;
-}
+    padding: 0;
 
+  }
+  .row {
+    margin-bottom: 4vh;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
   [class*="col-"] {
     width: auto;
   }
-  
+  .skills h2 {
+    text-align: center;
+  }
+  #project-section .col-6, #vela-project .col-6{
+    width: auto;
+  }
+  .col-6 {
+    width: 50%;
+    float: left;
+  }
 }
 
 /* medium device size */
-@media screen and (min-width: 640px)
-and (max-width: 1023px) {
-
+@media screen and (min-width: 640px) and (max-width: 1023px) {
   main {
     margin: 0 3vw 3%;
     padding: 0 0 5vh;
   }
 
-  header {
+  header.box-shadow-dark {
     position: static;
     box-shadow: none;
   }
@@ -395,8 +443,8 @@ and (max-width: 1023px) {
   .col-5 {
     width: auto;
   }
-  .project-box{
-margin-top: 3vh;
+  .project-box {
+    margin-top: 3vh;
   }
 
   .col-6 {
@@ -419,17 +467,16 @@ margin-top: 3vh;
 
 /* large screen size */
 @media screen and (min-width: 1024px) {
-
   main {
     margin: 0 7vw 3%;
     padding: 0 0 5vh;
   }
-  .container{
+  .container {
     margin-left: auto;
     margin-right: auto;
   }
 
-  header {
+  header.box-shadow-dark {
     position: static;
     box-shadow: none;
   }
@@ -473,13 +520,20 @@ margin-top: 3vh;
     width: 41.66%;
     padding: 2vh 2vw;
   }
+  .skills h2 {
+    margin: 0;
+  }
+
+  .skills .col-6:last-child h3 {
+    margin-top: 0;
+  }
 
   .col-6 {
     width: 100%;
     padding: 1vh 2vw;
   }
 
-  #project-section .col-6 {
+  #project-section .col-6, #vela-project .col-6 {
     width: 50%;
   }
 }
