@@ -1,9 +1,8 @@
 
 /* general css */
 :root {
-  --white: #fff;
   --off-white: #fffaf1;
-  --black: #351b00;
+  --warm-black: #351b00;
   --teal: #7feae9;
   --teal-text: #00507d;
   --pink: #fd7a8e;
@@ -14,26 +13,175 @@
   --dark-blue: #091941;
   --dark-med-blue: #12316E;
 }
+/* || General Rules */
 
-.box-shadow-light {
-  box-shadow: 0 2px 10px rgb(0 0 0 / 10%);
-}
-
-.box-shadow-dark {
-  box-shadow: 0 2px 10px rgb(0 0 0 / 25%);
-}
-
+/* || sizing & spacing */
 * {
   box-sizing: border-box;
 }
 
+.horizontal-stripe {
+  margin: auto calc(50% - 50vw);
+  /* reach the edges of the screen even inside a container */
+}
+.horizontal-stripe-orient-left{
+  margin-left:calc(50% - 50vw);
+}
+
+.margin-bottom-sm {
+  margin-bottom: 4vw;
+}
+.margin-bottom {
+  margin-bottom: 6vw;
+}
+
+
 .container {
   padding: 0 1em;
   max-width: calc(80% + 6vw);
-  /* i wanted the container to be 80% of the page but it was too small
-   so I added the margins from the main  - 6vw */
+  /* container size is 80% and adds the margin length from the main element */
+  /* 80% + 6w should really be stored in a variable */
   margin: 0 auto;
   position: relative;
+}
+
+.center-inside-container {
+  padding: 0 1em;
+  max-width: calc((.8 *(100% - 24vw - 2em)) + 6vw );
+  /* ...there has got to be a better way */
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+}
+
+/* || text rules */
+h1 {
+  font-family: "Marmelad", serif;
+}
+
+h4 {
+  margin: 2% 0 1%;
+  font-size: 1.17em;
+}
+
+.text-lg{
+  font-size: XX-large;
+}
+
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+
+.medium {
+  font-weight: 500;
+}
+.semibold {
+  font-weight: 600;
+}
+
+h1 + span {
+  font-size: large;
+  font-weight: 500;
+  display: inline-block;
+  margin-bottom: 2vh;
+}
+
+/* || display rules */
+.inline-block {
+  display: inline-block;
+}
+.inline {
+  display: inline;
+}
+.flex {
+  display: flex;
+  position: relative;
+}
+.flex-column{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.grid {
+  display: grid;
+}
+
+
+.col-1 {width: 8.33%;
+}
+.col-2 {width: 16.66%;
+}
+.col-3 {width: 25%;
+}
+.col-4 {width: 33.33%;
+}
+.col-5 {width: 41.66%;
+}
+.col-6 {width: 50%;
+}
+.col-7 {width: 58.33%;
+}
+.col-8 {width: 66.66%;
+}
+.col-9 {width: 75%;
+}
+.col-10 {width: 83.33%;
+}
+.col-11 {width: 91.66%;
+}
+.col-12 {width: 100%;
+}
+
+/* || decorative elements */
+
+.border-radius{
+  border-radius: 25px;
+}
+.border-radius-sm{
+  border-radius: 10px;
+}
+
+.box-shadow-light {
+  box-shadow: 0 2px 10px rgb(0 0 0 / 10%);
+}
+.box-shadow-dark {
+  box-shadow: 0 2px 10px rgb(0 0 0 / 25%);
+}
+
+.btn-border-yellow{
+  border: 2px solid var(--yellow);
+  border-radius: 10px;
+}
+.btn-border-pink{
+  border: 2px solid var(--pink);
+  border-radius: 10px;
+}
+
+
+
+/* || Main elements */
+header {
+  background-color: var(--off-white);
+  padding: 0 4% 0 7%;
+  border-bottom: 5px solid var(--pink);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--off-white);
+  padding: 1.3vh 3vw 1vh;
+  text-align: center;
 }
 
 body {
@@ -44,58 +192,7 @@ body {
   overflow-x: hidden;
 }
 
-header {
-  background-color: var(--off-white);
-  padding: 0 4% 0 7%;
-  border-bottom: 5px solid var(--pink);
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1;
-}
-.inline-block {
-  display: inline-block;
-}
-.col-1 {
-  width: 8.33%;
-}
-.col-2 {
-  width: 16.66%;
-}
-.col-3 {
-  width: 25%;
-}
-.col-4 {
-  width: 33.33%;
-}
-.col-5 {
-  width: 41.66%;
-}
-.col-6 {
-  width: 50%;
-}
-.col-7 {
-  width: 58.33%;
-}
-.col-8 {
-  width: 66.66%;
-}
-.col-9 {
-  width: 75%;
-}
-.col-10 {
-  width: 83.33%;
-}
-.col-11 {
-  width: 91.66%;
-}
-.col-12 {
-  width: 100%;
-}
-
-img {
-  width: 100%;
-}
+/* || icons */
 img[src*="icon.svg"],
 #contact-me .icon {
   width: 50px;
@@ -108,15 +205,7 @@ header svg {
   margin-top: 1vh;
 }
 
-footer {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  background-color: var(--off-white);
-  padding: 1.3vh 3vw 1vh;
-  text-align: center;
-}
-
+/* || Navbar */
 nav {
   position: absolute;
   right: 5vw;
@@ -132,42 +221,27 @@ nav ul {
 .navtoggle.responsive {
   position: relative;
 }
-
-h1 {
-  font-family: "Marmelad", serif;
+/* decorative borders for intro */
+.border-pink {
+  border: 3px solid var(--pink);
+}
+.border-yellow {
+  border: 3px solid var(--yellow);
+  margin: 5px;
+}
+.border-teal {
+  border: 3px solid var(--teal);
+  margin: 8px;
+  padding: 3px;
 }
 
-/* index css */
-h1 + span {
-  font-size: large;
-  font-weight: 500;
-  display: inline-block;
-  margin-bottom: 2vh;
-}
+/* || index css */
 
 #hero-section {
   padding: 5% 0;
   display: inline-block;
   width: 100%;
   text-align: center;
-}
-
-.border-pink {
-  border: 3px solid var(--pink);
-  border-radius: 25px;
-}
-
-.border-yellow {
-  border: 3px solid var(--yellow);
-  border-radius: 25px;
-  margin: 5px;
-}
-
-.border-teal {
-  border: 3px solid var(--teal);
-  border-radius: 25px;
-  margin: 8px;
-  padding: 3px;
 }
 
 .project-box {
@@ -179,21 +253,11 @@ h1 + span {
 #contact-me h2{
   margin-bottom: .5rem;
 }
-/* about css */
+/* || about css */
 .my-story {
   background-color: var(--off-white);
-  border-radius: 25px;
-  border: 3px solid var(--yellow);
   padding: 3vh 3vw;
   margin-bottom: 3vh;
-}
-
-.inline {
-  display: inline;
-}
-
-.me {
-  border-radius: 25px;
 }
 
 .skills ul {
@@ -210,9 +274,7 @@ h1 + span {
 }
 
 .me-picture {
-  display: inline-block;
   position: relative;
-  border-radius: 25px;
   width: 80%;
   margin-bottom: 2vh;
 }
@@ -274,47 +336,39 @@ a.logo:hover {
   transform: scale(1.25);
 }
 
-.button {
+/* || buttons */
+.btn {
   background-color: white;
-  color: var(--black);
+  color: var(--warm-black);
   padding: 0.8em;
   text-decoration: none;
-  border: 2px solid var(--pink);
-  border-radius: 10px;
   font-size: 18px;
 }
-
-.button:hover {
-  box-shadow: 0 0 5px 1px rgb(253 122 142 / 16%);
-}
-
-.download-button {
-  background-color: white;
-  color: var(--black);
-  padding: 0.8em;
-  text-decoration: none;
-  border: 2px solid var(--yellow);
-  border-radius: 10px;
-  font-size: 18px;
+.download-btn {
   transition: transform 200ms;
 }
 
-.download-button:hover {
-  background-color: hsl(46deg 100% 95%);
-}
-.contact-button{
+.contact-btn{
   background-color: var(--teal-text);
   color: var(--off-white);
   padding: 0.6em 0.8em;
-  text-decoration: none;
   border: 2px solid var(--text-hover);
   border-radius: 10px;
-  font-size: 18px;
   margin-bottom: .75rem;
 }
-a.contact-button:hover{
+
+.btn:hover {
+  box-shadow: 0 0 5px 1px rgb(253 122 142 / 16%);
+}
+
+.download-btn:hover {
+  background-color: hsl(46deg 100% 95%);
+}
+a.contact-btn:hover{
 color: white;
 }
+
+
 /* small screen size */
 @media screen and (max-width: 639px) {
   main {
@@ -334,7 +388,7 @@ padding: 0 12px;
   .navtoggle.responsive li:not(:first-child) {
     display: block;
     text-align: center;
-    border-bottom: 1px solid var(--black);
+    border-bottom: 1px solid var(--warm-black);
     border-left: 2px solid var(--pink);
     border-right: 2px solid var(--pink);
     background-color: var(--off-white);
@@ -469,6 +523,9 @@ padding: 0 12px;
 
 /* large screen size */
 @media screen and (min-width: 1024px) {
+  .border-yellow{
+    margin: 0;
+  }
   main {
     margin: 0 7vw 3%;
     padding: 0 0 5vh;

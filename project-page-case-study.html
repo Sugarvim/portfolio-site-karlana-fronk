@@ -27,7 +27,12 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
-    <link rel="stylesheet" type="text/css" href="css/velastyles.css" />
+    <link rel="stylesheet" type="text/css" href="css/project-styles.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/mobile-first-project-styles.css"
+    />
     <script
       src="https://kit.fontawesome.com/e2137e9ec3.js"
       crossorigin="anonymous"
@@ -78,13 +83,18 @@
     </header>
     <main>
       <section id="introduction">
-        <h1><span class="lg-text">Project Page</span> Case Study</h1>
-
-        <h2>The Objective</h2>
-        <p class="text-center">
-          To transform static images into accessible web content.
-        </p>
-        <div class="grid light-blue-bg bust-out-left">
+        <div class="intro-box flex-column border-radius-sm">
+          <h1><span class="text-lg">Project Page</span> Case Study</h1>
+          <div>
+          <h2>The Objective</h2>
+          <p class="text-center">
+            To transform static images into accessible web content.
+          </p>
+          </div>
+        </div>
+        <div
+          class="project-info flex light-teal border-radius-sm horizontal-stripe-orient-left"
+        >
           <div>
             <p class="sub-heading">Tools:</p>
             <p>Figma, VScode, Github</p>
@@ -100,12 +110,11 @@
         </div>
       </section>
       <section id="challenges">
-        <div class="background-decor bust-out">
-            <div class="decor-ellipse"></div>
-          <div class="container">
-
-              <div class="on-top">
-                <div class="fit-ellipse">
+        <div class="background-split-colors horizontal-stripe">
+          <div class="long-capsule"></div>
+          <div class="container on-top">
+            <div>
+              <div class="fit-ellipse">
                 <h2>Overview</h2>
                 <p>
                   This project is a web page designed using HTML and CSS. It is
@@ -114,14 +123,13 @@
                   case study was intended for desktop viewing, the web page is
                   designed to be viewed at medium or large screen sizes.
                 </p>
-                </div>
-                <h2>The Problem</h2>
-                <p>
-                  The case study I made was constructed from static images,
-                  making it unresponsive and inaccessible for screen readers.
-                </p>
               </div>
-            
+              <h2>The Problem</h2>
+              <p>
+                The case study I made was constructed from static images, making
+                it unresponsive and inaccessible for screen readers.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -131,7 +139,7 @@
       <div class="container">
         <div>
           <h2>Get in Touch</h2>
-          <a class="contact-button" href="mailto:karafronk at gmail dot com"
+          <a class="btn contact-btn" href="mailto:karafronk at gmail dot com"
             >Email me</a
           >
         </div>
