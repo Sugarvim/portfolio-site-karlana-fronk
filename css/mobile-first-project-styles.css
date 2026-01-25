@@ -25,22 +25,47 @@ max-width:80%;
   margin-top: -80px;
 }
 
-.long-capsule {
-  position: absolute;
-  background-color: var(--medium-teal);
-  width: 88%;
+.capsule-up{
+  width: 90%;
   height: 60vw;
   border-radius: 90% 90% 0 0;
-  top: 15vh;
-  margin-left: 6%;
+  top: 13vh;
+  margin-left: 5%;
+}
+.capsule-shape {
+  position: absolute;
+  background-color: var(--medium-teal);
+}
+.capsule-container {
+  position: relative;
+  align-items: center;
 }
 
-.on-top {
-  position: relative;
+.the-problem{
+    border-image:linear-gradient(
+    to right,
+    white 0%,
+    white 50%,
+    var(--teal-text) 50%,
+    var(--teal-text) 100%
+  ) 1;
+  border-width: 3px;
+  border-style: solid;
+  align-items: center;
+  max-width:90%;
+  margin: 20px auto 5px;
 }
-.fit-ellipse {
-  height: 30vw;
-  margin-top: 5vw;
-  position: relative;
-  display: inline-block;
+
+.the-problem picture{
+    width: 60%;
+}
+.the-problem p{
+    width: 60%;
+}
+
+.capsule-up > p{
+    width:60%;
+}
+.dotted-line{
+    background-color: var(--medium-teal)
 }
