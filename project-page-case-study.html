@@ -109,25 +109,32 @@
           </div>
         </div>
       </section>
-      <section id="project-goals">
-        <div class="background-split-colors horizontal-stripe">
+
+      <div class="background-split-colors horizontal-stripe">
+        <section id="project-goals">
           <div>
+            <!-- i want the capsule shape to strech as the screen gets smaller
+            i think i need javascript for that -- screen width decreases by * and vh goes up by 1 -->
             <div class="capsule-up capsule-shape"></div>
-            <div class="capsule-up capsule-container flex-column" >
-              <h2>Overview</h2>
-              <p>
-                This project is a web page designed using HTML and CSS. It is
-                meant to give viewers a clear understanding of my previous case
-                study by being responsive and accessible. As the initial case
-                study was intended for desktop viewing, the web page is designed
-                to be viewed at medium or large screen sizes.
-              </p>
-              <div class="the-problem flex-column">
-                <h2>The Problem</h2>
+            <div class="capsule-up capsule-container flex-column">
+              <div class="flex-column">
+                <h2>Overview</h2>
                 <p>
-                  The case study I made was constructed from static images,
-                  making it unresponsive and inaccessible for screen readers.
+                  This project is a web page designed using HTML and CSS. It is
+                  meant to give viewers a clear understanding of my previous
+                  case study by being responsive and accessible. As the initial
+                  case study was intended for desktop viewing, the web page is
+                  designed to be viewed at medium or large screen sizes.
                 </p>
+              </div>
+              <div class="the-problem flex-column">
+                <div>
+                  <h2>The Problem</h2>
+                  <p>
+                    The case study I made was constructed from static images,
+                    making it unresponsive and inaccessible for screen readers.
+                  </p>
+                </div>
                 <picture>
                   <source
                     srcset="img/Vela/project-img-1x/sitemap-1x.png"
@@ -149,6 +156,7 @@
               </p>
             </div>
           </div>
+</section>
           <section id="challenges">
             <h2>From Image to HTML</h2>
             <p>
@@ -238,8 +246,8 @@
               </div>
             </div>
           </section>
-        </div>
-      </section>
+        
+      </div>
 
       <section id="closing-thoughts">
         <div class="long-capsule-bottom">

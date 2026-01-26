@@ -27,7 +27,7 @@ max-width:80%;
 
 .capsule-up{
   width: 90%;
-  height: 60vw;
+  height: 63vw;
   border-radius: 90% 90% 0 0;
   top: 13vh;
   margin-left: 5%;
@@ -38,7 +38,7 @@ max-width:80%;
 }
 .capsule-container {
   position: relative;
-  align-items: center;
+  justify-content: space-between;
 }
 
 .the-problem{
@@ -52,7 +52,7 @@ max-width:80%;
   border-width: 3px;
   border-style: solid;
   align-items: center;
-  max-width:90%;
+  max-width:80%;
   margin: 20px auto 5px;
 }
 
@@ -63,9 +63,15 @@ max-width:80%;
     width: 60%;
 }
 
-.capsule-up > p{
+ .background-split-colors p  {
     width:60%;
+} 
+
+.capsule-container > div{
+    padding-top:3vh;
+    align-items:center
 }
+
 .dotted-line{
     background-color: var(--medium-teal)
 }
