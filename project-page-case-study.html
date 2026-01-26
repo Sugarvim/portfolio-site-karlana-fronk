@@ -137,11 +137,11 @@
                 </div>
                 <picture>
                   <source
-                    srcset="img/Vela/project-img-1x/sitemap-1x.png"
+                    srcset="img/coding-vela-page/code-img-1x/behance-screen-reader-1x.png"
                     media="(max-width:639px)"
                   />
                   <img
-                    src="img/coding-vela-page/code-img-2x /behance-screen-reader-2x.png"
+                    src="img/coding-vela-page/code-img-2x/behance-screen-reader-2x.png"
                     alt="small black box that reads: Untitled Modal, dialog, link, Project module 1203837753 permalink, Project Module 0, region"
                   />
                 </picture>
@@ -156,97 +156,151 @@
               </p>
             </div>
           </div>
-</section>
-          <section id="challenges">
-            <h2>From Image to HTML</h2>
-            <p>
-              To begin translating the static images of my case study to a web
-              format, I had to recreate the elements in HTML code.
-            </p>
-            <div class="flex">
-              <div class="flex-column">
-                <img />
-              </div>
-              <div class="flex-column">
-                <img />
-              </div>
+        </section>
+        <section id="challenges">
+          <h2>From Image to HTML</h2>
+          <p>
+            To begin translating the static images of my case study to a web
+            format, I had to recreate the elements in HTML code.
+          </p>
+          <div class="flex">
+            <div>
+              <picture>
+                <source
+                  srcset="img/coding-vela-page/code-img-1x/competitive-resarch-1x.png"
+                  media="(max-width:639px)"
+                />
+                <img
+                  src="img/coding-vela-page/code-img-2x/competitive-research-2x.png"
+                  alt="a screenshot of the website"
+                />
+              </picture>
             </div>
-            <div class="light-teal">
-              <h2>CSS Challenges</h2>
-              <div class="dotted-line"></div>
-              <div class="flex-column">
-                <h3>Breaking out of container</h3>
-                <p>
-                  One challenge I faced was making an element within a container
-                  break out of its boundaries and reach the edge of the page.
-                </p>
-                <p class="">The answer lay in negative margins.</p>
-                <img />
-                <p>
-                  Positive margins push an element inside a container, so it
-                  would reason that negative margins will push an element
-                  outside of a container.
-                </p>
-              </div>
-              <div class="dotted-line"></div>
-              <h3>Responsive Design Issues</h3>
+            <div>
+              <picture>
+                <source
+                  srcset="img/coding-vela-page/code-img-1x/html-text-1x.png"
+                  media="(max-width:639px)"
+                />
+                <img
+                  src="img/coding-vela-page/code-img-2x/html-text-2x.png"
+                  alt="HTML code"
+                />
+              </picture>
+            </div>
+          </div>
+          <div class="light-teal">
+            <h2>CSS Challenges</h2>
+            <div class="dotted-line"></div>
+            <div class="flex-column">
+              <h3>Breaking out of container</h3>
               <p>
-                In trying to make the web page accessible, I designed the layout
-                of the page to adapt to different screen sizes. Amidst the
-                changing landscape, I ran into many issues in attempting to make
-                my layout consistent.
+                One challenge I faced was making an element within a container
+                break out of its boundaries and reach the edge of the page.
               </p>
-              <div class="dotted-line"></div>
-              <div class="flex-column">
-                <h3>Misaligned Elements</h3>
+              <p class="">The answer lay in negative margins.</p>
+              <picture>
+                <source
+                  srcset="img/coding-vela-page/code-img-1x/misaligned-elements-1x.png"
+                  media="(max-width:639px)"
+                />
+                <img
+                  src="img/coding-vela-page/code-img-2x/negative-margins-2x.png"
+                  alt="A line of code that reads: margin: auto calc(50% - 50vw)"
+                />
+              </picture>
+              <p>
+                Positive margins push an element inside a container, so it would
+                reason that negative margins will push an element outside of a
+                container.
+              </p>
+            </div>
+            <div class="dotted-line"></div>
+            <h3>Responsive Design Issues</h3>
+            <p>
+              In trying to make the web page accessible, I designed the layout
+              of the page to adapt to different screen sizes. Amidst the
+              changing landscape, I ran into many issues in attempting to make
+              my layout consistent.
+            </p>
+            <div class="dotted-line"></div>
+            <div class="flex-column">
+              <h3>Misaligned Elements</h3>
+              <p>
+                To implement the design of the quotes coming from the circles,
+                the elements had to be positioned top-down. This caused an issue
+                where the bottom description would move when the screen size
+                changed.
+              </p>
+              <div class="flex">
+                <div class="flex-column">
+                                <picture>
+                <source
+                  srcset="img/coding-vela-page/code-img-1x/misaligned-elements-1x.png"
+                  media="(max-width:639px)"
+                />
+                <img
+                  src="img/coding-vela-page/code-img-2x/misaligned-elements-2x.png"
+                  alt="two screenshots side by side with a transparent rectangle overlapping both images, showing that the images are misaligned"
+                />
+              </picture>
+                </div>
                 <p>
-                  To implement the design of the quotes coming from the circles,
-                  the elements had to be positioned top-down. This caused an
-                  issue where the bottom description would move when the screen
-                  size changed.
+                  I resolved this by using
+                  <span>absolute positioning</span> to move the description
+                  outside the group, making it unable to be affected by the
+                  other elements
                 </p>
-                <div class="flex">
-                  <div class="flex-column"></div>
-                  <div class="flex-column"></div>
-                  <p>
-                    I resolved this by using
-                    <span>absolute positioning</span> to move the description
-                    outside the group, making it unable to be affected by the
-                    other elements
-                  </p>
-                </div>
+              </div>
+              <div>
+                <h3>Absolutely <span>not</span> centered</h3>
+                <p>
+                  To make images overlap, I often relied on position: absolute
+                  to move the element outside of the group, allowing it to be
+                  positioned independently. This method did not work when I
+                  needed an element centered vertically.
+                </p>
                 <div>
-                  <h3>Absolutely <span>not</span> centered</h3>
-                  <p>
-                    To make images overlap, I often relied on position: absolute
-                    to move the element outside of the group, allowing it to be
-                    positioned independently. This method did not work when I
-                    needed an element centered vertically.
-                  </p>
-                  <div>
-                    <img />
-                  </div>
-                  <p>
-                    To maintain consistency with varied screen sizes, I used
-                    relative units of measurement to position the absolute
-                    element. This did not adapt properly because when changing
-                    the screen size the shape of the page changed, resulting in
-                    the elements not being centered.
-                  </p>
-                  <h3>A grid gives good results.</h3>
-                  <div>
-                    <img />
-                  </div>
-                  <p>
-                    A grid display allowed elements to overlap within the same
-                    row eliminating the need for absolute positioning and
-                    relative units of measurement.
-                  </p>
+                  <picture>
+                    <source
+                      srcset="img/coding-vela-page/code-img-1x/elements-not-aligned-1x.png"
+                      media="(max-width:639px)"
+                    />
+                    <img
+                      src="img/coding-vela-page/code-img-2x/elements-not-centered-2x.png"
+                      alt="two lines of phone screens with a colored stripe behind each line. The phone screens are not centered with the colored stripes"
+                    />
+                  </picture>
                 </div>
+                <p>
+                  To maintain consistency with varied screen sizes, I used
+                  relative units of measurement to position the absolute
+                  element. This did not adapt properly because when changing the
+                  screen size the shape of the page changed, resulting in the
+                  elements not being centered.
+                </p>
+                <h3>A grid gives good results.</h3>
+                <div>
+                  <picture>
+                    <source
+                      srcset="img/coding-vela-page/code-img-1x/elements-with-grid-1x.png"
+                      media="(max-width:639px)"
+                    />
+                    <img
+                      src="img/coding-vela-page/code-img-2x/elements-with-grid-2x.png"
+                      alt="same as the previous image but the line of phones screens is centered over the colored stripe."
+                    />
+                  </picture>
+                </div>
+                <p>
+                  A grid display allowed elements to overlap within the same row
+                  eliminating the need for absolute positioning and relative
+                  units of measurement.
+                </p>
               </div>
             </div>
-          </section>
-        
+          </div>
+        </section>
       </div>
 
       <section id="closing-thoughts">
