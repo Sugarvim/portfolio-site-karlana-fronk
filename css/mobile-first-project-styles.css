@@ -1,10 +1,7 @@
-:root {
-  --dark-blue: #00507d;
-}
 
 .intro-box {
   background-color: var(--medium-teal);
-  border: 3px solid var(--dark-blue);
+  border: 3px solid var(--teal-text);
   justify-content: space-between;
 }
 
@@ -28,6 +25,7 @@ max-width:80%;
     var(--teal-text) 100%
   );
   margin-top: -80px;
+  position: relative;
 }
 .teal-strip{
     background-color: var(--light-teal);
@@ -35,10 +33,11 @@ max-width:80%;
 }
 
 .capsule-up{
-  width: 100%;
+  width: 90%;
   height: 63vw;
   border-radius: 90% 90% 0 0;
   top: 13vh;
+  margin-left: 5vw;
 }
 .capsule-shape {
   position: absolute;
@@ -66,6 +65,7 @@ max-width:80%;
 
 .the-problem picture{
     width: 60%;
+    /* temporary */
 }
 
  .background-split-colors p  {
@@ -73,5 +73,14 @@ max-width:80%;
 } 
 
 .dotted-line{
-    background-color: var(--medium-teal)
+   border-top: 2.5vw dotted var(--medium-teal);
+   width:100%;
+}
+.dotted-line.horizontal-stripe{
+    padding: 0 50vw;
+}
+.dotted-line.dark-teal{
+     border-top: 1.8vw dotted var(--teal-text);
+     width: 60%; 
+     /* temporary */
 }

@@ -6,7 +6,7 @@
   --cool-black: #1e1e1e;
 }
 
-/* || colors */
+/* #region || colors */
 .white-bg {
   background-color: white;
 }
@@ -19,8 +19,8 @@
 .dark-teal {
   color: var(--teal-text);
 }
-
-/* || text rules */
+/* #endregion */
+/* #region || general text rules */
 h1,
 h2 {
   font-family: Marmelad, sans-serif;
@@ -30,6 +30,9 @@ h2 {
 h3 {
   font-size: 1.5em;
 }
+h3.semibold {
+  font-size: 1.2em;
+}
 
 .sub-heading {
   font-family: Glory, sans-serif;
@@ -38,8 +41,9 @@ h3 {
   max-width: 60%;
   color: #5e6b81;
 }
+/* #endregion */
 
-/* ||main body rules */
+/* #region ||main body rules */
 main {
   background-color: #fff;
   color: var(--cool-black);
@@ -55,48 +59,37 @@ main {
   font-size: 1.5rem;
   margin: 1% 0;
 }
+/* #endregion */
 
 
-
-/* || Introduction */
-
-#introduction h1 {
-  margin-bottom: 0.25em;
-  padding-top: 2vh;
-}
+/* #region || Introduction section */
 
 .bottom-border {
   border-bottom: 2px solid var(--cool-black);
   padding-top: 0.5vh;
 }
 
-h3.semibold {
-  font-size: 1.2em;
+#introduction h1 {
+  margin-bottom: 0.25em;
+  padding-top: 2vh;
 }
 #introduction h3 {
   margin: 1vh 0;
 }
-#introduction .inline-flex h3 {
+#introduction .software-icons h3 {
   float: left;
 }
-
 #introduction ul {
   padding: 0;
 }
-
 #introduction.grid div {
   padding-left: 2vw;
 }
-
-#introduction .intro-top .col-6 {
-  width: 50%;
-}
-
 #introduction .intro-img {
   float: right;
 }
 
-.icons img {
+.software-icons img {
   padding-left: 2vw;
   max-width: 75%;
 }
@@ -105,9 +98,12 @@ img[src*="arrow-transition"] {
   height: 33.2px;
 }
 
-/* || competitive research */
+/* #endregion */
 
-/* || icon sizing */
+
+/* #region || competitive research */
+
+/* icon sizing */
 img[src*="windy-app-icon"] {
   width: 6rem;
   height: 6rem;
@@ -116,7 +112,7 @@ img[src*="accuweather-icon"] {
   width: 8rem;
   height: 6.5rem;
 }
-
+/* specific colors */
 .windy-teal {
   background-color: #add5e8;
 }
@@ -130,37 +126,35 @@ img[src*="accuweather-icon"] {
   background-color: #ff8d4f;
 }
 
-/* || main elements */
+/*main elements */
 .weather-flexbox {
   flex-shrink: 0;
   width: 50%;
   padding: 2vh 2vh 4vh;
   gap: 11px;
 }
-
 .weather-container {
   display: flex;
   gap: 4vh;
   justify-content: center;
   margin-bottom: 5vh;
 }
-
 .weather-container ul {
   margin: 0;
   padding: 0;
+}
+.weather-container p {
+  margin: 0;
 }
 
 .flex-item-padding {
   padding: 1.5vh 2vw 1.5vh 4vw;
   text-align: left;
 }
+/* #endregion */
 
-.weather-container p {
-  margin: 0;
-}
-
-
-/* || user interviews */
+/* #region || user interviews WIP*/
+/* #region goal section */
 .goal {
   width: 100%;
   height: 100%;
@@ -172,33 +166,32 @@ img[src*="accuweather-icon"] {
   gap: 16px;
   display: inline-flex;
 }
-.quote {
-  z-index: 0;
-  padding: 2vh 2vw;
-  margin-bottom: 1vh;
-}
+
 .flex-goals {
   display: flex;
   flex-direction: column;
   gap: 2vh;
 }
-
 .goal-one {
   background: rgb(0 80 125 / 13%);
 }
-
 .goal-two {
   background: rgb(0 80 125 / 23%);
 }
-
 .goal-three {
   background: rgb(0 80 125 / 36%);
 }
-
 .goal-four {
   background: rgb(0 80 125 / 46%);
 }
+/* #endregion */
 
+/* #region deprecated */
+.quote {
+  z-index: 0;
+  padding: 2vh 2vw;
+  margin-bottom: 1vh;
+}
 #user-interviews img[src*="icon.svg"] {
   max-width: 3vw;
   height: auto;
@@ -211,11 +204,19 @@ img[src*="accuweather-icon"] {
 .icon-location-b {
   width: 10%;
 }
+/* #endregion */
 
-/* ||user personas */
-/* #define p {
-  margin-top: 5vh;
-} */
+/* keep image, basic details and quote - put the rest under an 'about' btn */
+/*#region ||user personas WIP*/
+
+.persona-block {
+  display: flex;
+  position: relative;
+}
+.persona-block.margin-bottom {
+  margin-bottom: 8vh;
+}
+
 .persona-textbox {
   padding: 17px 20px;
   flex-direction: column;
@@ -223,21 +224,18 @@ img[src*="accuweather-icon"] {
   align-items: flex-start;
   display: inline-flex;
 }
-
-.persona ul {
+.persona-textbox ul {
   padding-left: 2vw;
   margin: 1vh 0;
 }
 
-.persona-block {
-  display: flex;
-  position: relative;
-}
 .persona-container {
   display: flex;
   flex-direction: column;
   position: relative;
 }
+
+/* persona image rules */
 .center-image-lock {
   position: relative;
   top: 2vh;
@@ -258,32 +256,36 @@ img[src*="accuweather-icon"] {
   transform: translate(-50%, 0);
   position: absolute;
 }
+
 .persona-personal-details {
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 4vw;
 }
-.persona-space {
+div.persona-container h4 {
+  margin-top: 2vh;
+}
+
+.quote-grid {
   display: grid;
   row-gap: 1.5vw;
   padding-top: 0;
   padding-bottom: 0;
 }
-.persona-block.margin-bottom {
-  margin-bottom: 8vh;
-}
+
 div.persona-container > h4 {
+  /* adjustment for absolute placed image */
   padding-top: 80%;
 }
-div.persona-container h4 {
-  margin-top: 2vh;
-}
-/* || wireframes */
+
+/* #endregion */
+
+/* #region || wireframes WIP*/
 #wireframes h4 {
   margin-top: -1.5vw;
 }
-.wireframe {
+.wireframe-img-block {
   position: relative;
   display: grid;
   gap: 4vh;
@@ -291,26 +293,26 @@ div.persona-container h4 {
 .move-left {
   margin-left: -6vw;
 }
-
+/* background stripes */
 .light-stripe {
   position: relative;
   background-color: var(--light-teal);
   padding-top: 16vh;
-  grid-area: 1/-1;
+  grid-area: 1/1;
 }
-
 .med-stripe {
   position: relative;
   background-color: var(--medium-teal);
   padding-top: 16vh;
-  grid-area: 2/-1;
+  grid-area: 2/1;
 }
 .dark-stripe {
   position: relative;
   background-color: var(--teal-text);
   padding-top: 16vh;
-  grid-area: 3/-1;
+  grid-area: 3/1;
 }
+
 .in-front {
   position: relative;
   z-index: 1;
@@ -319,36 +321,34 @@ div.persona-container h4 {
 }
 .low-fidelity {
   display: flex;
-  grid-area: 1/-1;
+  grid-area: 1/1;
 }
 .med-fidelity {
   display: flex;
   position: relative;
-  grid-area: 2/-1;
+  grid-area: 2/1;
 }
 .high-fidelity {
   display: flex;
-  grid-area: 3/-1;
+  grid-area: 3/1;
 }
+
+/* label placement */
 .move-low {
-  grid-area: 1/-1;
+  grid-area: 1/1;
 }
 .mid-down {
   position: relative;
-
-  grid-area: 2/-1;
+  grid-area: 2/1;
 }
 .high-down {
   position: relative;
-
-  grid-area: 3/-1;
+  grid-area: 3/1;
 }
 
-.flex-wireframe {
-  display: flex;
-  flex-direction: column;
-}
-/* || usability testing */
+/* #endregion */
+
+/*#region || usability testing WIP */
 #usability-testing .flex {
   gap: 2vw;
   align-items: normal;
@@ -399,7 +399,9 @@ div.persona-container h4 {
 .error-box {
   padding: 2vh 0;
 }
-/* || wireframe iterations */
+/* #endregion */
+
+/* #region || wireframe iterations WIP*/
 #wireframe-iterations .iterate {
   align-items: flex-start;
   gap: 4vw;
@@ -422,6 +424,9 @@ div.persona-container h4 {
 .final-wireframes {
   margin-right: calc(2em + 1vw);
 }
+/* #endregion */
+
+
 /* || small screen size */
 @media screen and (-webkit-min-device-pixel-ratio: 1) and (max-width: 639px) {
   /* || design thinking small */
@@ -580,11 +585,11 @@ div.persona-container h4 {
     padding: 2vh 2vw;
     position: relative;
   }
-  #introduction .inline-flex {
+  #introduction .software-icons {
     display: inline-flex;
     float: none;
   }
-  #introduction .inline-flex.col-8 {
+  #introduction .software-icons.col-8 {
     padding-top: 0;
   }
   /* || user interviews medium */
@@ -639,7 +644,7 @@ div.persona-container h4 {
     padding-right: 0;
   }
 
-  #introduction .inline-flex {
+  #introduction .software-icons {
     display: inline-flex;
     float: none;
   }
@@ -648,14 +653,13 @@ div.persona-container h4 {
   #introduction div.col-4 {
     width: 33.33%;
   }
-
   #introduction div.col-8 {
     width: 66.66%;
   }
-  #introduction .inline-flex {
+  #introduction .software-icons {
     display: inline-flex;
   }
-  #introduction .inline-flex.col-8 {
+  #introduction .software-icons.col-8 {
     padding-top: 0;
   }
 
