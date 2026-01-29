@@ -1,4 +1,3 @@
-
 /* general css */
 :root {
   --off-white: #fffaf1;
@@ -11,8 +10,9 @@
   --visited-link: #4d2233;
   --text-hover: #043653;
   --dark-blue: #091941;
-  --dark-med-blue: #12316E;
+  --dark-med-blue: #12316e;
 }
+
 /* || General Rules */
 
 /* || sizing & spacing */
@@ -24,8 +24,8 @@
   margin: auto calc(50% - 50vw);
   /* reach the edges of the screen even inside a container */
 }
-.horizontal-stripe-orient-left{
-  margin-left:calc(50% - 50vw);
+.horizontal-stripe-orient-left {
+  margin-left: calc(50% - 50vw);
 }
 
 .margin-bottom-sm {
@@ -35,20 +35,15 @@
   margin-bottom: 6vw;
 }
 
-
 .container {
-  padding: 0 1em;
-  max-width: calc(80% + 6vw);
-  /* container size is 80% and adds the margin length from the main element */
-  /* 80% + 6w should really be stored in a variable */
-  margin: 0 auto;
+  /* (defunct 80% + 6w)i stg 1vw is 1% of the screen so 80% + 6vw is 86% 
+  which means there is 14% left, 
+  so 7vw (% works inside the container, so if the container is smaller it won't work right) on each side... */
+  margin: 0 7vw;
   position: relative;
 }
-
 .center-inside-container {
-  padding: 0 1em;
-  max-width: calc((.8 *(100% - 24vw - 2em)) + 6vw );
-  /* ...there has got to be a better way */
+  max-width: calc(100% - 24vw );
   margin: 0 auto;
 }
 
@@ -66,7 +61,7 @@ h4 {
   font-size: 1.17em;
 }
 
-.text-lg{
+.text-lg {
   font-size: XX-large;
 }
 
@@ -102,47 +97,59 @@ h1 + span {
   display: flex;
   position: relative;
 }
-.flex-column{
+.flex-column {
   display: flex;
   flex-direction: column;
   position: relative;
+  align-items:center
 }
 .grid {
   display: grid;
 }
 
-
-.col-1 {width: 8.33%;
+.col-1 {
+  width: 8.33%;
 }
-.col-2 {width: 16.66%;
+.col-2 {
+  width: 16.66%;
 }
-.col-3 {width: 25%;
+.col-3 {
+  width: 25%;
 }
-.col-4 {width: 33.33%;
+.col-4 {
+  width: 33.33%;
 }
-.col-5 {width: 41.66%;
+.col-5 {
+  width: 41.66%;
 }
-.col-6 {width: 50%;
+.col-6 {
+  width: 50%;
 }
-.col-7 {width: 58.33%;
+.col-7 {
+  width: 58.33%;
 }
-.col-8 {width: 66.66%;
+.col-8 {
+  width: 66.66%;
 }
-.col-9 {width: 75%;
+.col-9 {
+  width: 75%;
 }
-.col-10 {width: 83.33%;
+.col-10 {
+  width: 83.33%;
 }
-.col-11 {width: 91.66%;
+.col-11 {
+  width: 91.66%;
 }
-.col-12 {width: 100%;
+.col-12 {
+  width: 100%;
 }
 
 /* || decorative elements */
 
-.border-radius{
+.border-radius {
   border-radius: 25px;
 }
-.border-radius-sm{
+.border-radius-sm {
   border-radius: 10px;
 }
 
@@ -153,16 +160,14 @@ h1 + span {
   box-shadow: 0 2px 10px rgb(0 0 0 / 25%);
 }
 
-.btn-border-yellow{
+.btn-border-yellow {
   border: 2px solid var(--yellow);
   border-radius: 10px;
 }
-.btn-border-pink{
+.btn-border-pink {
   border: 2px solid var(--pink);
   border-radius: 10px;
 }
-
-
 
 /* || Main elements */
 header {
@@ -187,6 +192,7 @@ footer {
 body {
   font-family: "proza libre", sans-serif;
   font-size: 16px;
+  color: var(--warm-black);
   word-spacing: 1.6px;
   line-height: 1.5;
   overflow-x: hidden;
@@ -250,8 +256,8 @@ nav ul {
   outline: 2px solid var(--pink);
   padding: 3vw;
 }
-#contact-me h2{
-  margin-bottom: .5rem;
+#contact-me h2 {
+  margin-bottom: 0.5rem;
 }
 /* || about css */
 .my-story {
@@ -348,13 +354,13 @@ a.logo:hover {
   transition: transform 200ms;
 }
 
-.contact-btn{
+.contact-btn {
   background-color: var(--teal-text);
   color: var(--off-white);
   padding: 0.6em 0.8em;
   border: 2px solid var(--text-hover);
   border-radius: 10px;
-  margin-bottom: .75rem;
+  margin-bottom: 0.75rem;
 }
 
 .btn:hover {
@@ -364,22 +370,21 @@ a.logo:hover {
 .download-btn:hover {
   background-color: hsl(46deg 100% 95%);
 }
-a.contact-btn:hover{
-color: white;
+a.contact-btn:hover {
+  color: white;
 }
-
 
 /* small screen size */
 @media screen and (max-width: 639px) {
   main {
     padding-top: 80px;
   }
-  .navtoggle li{
+  .navtoggle li {
     padding: 10px 10px;
   }
 
-  .navtoggle li:first-child{
-padding: 0 12px;
+  .navtoggle li:first-child {
+    padding: 0 12px;
   }
   .navtoggle li:not(:first-child) {
     display: none;
@@ -393,7 +398,7 @@ padding: 0 12px;
     border-right: 2px solid var(--pink);
     background-color: var(--off-white);
   }
-  .navtoggle.responsive li:first-child{
+  .navtoggle.responsive li:first-child {
     padding: 0 10px;
     padding-bottom: 12px;
   }
@@ -406,9 +411,9 @@ padding: 0 12px;
   .navtoggle.responsive nav {
     background-color: var(--off-white);
     border-radius: 0 0 10px 10px;
-
   }
-  .navtoggle li:hover, .navtoggle.responsive li:hover{
+  .navtoggle li:hover,
+  .navtoggle.responsive li:hover {
     background-color: var(--white);
   }
 
@@ -428,10 +433,10 @@ padding: 0 12px;
   nav ul {
     margin: 0;
     padding: 0;
-
   }
   .row {
     margin-bottom: 4vh;
+    position: relative;
   }
   .row::after {
     content: "";
@@ -444,7 +449,8 @@ padding: 0 12px;
   .skills h2 {
     text-align: center;
   }
-  #project-section .col-6, #vela-project .col-6{
+  #project-section .col-6,
+  #vela-project .col-6 {
     width: auto;
   }
   .col-6 {
@@ -523,16 +529,12 @@ padding: 0 12px;
 
 /* large screen size */
 @media screen and (min-width: 1024px) {
-  .border-yellow{
+  .border-yellow {
     margin: 0;
   }
   main {
     margin: 0 7vw 3%;
     padding: 0 0 5vh;
-  }
-  .container {
-    margin-left: auto;
-    margin-right: auto;
   }
 
   header.box-shadow-dark {
@@ -592,7 +594,8 @@ padding: 0 12px;
     padding: 1vh 2vw;
   }
 
-  #project-section .col-6, #vela-project .col-6 {
+  #project-section .col-6,
+  #vela-project .col-6 {
     width: 50%;
   }
 }

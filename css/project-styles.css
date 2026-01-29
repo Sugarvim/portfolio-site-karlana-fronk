@@ -1,22 +1,28 @@
 /* || general css */
 :root {
-  --light-teal: #eefeff;;
-  --medium-teal: #9BC3DA;
+  --light-teal: #eefeff;
+  --medium-teal: #9bc3da;
   --grey: #5e6b81;
   --cool-black: #1e1e1e;
 }
-.white-bg{
+
+/* || colors */
+.white-bg {
   background-color: white;
 }
-.light-teal{
+.light-teal {
   background-color: var(--light-teal);
 }
-.teal {
+.medium-teal {
+  color: var(--medium-teal);
+}
+.dark-teal {
   color: var(--teal-text);
 }
 
 /* || text rules */
-h1, h2 {
+h1,
+h2 {
   font-family: Marmelad, sans-serif;
   text-align: center;
   font-size: 2em;
@@ -25,75 +31,43 @@ h3 {
   font-size: 1.5em;
 }
 
-.row {
-  position: relative;
+.sub-heading {
+  font-family: Glory, sans-serif;
+  font-weight: 500;
+  font-size: 1.5em;
+  max-width: 60%;
+  color: #5e6b81;
 }
 
+/* ||main body rules */
 main {
   background-color: #fff;
   color: var(--cool-black);
   font-size: 14px;
 }
 
-
-/* || Project page case study */
-
-/* || background */
-.background-split-colors{
-  background-image: linear-gradient(to right,
-  white 0%,
-  white 50%,
-  var(--teal-text) 50%,
-var(--teal-text)100%);
-margin-top: -40px;
-position: relative;
+/* || teal transition stripe */
+.light-teal-stripe {
+  background-color: var(--light-teal);
+  padding: 1vh 0 1.5vh;
 }
-
-.long-capsule{
-  position: absolute;
-  background-color: var(--medium-teal);
-  width: 88%;
-  height: 60vw;
-  border-radius: 90% 90% 0 0;
-  top: 15vh;
-  margin-left: 6%;
-
-}
-
-.on-top{
-  position: relative;
-
-}
-.fit-ellipse{
-  height: 30vw;
-  margin-top: 5vw;
-  position: relative;
-  display: inline-block;
+.light-teal-stripe h3 {
+  font-size: 1.5rem;
+  margin: 1% 0;
 }
 
 
-#wrap-up h3{
-  text-align: center;
-}
-
-.bottom-border {
-  border-bottom: 2px solid var(--cool-black);
-  padding-top: 0.5vh;
-}
-
-.sub-heading {
-  font-family: Glory, sans-serif;
-  font-weight: 400;
-  font-size: 1.5em;
-  max-width: 60%;
-  color: #5e6b81;
-}
 
 /* || Introduction */
 
 #introduction h1 {
   margin-bottom: 0.25em;
   padding-top: 2vh;
+}
+
+.bottom-border {
+  border-bottom: 2px solid var(--cool-black);
+  padding-top: 0.5vh;
 }
 
 h3.semibold {
@@ -115,7 +89,7 @@ h3.semibold {
 }
 
 #introduction .intro-top .col-6 {
-  width:50%
+  width: 50%;
 }
 
 #introduction .intro-img {
@@ -132,80 +106,59 @@ img[src*="arrow-transition"] {
 }
 
 /* || competitive research */
+
+/* || icon sizing */
 img[src*="windy-app-icon"] {
   width: 6rem;
   height: 6rem;
 }
-
 img[src*="accuweather-icon"] {
   width: 8rem;
   height: 6.5rem;
 }
 
-.windy,
-.accuweather {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 25px;
-  padding: 2vh 2vh 4vh;
-  gap: 11px;
-}
-/* .compare-col{
-  flex: 1;
-} */
 .windy-teal {
   background-color: #add5e8;
 }
-
 .windy-teal-dark {
   background-color: #82b9e8;
 }
-
 .light-orange {
   background-color: #ffd399;
 }
-
 .mid-orange {
   background-color: #ff8d4f;
 }
 
-.no-shrink {
+/* || main elements */
+.weather-flexbox {
   flex-shrink: 0;
-  width: 40%;
+  width: 50%;
+  padding: 2vh 2vh 4vh;
+  gap: 11px;
 }
 
-.competitive {
+.weather-container {
   display: flex;
-  flex-direction: row;
   gap: 4vh;
   justify-content: center;
   margin-bottom: 5vh;
 }
 
-.competitive ul {
+.weather-container ul {
   margin: 0;
   padding: 0;
 }
 
-.competitive-padding {
+.flex-item-padding {
   padding: 1.5vh 2vw 1.5vh 4vw;
   text-align: left;
 }
 
-.competitive p {
+.weather-container p {
   margin: 0;
 }
 
-.light-teal-stripe {
-  background-color: var(--light-teal);
-  padding: 1vh 0 1.5vh;
-}
-
-.light-teal-stripe h3 {
-  font-size: 1.5rem;
-  margin: 1% 0;
-}
 
 /* || user interviews */
 .goal {
@@ -258,7 +211,6 @@ img[src*="accuweather-icon"] {
 .icon-location-b {
   width: 10%;
 }
-
 
 /* ||user personas */
 /* #define p {
@@ -328,14 +280,13 @@ div.persona-container h4 {
   margin-top: 2vh;
 }
 /* || wireframes */
-#wireframes h4{
+#wireframes h4 {
   margin-top: -1.5vw;
 }
 .wireframe {
   position: relative;
   display: grid;
   gap: 4vh;
-
 }
 .move-left {
   margin-left: -6vw;
@@ -381,7 +332,6 @@ div.persona-container h4 {
 }
 .move-low {
   grid-area: 1/-1;
-
 }
 .mid-down {
   position: relative;
@@ -399,46 +349,46 @@ div.persona-container h4 {
   flex-direction: column;
 }
 /* || usability testing */
-#usability-testing .flex{
-gap: 2vw;
-align-items: normal;
+#usability-testing .flex {
+  gap: 2vw;
+  align-items: normal;
 }
-#usability-testing ul{
+#usability-testing ul {
   padding: 0 1vw 0 2vw;
 }
-.usability-head{
+.usability-head {
   padding-top: 4vh;
 }
-.usability-background{
+.usability-background {
   background-color: var(--light-teal);
   padding-bottom: 8vw;
 }
 .p1 {
-  background-color: #F8B3B3;
+  background-color: #f8b3b3;
 }
-.p2{
-  background-color: #FFCEAB;
+.p2 {
+  background-color: #ffceab;
 }
-.p3{
-  background-color: #FFF3B6;
+.p3 {
+  background-color: #fff3b6;
 }
-.p4{
-  background-color: #D5FFBB;
+.p4 {
+  background-color: #d5ffbb;
 }
-.p5{
-  background-color: #C3FFED;
+.p5 {
+  background-color: #c3ffed;
 }
-.p6{
-  background-color: #CED6FF;
+.p6 {
+  background-color: #ced6ff;
 }
-.participant-box{
+.participant-box {
   padding: 1rem 2rem;
   width: 12vw;
 }
-.usability-quotes{
+.usability-quotes {
   justify-content: space-between;
 }
-.usability-task{
+.usability-task {
   display: flex;
   flex-direction: column;
   padding: 2vh 1vw;
@@ -446,30 +396,30 @@ align-items: normal;
   width: 30rem;
   background-color: white;
 }
-.error-box{
+.error-box {
   padding: 2vh 0;
 }
 /* || wireframe iterations */
-#wireframe-iterations .iterate{
+#wireframe-iterations .iterate {
   align-items: flex-start;
   gap: 4vw;
   justify-content: center;
 }
-#wireframe-iterations .wireframe-box{
+#wireframe-iterations .wireframe-box {
   justify-content: flex-start;
 }
-.version-num{
+.version-num {
   align-self: flex-start;
   margin-right: 1vw;
 }
-.frame-iterate{
-  display:flex;
+.frame-iterate {
+  display: flex;
   flex-direction: column;
   flex-basis: 0;
   flex-grow: 1;
   align-items: center;
 }
-.final-wireframes{
+.final-wireframes {
   margin-right: calc(2em + 1vw);
 }
 /* || small screen size */
@@ -507,7 +457,7 @@ align-items: normal;
   }
 
   .flex-sm {
-    display:flex;
+    display: flex;
     align-items: center;
     row-gap: 10px;
   }
@@ -518,7 +468,7 @@ align-items: normal;
     height: 30px;
   }
   /* || competitive research small */
-  .competitive {
+  .weather-container {
     flex-direction: column;
   }
 
@@ -536,26 +486,26 @@ align-items: normal;
     height: 3.5rem;
   }
   /* || user persona small */
-  .persona-block{
+  .persona-block {
     align-items: normal;
     flex-direction: column;
   }
-  .persona-container{
+  .persona-container {
     flex-direction: row;
   }
   .persona-personal-details {
     padding-top: 30%;
     padding-left: 3vw;
   }
-  div.persona-container > h4{
+  div.persona-container > h4 {
     padding-top: 20%;
     position: absolute;
     top: 2vh;
     left: 13vw;
-    }
-    .persona-container div:nth-child(4){
-      padding: 3vh 3vw  3vw;
-    }
+  }
+  .persona-container div:nth-child(4) {
+    padding: 3vh 3vw 3vw;
+  }
 }
 
 /* || medium width size */
@@ -613,7 +563,7 @@ align-items: normal;
   }
 
   .flex-med {
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: space-around;
   }
@@ -642,7 +592,7 @@ align-items: normal;
   .ellipse-user-right {
     position: relative;
   }
-  
+
   .ellipse-user-left {
     width: 4vw;
     padding-top: 4vw;
@@ -651,11 +601,10 @@ align-items: normal;
     width: 4vw;
     padding-top: 4vw;
   }
-  #define [class*="col-"]{
+  #define [class*="col-"] {
     padding-top: 0;
     padding-bottom: 0;
   }
-
 
   .col-7 {
     width: 58.33%;
@@ -666,17 +615,17 @@ align-items: normal;
   /* ||wireframes medium */
 }
 /* || usability testing medium */
-.usability-task{
+.usability-task {
   align-items: normal;
   align-content: space-evenly;
 }
 
 /* || large screen size */
 @media screen and (-webkit-min-device-pixel-ratio: 1) and (min-width: 1024px) {
-  .sub-heading{
-    max-width: 80%
+  .sub-heading {
+    max-width: 80%;
   }
-  
+
   main > * {
     margin: 10vh 5vw;
   }
@@ -769,11 +718,11 @@ align-items: normal;
 
   /* ||wireframes large */
 
-  .in-front{
+  .in-front {
     max-width: 70%;
   }
   /* || usability testing large */
-  .usability-task{
+  .usability-task {
     align-items: normal;
     align-content: space-evenly;
   }

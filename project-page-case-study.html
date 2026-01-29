@@ -82,177 +82,205 @@
       </div>
     </header>
     <main>
-      <section id="introduction">
-        <div class="intro-box flex-column border-radius-sm">
-          <h1><span class="text-lg">Project Page</span> Case Study</h1>
-          <div>
-            <h2>The Objective</h2>
-            <p class="text-center">
-              To transform static images into accessible web content.
-            </p>
+      <div class="container">
+        <section id="introduction">
+          <div class="intro-box flex-column border-radius-sm">
+            <h1><span class="text-lg">Project Page</span> Case Study</h1>
+            <div class="flex intro-pics">
+              <picture>
+                <source
+                  srcset="img/coding-vela-page/code-img-1x/intro-pic-1x.png"
+                  media="(max-width:639px)"
+                />
+                <img
+                  src="img/coding-vela-page/code-img-2x/intro-pic-2x.png"
+                  alt="two screenshots of the vela case study page one at medium width and one at large width next to each other "
+                />
+              </picture>
+            </div>
+            <div>
+              <h2>The Objective</h2>
+              <p class="text-center">
+                To transform static images into accessible web content.
+              </p>
+            </div>
           </div>
-        </div>
-        <div
-          class="project-info flex light-teal border-radius-sm horizontal-stripe-orient-left"
-        >
-          <div>
-            <p class="sub-heading">Tools:</p>
-            <p>Figma, VScode, Github</p>
+          <div
+            class="project-info flex light-teal border-radius-sm horizontal-stripe-orient-left"
+          >
+            <div>
+              <p class="sub-heading">Tools:</p>
+              <p>Figma, VScode, Github</p>
+            </div>
+            <div>
+              <p class="sub-heading">Role:</p>
+              <p>Frontend Development</p>
+            </div>
+            <div>
+              <p class="sub-heading">Duration:</p>
+              <p>Three weeks</p>
+            </div>
           </div>
-          <div>
-            <p class="sub-heading">Role:</p>
-            <p>Frontend Development</p>
-          </div>
-          <div>
-            <p class="sub-heading">Duration:</p>
-            <p>Three weeks</p>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <div class="background-split-colors horizontal-stripe">
-        <section id="project-goals">
-          <div>
-            <!-- i want the capsule shape to strech as the screen gets smaller
-            i think i need javascript for that -- screen width decreases by * and vh goes up by 1 -->
-            <div class="capsule-up capsule-shape"></div>
-            <div class="capsule-up capsule-container flex-column">
-              <div class="flex-column">
-                <h2>Overview</h2>
-                <p>
-                  This project is a web page designed using HTML and CSS. It is
-                  meant to give viewers a clear understanding of my previous
-                  case study by being responsive and accessible. As the initial
-                  case study was intended for desktop viewing, the web page is
-                  designed to be viewed at medium or large screen sizes.
-                </p>
-              </div>
-              <div class="the-problem flex-column">
-                <div>
+        <!-- end of introduction -->
+
+        <div class="background-split-colors horizontal-stripe">
+          <section id="project-goals">
+            <div class="container">
+              <!-- i want the capsule shape to strech as the screen gets smaller
+             i think i need javascript for that -- screen width decreases by * and vh goes down by 1 -->
+              <div class="capsule-up capsule-shape"></div>
+              <div class="capsule-up capsule-container flex-column">
+                <div class="flex-column">
+                  <h2>Overview</h2>
+                  <p>
+                    This project is a web page designed using HTML and CSS. It
+                    is meant to give viewers a clear understanding of my
+                    previous case study by being responsive and accessible. As
+                    the initial case study was intended for desktop viewing, the
+                    web page is designed to be viewed at medium or large screen
+                    sizes.
+                  </p>
+                </div>
+                <div class="the-problem flex-column">
                   <h2>The Problem</h2>
                   <p>
                     The case study I made was constructed from static images,
                     making it unresponsive and inaccessible for screen readers.
                   </p>
+
+                  <picture>
+                    <source
+                      srcset="
+                        img/coding-vela-page/code-img-1x/behance-screen-reader-1x.png
+                      "
+                      media="(max-width:639px)"
+                    />
+                    <img
+                      src="img/coding-vela-page/code-img-2x/behance-screen-reader-2x.png"
+                      alt="small black box that reads: Untitled Modal, dialog, link, Project module 1203837753 permalink, Project Module 0, region"
+                    />
+                  </picture>
+                  <span>Voiceover for my case study</span>
                 </div>
+              </div>
+              <div class="horizontal-stripe">
+                <div>
+                  <h2>Goals</h2>
+                  <p>
+                    A responsive web page that presents my case study HTML and
+                    CSS continued exploration
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- end of overview -->
+          <section id="challenges">
+            <h2>From Image to HTML</h2>
+            <p>
+              To begin translating the static images of my case study to a web
+              format, I had to recreate the elements in HTML code.
+            </p>
+            <div class="flex">
+              <div>
                 <picture>
                   <source
-                    srcset="img/coding-vela-page/code-img-1x/behance-screen-reader-1x.png"
+                    srcset="
+                      img/coding-vela-page/code-img-1x/competitive-resarch-1x.png
+                    "
                     media="(max-width:639px)"
                   />
                   <img
-                    src="img/coding-vela-page/code-img-2x/behance-screen-reader-2x.png"
-                    alt="small black box that reads: Untitled Modal, dialog, link, Project module 1203837753 permalink, Project Module 0, region"
+                    src="img/coding-vela-page/code-img-2x/competitive-research-2x.png"
+                    alt="a screenshot of the website"
                   />
                 </picture>
-                <span>Voiceover for my case study</span>
-              </div>
-            </div>
-            <div class="horizontal-stripe">
-              <h2>Goals</h2>
-              <p>
-                A responsive web page that presents my case study HTML and CSS
-                continued exploration
-              </p>
-            </div>
-          </div>
-        </section>
-        <section id="challenges">
-          <h2>From Image to HTML</h2>
-          <p>
-            To begin translating the static images of my case study to a web
-            format, I had to recreate the elements in HTML code.
-          </p>
-          <div class="flex">
-            <div>
-              <picture>
-                <source
-                  srcset="img/coding-vela-page/code-img-1x/competitive-resarch-1x.png"
-                  media="(max-width:639px)"
-                />
-                <img
-                  src="img/coding-vela-page/code-img-2x/competitive-research-2x.png"
-                  alt="a screenshot of the website"
-                />
-              </picture>
-            </div>
-            <div>
-              <picture>
-                <source
-                  srcset="img/coding-vela-page/code-img-1x/html-text-1x.png"
-                  media="(max-width:639px)"
-                />
-                <img
-                  src="img/coding-vela-page/code-img-2x/html-text-2x.png"
-                  alt="HTML code"
-                />
-              </picture>
-            </div>
-          </div>
-          <div class="light-teal">
-            <h2>CSS Challenges</h2>
-            <div class="dotted-line"></div>
-            <div class="flex-column">
-              <h3>Breaking out of container</h3>
-              <p>
-                One challenge I faced was making an element within a container
-                break out of its boundaries and reach the edge of the page.
-              </p>
-              <p class="">The answer lay in negative margins.</p>
-              <picture>
-                <source
-                  srcset="img/coding-vela-page/code-img-1x/misaligned-elements-1x.png"
-                  media="(max-width:639px)"
-                />
-                <img
-                  src="img/coding-vela-page/code-img-2x/negative-margins-2x.png"
-                  alt="A line of code that reads: margin: auto calc(50% - 50vw)"
-                />
-              </picture>
-              <p>
-                Positive margins push an element inside a container, so it would
-                reason that negative margins will push an element outside of a
-                container.
-              </p>
-            </div>
-            <div class="dotted-line"></div>
-            <h3>Responsive Design Issues</h3>
-            <p>
-              In trying to make the web page accessible, I designed the layout
-              of the page to adapt to different screen sizes. Amidst the
-              changing landscape, I ran into many issues in attempting to make
-              my layout consistent.
-            </p>
-            <div class="dotted-line"></div>
-            <div class="flex-column">
-              <h3>Misaligned Elements</h3>
-              <p>
-                To implement the design of the quotes coming from the circles,
-                the elements had to be positioned top-down. This caused an issue
-                where the bottom description would move when the screen size
-                changed.
-              </p>
-              <div class="flex">
-                <div class="flex-column">
-                                <picture>
-                <source
-                  srcset="img/coding-vela-page/code-img-1x/misaligned-elements-1x.png"
-                  media="(max-width:639px)"
-                />
-                <img
-                  src="img/coding-vela-page/code-img-2x/misaligned-elements-2x.png"
-                  alt="two screenshots side by side with a transparent rectangle overlapping both images, showing that the images are misaligned"
-                />
-              </picture>
-                </div>
-                <p>
-                  I resolved this by using
-                  <span>absolute positioning</span> to move the description
-                  outside the group, making it unable to be affected by the
-                  other elements
-                </p>
               </div>
               <div>
+                <picture>
+                  <source
+                    srcset="img/coding-vela-page/code-img-1x/html-text-1x.png"
+                    media="(max-width:639px)"
+                  />
+                  <img
+                    src="img/coding-vela-page/code-img-2x/html-text-2x.png"
+                    alt="HTML code"
+                  />
+                </picture>
+              </div>
+            </div>
+
+            <!-- teal strip starts here -->
+            <div class="teal-strip">
+              <h2>CSS Challenges</h2>
+              <div class="dotted-line"></div>
+              <div class="flex-column">
+                <h3>Breaking out of container</h3>
+                <p>
+                  One challenge I faced was making an element within a container
+                  break out of its boundaries and reach the edge of the page.
+                </p>
+                <p class="">The answer lay in negative margins.</p>
+                <picture>
+                  <source
+                    srcset="
+                      img/coding-vela-page/code-img-1x/negative-margins-1x.png
+                    "
+                    media="(max-width:639px)"
+                  />
+                  <img
+                    src="img/coding-vela-page/code-img-2x/negative-margins-2x.png"
+                    alt="A line of code that reads: margin: auto calc(50% - 50vw)"
+                  />
+                </picture>
+                <p>
+                  Positive margins push an element inside a container, so it
+                  would reason that negative margins will push an element
+                  outside of a container.
+                </p>
+
+                <div class="dotted-line"></div>
+                <h3>Responsive Design Issues</h3>
+                <p>
+                  In trying to make the web page accessible, I designed the
+                  layout of the page to adapt to different screen sizes. Amidst
+                  the changing landscape, I ran into many issues in attempting
+                  to make my layout consistent.
+                </p>
+                <div class="dotted-line"></div>
+
+                <h3>Misaligned Elements</h3>
+                <p>
+                  To implement the design of the quotes coming from the circles,
+                  the elements had to be positioned top-down. This caused an
+                  issue where the bottom description would move when the screen
+                  size changed.
+                </p>
+                <div class="flex-column">
+                  <picture>
+                    <source
+                      srcset="
+                        img/coding-vela-page/code-img-1x/misaligned-elements-1x.png
+                      "
+                      media="(max-width:639px)"
+                    />
+                    <img
+                      src="img/coding-vela-page/code-img-2x/misaligned-elements-2x.png"
+                      alt="two screenshots side by side with a transparent rectangle overlapping both images, showing that the images are misaligned"
+                    />
+                  </picture>
+
+                  <p>
+                    I resolved this by using
+                    <span>absolute positioning</span> to move the description
+                    outside the group, making it unable to be affected by the
+                    other elements
+                  </p>
+                </div>
+
                 <h3>Absolutely <span>not</span> centered</h3>
                 <p>
                   To make images overlap, I often relied on position: absolute
@@ -263,7 +291,9 @@
                 <div>
                   <picture>
                     <source
-                      srcset="img/coding-vela-page/code-img-1x/elements-not-aligned-1x.png"
+                      srcset="
+                        img/coding-vela-page/code-img-1x/elements-not-aligned-1x.png
+                      "
                       media="(max-width:639px)"
                     />
                     <img
@@ -283,7 +313,9 @@
                 <div>
                   <picture>
                     <source
-                      srcset="img/coding-vela-page/code-img-1x/elements-with-grid-1x.png"
+                      srcset="
+                        img/coding-vela-page/code-img-1x/elements-with-grid-1x.png
+                      "
                       media="(max-width:639px)"
                     />
                     <img
@@ -299,44 +331,44 @@
                 </p>
               </div>
             </div>
+          </section>
+        </div>
+
+        <section id="closing-thoughts">
+          <div class="long-capsule-bottom">
+            <div class="flex-column">
+              <h2>Closing Thoughts</h2>
+              <p>
+                This project has expanded my understanding of coding and the
+                creativity involved in coming up with solutions. When searching
+                for answers on the internet, I found that there were many
+                different possible solutions for the problem I had. Each person
+                had taken a different approach to solving the problem. Although
+                not all solutions were the most concise, they still worked. This
+                helped me to understand that if you're creative enough, you can
+                make anything work <br />
+                <br />
+                I believe that as I continue to learn more about coding, I'll be
+                able to come up with solutions that reflect a deep understanding
+                of coding that are simple and elegant.
+              </p>
+              <h3>Looking Ahead</h3>
+              <p>
+                The next challenge I plan to take on is to make the page fully
+                responsive by adapting it for mobile screens. In order to have
+                the content comfortably on the page, I plan on adding
+                interactivity with JavaScript. I will continue to expand my
+                knowledge of coding to give my designs more freedom.
+              </p>
+              <p>
+                I am confident there will be many unexpected challenges ahead as
+                I attempt to translate the page into mobile, but I am confident
+                I can face the challenges and achieve success.
+              </p>
+            </div>
           </div>
         </section>
       </div>
-
-      <section id="closing-thoughts">
-        <div class="long-capsule-bottom">
-          <div class="flex-column">
-            <h2>Closing Thoughts</h2>
-            <p>
-              This project has expanded my understanding of coding and the
-              creativity involved in coming up with solutions. When searching
-              for answers on the internet, I found that there were many
-              different possible solutions for the problem I had. Each person
-              had taken a different approach to solving the problem. Although
-              not all solutions were the most concise, they still worked. This
-              helped me to understand that if you're creative enough, you can
-              make anything work <br />
-              <br />
-              I believe that as I continue to learn more about coding, I'll be
-              able to come up with solutions that reflect a deep understanding
-              of coding that are simple and elegant.
-            </p>
-            <h3>Looking Ahead</h3>
-            <p>
-              The next challenge I plan to take on is to make the page fully
-              responsive by adapting it for mobile screens. In order to have the
-              content comfortably on the page, I plan on adding interactivity
-              with JavaScript. I will continue to expand my knowledge of coding
-              to give my designs more freedom.
-            </p>
-            <p>
-              I am confident there will be many unexpected challenges ahead as I
-              attempt to translate the page into mobile, but I am confident I
-              can face the challenges and achieve success.
-            </p>
-          </div>
-        </div>
-      </section>
     </main>
 
     <footer id="contact-me">
