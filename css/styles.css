@@ -13,6 +13,8 @@
   --dark-med-blue: #12316e;
 }
 
+/* fonts: Marmelad (H), Glory(SH), Proza Libre (B) */
+
 /* || General Rules */
 
 /* || sizing & spacing */
@@ -23,9 +25,6 @@
 .horizontal-stripe {
   margin: auto calc(50% - 50vw);
   /* reach the edges of the screen even inside a container */
-}
-.horizontal-stripe-orient-left {
-  margin-left: calc(50% - 50vw);
 }
 
 .margin-bottom-sm {
@@ -177,7 +176,7 @@ header {
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 1;
+  z-index: 2;
 }
 
 footer {

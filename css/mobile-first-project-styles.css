@@ -1,21 +1,9 @@
 
-.intro-box {
-  background-color: var(--medium-teal);
-  border: 3px solid var(--teal-text);
-  justify-content: space-between;
-}
 
-.intro-pics{
-    margin: auto calc(50% - 45vw);
-    align-self: center;
-}
 
-.project-info {
-max-width:80%;
-  justify-content: space-around;
-  margin-top: 3vh;
-  z-index: 1;
-}
+/* #region decorative elements */
+
+/* background color */
 .background-split-colors {
   background-image: linear-gradient(
     to right,
@@ -27,60 +15,269 @@ max-width:80%;
   margin-top: -80px;
   position: relative;
 }
-.teal-strip{
-    background-color: var(--light-teal);
-    margin: auto 5vw;
+.teal-strip {
+  background-color: var(--light-teal);
+  margin: auto 5vw;
 }
 
-.capsule-up{
-  width: 90%;
-  height: 63vw;
+/* dotted line */
+.dotted-line {
+  border-top: 2.5vw dotted var(--medium-teal);
+  width: 100%;
+}
+.dotted-line.horizontal-stripe {
+  padding: 0 50vw;
+}
+.dotted-line.dark-teal {
+  border-top: 1.8vw dotted var(--teal-text);
+  width: 60%;
+  /* temporary */
+}
+
+/* #endregion */
+
+
+h2 {
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+.sub-heading{
+    color: var(--cool-black)
+}
+
+/* #region introduction */
+
+.intro-box {
+  background-color: var(--medium-teal);
+  border: 3px solid var(--teal-text);
+  justify-content: space-between;
+}
+.intro-box div:nth-child(3) {
+  font-family: "Proza Libre", sans-serif;
+  font-weight: 500;
+  color: var(--dark-blue);
+}
+.intro-box p {
+  font-size: large;
+  margin-top: 10px;
+}
+.intro-pics {
+  margin: auto calc(50% - 45vw);
+  align-self: center;
+}
+
+.horizontal-stripe.light-teal {
+  position: relative;
+  z-index: 1;
+}
+.project-info {
+  justify-content: space-around;
+  margin-top: 3vh;
+  padding-top: 1vh;
+  z-index: 1;
+}
+.project-info div {
+  max-width: 90px;
+}
+.project-info p {
+  max-width: 50%;
+  margin-top: 0;
+  text-align: center;
+}
+.project-info div:nth-child(2) p {
+  max-width: 100%;
+}
+/* #endregion */
+
+/* #region overview */
+.capsule-up {
+  width: 96%;
+  height: 80vh;
   border-radius: 90% 90% 0 0;
   top: 13vh;
-  margin-left: 5vw;
+  margin-left: 2vw;
+  margin-bottom: 10vh;
 }
 .capsule-shape {
   position: absolute;
   background-color: var(--medium-teal);
 }
+.capsule-top{
+width: 96%;
+  height: 38vh;
+  border-radius: 60% 60% 0 0;
+  top: 13vh;
+  margin-left: 2vw;
+}
 .capsule-container {
   position: relative;
-  justify-content: space-between;
+}
+.capsule-container  p:first-of-type{
+width:80%;
 }
 
-.the-problem{
-    border-image:linear-gradient(
-    to right,
-    white 0%,
-    white 50%,
-    var(--teal-text) 50%,
-    var(--teal-text) 100%
-  ) 1;
+.the-problem {
+  border-image: linear-gradient(
+      to right,
+      white 0%,
+      white 50%,
+      var(--teal-text) 50%,
+      var(--teal-text) 100%
+    )
+    1;
   border-width: 3px;
   border-style: solid;
   align-items: center;
-  max-width:80%;
+  max-width: 90%;
+  width: 100%;
   margin: 30px auto;
+  margin-top: 0;
 }
 
+.the-problem picture {
+margin-top: 2vh;
+width: 370px;
+}
+.the-problem p:first-of-type{
+    margin-top: 0;
+    width:390px;
+    font-weight:500;
+}
+.the-problem p:last-child{
+    margin-top: 0;
+}
+
+#overview div:nth-child(4){
+    padding-top: 1vh;
+    padding-bottom: 2vh;
+}
+#overview div:nth-child(4) h2{
+    margin-top:0;
+}
+#overview div:nth-child(4) p{
+    margin:auto;
+}
+/* #endregion */
+
+#css-challenges h2{
+    margin:auto;
+    margin-top:5vh;
+    padding: 15px;
+    width:365px;
+}
+.background-split-colors p {
+  width: 70%;
+}
+
+
+    /* #region mini screen  */
+@media screen and (-webkit-min-device-pixel-ratio: 1) and (min-width: 320px) and (max-width: 450px) {
+
+.capsule-up{
+    height: 90vh;
+}
+.capsule-top{
+    height: 45vh;
+    border-radius: 50% 50% 0 0;
+}
+.capsule-container p{
+    width:85%;
+}
+.the-problem p{
+    width: 95%;
+    
+}
+.the-problem p:first-of-type{
+    width:265px;
+}
 .the-problem picture{
-    width: 60%;
-    /* temporary */
+    width: 270px;
+}
+}
+/* #endregion */
+/* || #region medium screen */
+@media screen and (-webkit-min-device-pixel-ratio: 1) and (min-width: 639px) and (max-width: 1023px) {
+    
+    /* #region overview */
+  #introduction .horizontal-stripe.light-teal {
+    max-width: 100%;
+    margin-left: calc(50% - 50vw);
+  }
+  .project-info{
+    align-items: initial;
+  }
+  .project-info div{
+    align-items: flex-start;
+    max-width: initial;
+  }
+  .project-info p {
+    max-width: initial;
+  }
+  /* #endregion */
+
+.capsule-up {
+  width: 90%;
+  border-radius: 60% 60% 0 0;
+  margin-left: 5vw;
+  margin-bottom: 8vh;
+}
+.capsule-top{
+width: 90%;
+  height: 65vh;
+  border-radius: 50% 50% 0 0;
+  margin-left: 5vw;
+}
+.capsule-container  p:first-of-type{
+    width: 450px;
 }
 
- .background-split-colors p  {
-    width:60%;
-} 
+.the-problem {
+  margin: 30px auto;
+  margin-top: 0;
+}
+.the-problem p:first-of-type{
+    width: 495px;
+}
+.the-problem picture{
+    margin-top: 3vh;
+    width: 440px;
+}
+}
+/* #endregion */
 
-.dotted-line{
-   border-top: 2.5vw dotted var(--medium-teal);
-   width:100%;
-}
-.dotted-line.horizontal-stripe{
-    padding: 0 50vw;
-}
-.dotted-line.dark-teal{
-     border-top: 1.8vw dotted var(--teal-text);
-     width: 60%; 
-     /* temporary */
+/* || large screen */
+@media screen and (-webkit-min-device-pixel-ratio: 1) and (min-width: 1024px) {
+
+    /* #region project-info */
+  #introduction .horizontal-stripe.light-teal {
+    max-width: 100%;
+    margin-left: calc(50% - 50vw);
+  }
+  .project-info{
+    align-items: initial;
+  }
+  .project-info div{
+    align-items: flex-start;
+    max-width: initial;
+  }
+  .project-info p {
+    max-width: initial;
+  }
+  /* #endregion */
+    
+  .capsule-up {
+    height: 63vh;
+    width: 72%;
+    margin-left: 14vw;
+    margin-top: 3vh;
+  }
+
+  .capsule-top{
+    display:none;
+  }
+
+  .capsule-container div:first-child h2 {
+    margin-top: 8vh;
+  }
 }

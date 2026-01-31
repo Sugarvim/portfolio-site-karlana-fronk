@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en" dir="ltr">
   <head>
@@ -105,81 +106,79 @@
               </p>
             </div>
           </div>
-          <div
-            class="project-info flex light-teal border-radius-sm horizontal-stripe-orient-left"
-          >
-            <div>
-              <p class="sub-heading">Tools:</p>
-              <p>Figma, VScode, Github</p>
-            </div>
-            <div>
-              <p class="sub-heading">Role:</p>
-              <p>Frontend Development</p>
-            </div>
-            <div>
-              <p class="sub-heading">Duration:</p>
-              <p>Three weeks</p>
+          <div class="horizontal-stripe light-teal border-radius-sm">
+            <div class="project-info flex border-radius-sm">
+              <div class="flex-column">
+                <h4 class="sub-heading">Tools:</h4>
+                <p>Figma, VScode, Github</p>
+              </div>
+              <div class="flex-column">
+                <h4 class="sub-heading">Role:</h4>
+                <p>Frontend Development</p>
+              </div>
+              <div class="flex-column">
+                <h4 class="sub-heading">Duration:</h4>
+                <p>Three weeks</p>
+              </div>
             </div>
           </div>
         </section>
 
         <!-- end of introduction -->
-
+        
         <div class="background-split-colors horizontal-stripe">
-          <section id="project-goals">
-            
-              <!-- i want the capsule shape to strech as the screen gets smaller
+          <section id="overview">
+            <!-- i want the capsule shape to strech as the screen gets smaller
              i think i need javascript for that -- screen width decreases by * and vh goes down by 1 -->
-              <div class="capsule-up capsule-shape"></div>
-              <div class="capsule-up capsule-container flex-column">
-                <div class="flex-column">
-                  <h2>Overview</h2>
-                  <p>
-                    This project is a web page designed using HTML and CSS. It
-                    is meant to give viewers a clear understanding of my
-                    previous case study by being responsive and accessible. As
-                    the initial case study was intended for desktop viewing, the
-                    web page is designed to be viewed at medium or large screen
-                    sizes.
-                  </p>
-                </div>
-                <div class="the-problem flex-column">
-                  <h2>The Problem</h2>
-                  <p>
-                    The case study I made was constructed from static images,
-                    making it unresponsive and inaccessible for screen readers.
-                  </p>
+            <div class="capsule-up capsule-shape"></div>
+            <div class="capsule-top capsule-shape"></div>
+            <div class="capsule-up capsule-container flex-column">
+              <div class="flex-column">
+                <h2>Overview</h2>
+                <p>
+                  This project is a web page designed using HTML and CSS. It is
+                  meant to give viewers a clear understanding of my previous
+                  case study by being responsive and accessible. As the initial
+                  case study was intended for desktop viewing, the web page is
+                  designed to be viewed at medium or large screen sizes.
+                </p>
+              </div>
+              <div class="the-problem flex-column">
+                <h2>The Problem</h2>
+                <p class="text-center">
+                  The case study I made was constructed from static images,
+                  making it unresponsive and inaccessible for screen readers.
+                </p>
 
-                  <picture>
-                    <source
-                      srcset="
-                        img/coding-vela-page/code-img-1x/behance-screen-reader-1x.png
-                      "
-                      media="(max-width:639px)"
-                    />
-                    <img
-                      src="img/coding-vela-page/code-img-2x/behance-screen-reader-2x.png"
-                      alt="small black box that reads: Untitled Modal, dialog, link, Project module 1203837753 permalink, Project Module 0, region"
-                    />
-                  </picture>
-                  <span>Voiceover for my case study</span>
-                </div>
+                <picture>
+                  <source
+                    srcset="
+                      img/coding-vela-page/code-img-1x/behance-screen-reader-1x.png
+                    "
+                    media="(max-width:639px)"
+                  />
+                  <img
+                    src="img/coding-vela-page/code-img-2x/behance-screen-reader-2x.png"
+                    alt="small black box that reads: Untitled Modal, dialog, link, Project module 1203837753 permalink, Project Module 0, region"
+                  />
+                </picture>
+                <p class="text-center">Voiceover for my case study</p>
               </div>
-              <div class="horizontal-stripe">
-                <div>
-                  <h2>Goals</h2>
-                  <p>
-                    A responsive web page that presents my case study HTML and
-                    CSS continued exploration
-                  </p>
-                </div>
+            </div>
+            <div class="horizontal-stripe light-teal text-center">
+              <div>
+                <h2>Goals</h2>
+                <p>
+                  A responsive web page that presents my case study HTML and CSS
+                  continued exploration
+                </p>
               </div>
-            
+            </div>
           </section>
 
           <!-- end of overview -->
-          <section id="challenges">
-            <h2>From Image to HTML</h2>
+          <section id="css-challenges">
+            <h2 class="border-radius-sm white-bg">From Image to HTML</h2>
             <p>
               To begin translating the static images of my case study to a web
               format, I had to recreate the elements in HTML code.

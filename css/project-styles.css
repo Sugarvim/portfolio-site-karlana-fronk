@@ -38,7 +38,6 @@ h3.semibold {
   font-family: Glory, sans-serif;
   font-weight: 500;
   font-size: 1.5em;
-  max-width: 60%;
   color: #5e6b81;
 }
 /* #endregion */
@@ -47,7 +46,6 @@ h3.semibold {
 main {
   background-color: #fff;
   color: var(--cool-black);
-  font-size: 14px;
 }
 
 /* || teal transition stripe */
@@ -515,7 +513,7 @@ div.persona-container > h4 {
 
 /* || medium width size */
 @media screen and (-webkit-min-device-pixel-ratio: 1) and (min-width: 639px) and (max-width: 1023px) {
-  main > * {
+  #introduction {
     margin: 5vh 4vw;
   }
   /* || introduction medium */
