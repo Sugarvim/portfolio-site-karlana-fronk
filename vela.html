@@ -71,7 +71,7 @@
     <main>
       <section id="introduction">
         <!-- Top section - project, role, tools and picture-->
-        <div class="margin-bottom-sm">
+        <div class="vela-intro-container margin-bottom-sm">
           <div class="row">
             <div class="col-7 col-8 intro-img">
               <picture>
@@ -110,66 +110,65 @@
           </div>
           <div class="col-8 software-icons">
             <h3 class="semibold">Tools:</h3>
-              <picture>
-                <source
-                  srcset="img/Vela/project-img-1x/tools-icons-1x.png"
-                  media="(max-width:639px)"
-                />
-                <img
-                  src="img/Vela/project-img-2x/tools-icons-2x.png"
-                  alt="A series of icons laid out horizontally - the icons from left to right are: Figma, Slack, Pages, Apple Numbers, Keynote, Lyssna, ScreenPal"
-                />
-              </picture>
-
+            <picture>
+              <source
+                srcset="img/Vela/project-img-1x/tools-icons-1x.png"
+                media="(max-width:639px)"
+              />
+              <img
+                src="img/Vela/project-img-2x/tools-icons-2x.png"
+                alt="A series of icons laid out horizontally - the icons from left to right are: Figma, Slack, Pages, Apple Numbers, Keynote, Lyssna, ScreenPal"
+              />
+            </picture>
           </div>
         </div>
 
         <!-- what is Vela -->
-        <div class="container">
-          <div class="margin-bottom">
-            <h2>
-              <b>What is</b><span class="dark-teal"><b> Vela?</b></span>
-            </h2>
+<div style="margin: 0 14vw">
+        <div class="margin-bottom">
+          <h2>
+            <b>What is</b><span class="dark-teal"><b> Vela?</b></span>
+          </h2>
+          <p>
+            Vela is a specialized weather app that supplies weather forecast
+            data with the intent of assisting wind and water sport participants
+            in making informed decisions.
+          </p>
+        </div>
+        <div class="row margin-bottom-sm">
+          <div class="col-6 col-4 light-teal box-shadow-dark border-radius">
+            <h2>The Problem</h2>
             <p>
-              Vela is a specialized weather app that supplies weather forecast
-              data with the intent of assisting wind and water sport
-              participants in making informed decisions.
+              <span class="medium"
+                >The difference between a good or a bad time often rides on the
+                weather.</span
+              >
+              <br /><br />
+              Being aware of meteorological factors, such as temperature and
+              wind, is essential for those who go out on the water. But many
+              sources do not provide the necessary weather information for wind
+              and water enthusiasts; while those that do, present it in a way
+              that is confusing for the casual person.
             </p>
           </div>
-          <div class="row margin-bottom-sm">
-            <div class="col-6 col-4 light-teal box-shadow-dark border-radius">
-              <h2>The Problem</h2>
+          <div class="grid col-6 col-8">
+            <div>
+              <h2>
+                Problem <span class="dark-teal"><b>Statement</b></span>
+              </h2>
               <p>
-                <span class="medium"
-                  >The difference between a good or a bad time often rides on
-                  the weather.</span>
-                <br /><br />
-                Being aware of meteorological factors, such as temperature and
-                wind, is essential for those who go out on the water. But many
-                sources do not provide the necessary weather information for
-                wind and water enthusiasts; while those that do, present it in a
-                way that is confusing for the casual person.
+                Casual water sport participants need a way to easily understand
+                weather conditions because water activities/safety are dependent
+                on shifting weather conditions.
               </p>
             </div>
-            <div class="grid col-6 col-8">
-              <div>
-                <h2>
-                  Problem <span class="dark-teal"><b>Statement</b></span>
-                </h2>
-                <p>
-                  Casual water sport participants need a way to easily
-                  understand weather conditions because water activities/safety
-                  are dependent on shifting weather conditions.
-                </p>
-              </div>
-              <div>
-                <h2>Hypothesis</h2>
-                <p>
-                  By offering specialized weather information in an accessible
-                  way, Vela can differentiate itself from other weather apps and
-                  target a wider audience.
-                </p>
-              </div>
+            <div>
+              <h2>Hypothesis</h2>
+              <p>
+                By offering specialized weather information in an accessible
+                way, Vela can differentiate itself from other weather apps and
+                target a wider audience.
+              </p>
             </div>
           </div>
         </div>
@@ -240,17 +239,19 @@
             </div>
           </a>
         </div>
+        </div>
       </section>
 
-      <section id="understand">
-        <div class="container">
-          
-            <h1 class="margin-bottom">
-              <span class="dark-teal">Understand</span> Phase
-            </h1>
-          
+
+
+      <div class="container">
+        <section id="understand">
+          <h1 class="margin-bottom">
+            <span class="dark-teal">Understand</span> Phase
+          </h1>
+
           <section id="competitive-research">
-              <div>
+            <div>
               <div class="margin-bottom">
                 <h3>Competitive Research</h3>
                 <p>
@@ -260,7 +261,9 @@
                 </p>
               </div>
               <div class="weather-container">
-                <div class="flex-column weather-flexbox box-shadow-light border-radius">
+                <div
+                  class="flex-column weather-flexbox box-shadow-light border-radius"
+                >
                   <h4>Windy.app</h4>
                   <img
                     src="img/Vela/icons/windy-app-icon.png"
@@ -304,7 +307,9 @@
                   </div>
                 </div>
 
-                <div class="flex-column weather-flexbox box-shadow-light  border-radius">
+                <div
+                  class="flex-column weather-flexbox box-shadow-light border-radius"
+                >
                   <h4>Accuweather</h4>
                   <img
                     src="img/Vela/icons/icons8-accuweather-icon.svg"
@@ -408,11 +413,9 @@
               </div>
             </div>
           </section>
-        </div>
-      </section>
+        </section>
 
-      <section id="define">
-        <div class="container">
+        <section id="define">
           <div>
             <h2>
               Define <span class="dark-teal"><b>Phase</b></span>
@@ -469,16 +472,18 @@
                             Kip is enjoying his retirement by the coast where he
                             enjoys the peace of the ocean and boating during the
                             summer. <br />
-                            He wants to spend more time with his
-                            grandkids and is thinking of taking them out on a
-                            boating trip. Kip is unsure, as he is worried about
-                            the unpredictable nature of weather and the danger
-                            that comes with it.
+                            He wants to spend more time with his grandkids and
+                            is thinking of taking them out on a boating trip.
+                            Kip is unsure, as he is worried about the
+                            unpredictable nature of weather and the danger that
+                            comes with it.
                           </p>
                         </div>
                       </div>
                       <div class="col-7 quote-grid">
-                        <div class="persona-textbox white-bg border-radius box-shadow-light">
+                        <div
+                          class="persona-textbox white-bg border-radius box-shadow-light"
+                        >
                           <h4 class="medium dark-teal">Quotes</h4>
                           <p class="medium">
                             “People die everyday out on the water due to
@@ -489,7 +494,9 @@
                             for going out or not.”
                           </p>
                         </div>
-                        <div class="persona-textbox light-teal border-radius box-shadow-light">
+                        <div
+                          class="persona-textbox light-teal border-radius box-shadow-light"
+                        >
                           <h4 class="medium dark-teal">Goals/Needs</h4>
                           <ul>
                             <li>A way to know about safety on the water</li>
@@ -498,7 +505,9 @@
                             <li>Feel confident going out onto the water</li>
                           </ul>
                         </div>
-                        <div class="persona-textbox light-teal border-radius box-shadow-light">
+                        <div
+                          class="persona-textbox light-teal border-radius box-shadow-light"
+                        >
                           <h4 class="medium dark-teal">Frustrations</h4>
                           <ul>
                             <li>Not technologically proficient</li>
@@ -510,7 +519,9 @@
                             </li>
                           </ul>
                         </div>
-                        <div class="persona-textbox light-teal border-radius box-shadow-light">
+                        <div
+                          class="persona-textbox light-teal border-radius box-shadow-light"
+                        >
                           <h4 class="medium dark-teal">Motivations</h4>
                           <ul>
                             <li>Spend more time with grandkids</li>
@@ -558,17 +569,20 @@
                           <h4 class="medium dark-teal text-center">About</h4>
                           <p>
                             Lock has enjoyed fishing since he was a child after
-                            being introduced to it by his father.<br /> As an
-                            electrical engineer, Lock's job takes up most of his
-                            week, however he makes sure to spend a day on the
-                            weekend fishing alone or with friends.<br /> He enjoys the
-                            peace and challenge of fishing and seeks out
-                            knowledge to improve his fishing techniques.
+                            being introduced to it by his father.<br />
+                            As an electrical engineer, Lock's job takes up most
+                            of his week, however he makes sure to spend a day on
+                            the weekend fishing alone or with friends.<br />
+                            He enjoys the peace and challenge of fishing and
+                            seeks out knowledge to improve his fishing
+                            techniques.
                           </p>
                         </div>
                       </div>
                       <div class="col-7 quote-grid">
-                        <div class="persona-textbox white-bg border-radius box-shadow-light">
+                        <div
+                          class="persona-textbox white-bg border-radius box-shadow-light"
+                        >
                           <h4 class="medium dark-teal">Quotes</h4>
                           <p class="medium">
                             “I do a thorough analysis of all the weather apps I
@@ -579,7 +593,9 @@
                             forecast.”
                           </p>
                         </div>
-                        <div class="persona-textbox light-teal border-radius box-shadow-light">
+                        <div
+                          class="persona-textbox light-teal border-radius box-shadow-light"
+                        >
                           <h4 class="medium dark-teal">Goals/Needs</h4>
                           <ul>
                             <li>
@@ -595,7 +611,9 @@
                             </li>
                           </ul>
                         </div>
-                        <div class="persona-textbox border-radius light-teal box-shadow-light">
+                        <div
+                          class="persona-textbox border-radius light-teal box-shadow-light"
+                        >
                           <h4 class="medium dark-teal">Frustrations</h4>
                           <ul>
                             <li>
@@ -604,7 +622,9 @@
                             <li>Paywalls that restrict information</li>
                           </ul>
                         </div>
-                        <div class="persona-textbox light-teal border-radius box-shadow-light">
+                        <div
+                          class="persona-textbox light-teal border-radius box-shadow-light"
+                        >
                           <h4 class="medium dark-teal">Motivations</h4>
                           <ul>
                             <li>
@@ -624,11 +644,9 @@
               </div>
             </div>
           </section>
-        </div>
-      </section>
+        </section>
 
-      <section id="ideate">
-        <div class="container">
+        <section id="ideate">
           <h2>Ideate<span class="dark-teal"> Phase</span></h2>
           <section id="information-architecture">
             <div>
@@ -650,11 +668,9 @@
               </picture>
             </div>
           </section>
-        </div>
-      </section>
+        </section>
 
-      <section id="design">
-        <div class="container">
+        <section id="design">
           <h2>Design<span class="dark-teal"> Phase</span></h2>
           <section id="wireframes" class="margin-bottom">
             <div>
@@ -670,50 +686,49 @@
               </div>
               <!--do image alts later-->
 
-                <div class="wireframe-img-block">
-                  <h4 class="move-left move-low">Low-Fidelity</h4>
-                  <div class="light-stripe horizontal-stripe"></div>
-                  <picture class="low-fidelity">
-                    <source
-                      srcset="img/Vela/project-img-1x/low-fidelity-1x.png"
-                      media="(max-width:639px)"
-                    />
-                    <img
-                      class="in-front"
-                      src="img/Vela/project-img-2x/low-fidelity-2x.png"
-                      alt="#"
-                    />
-                  </picture>
+              <div class="wireframe-img-block">
+                <h4 class="move-left move-low">Low-Fidelity</h4>
+                <div class="light-stripe horizontal-stripe"></div>
+                <picture class="low-fidelity">
+                  <source
+                    srcset="img/Vela/project-img-1x/low-fidelity-1x.png"
+                    media="(max-width:639px)"
+                  />
+                  <img
+                    class="in-front"
+                    src="img/Vela/project-img-2x/low-fidelity-2x.png"
+                    alt="#"
+                  />
+                </picture>
 
-                  <h4 class="move-left mid-down">Mid-Fidelity</h4>
-                  <div class="med-stripe horizontal-stripe"></div>
-                  <picture class="med-fidelity">
-                    <source
-                      srcset="img/Vela/project-img-1x/mid-fidelity-1x.png"
-                      media="(max-width:639px)"
-                    />
-                    <img
-                      class="in-front"
-                      src="img/Vela/project-img-2x/mid-fidelity-2x.png"
-                      alt="#"
-                    />
-                  </picture>
+                <h4 class="move-left mid-down">Mid-Fidelity</h4>
+                <div class="med-stripe horizontal-stripe"></div>
+                <picture class="med-fidelity">
+                  <source
+                    srcset="img/Vela/project-img-1x/mid-fidelity-1x.png"
+                    media="(max-width:639px)"
+                  />
+                  <img
+                    class="in-front"
+                    src="img/Vela/project-img-2x/mid-fidelity-2x.png"
+                    alt="#"
+                  />
+                </picture>
 
-                  <h4 class="move-left high-down">High-Fidelity</h4>
-                  <div class="dark-stripe horizontal-stripe"></div>
-                  <picture class="high-fidelity">
-                    <source
-                      srcset="img/Vela/project-img-1x/high-fidelity-1x.png"
-                      media="(max-width:639px)"
-                    />
-                    <img
-                      class="in-front"
-                      src="img/Vela/project-img-2x/high-fidelity-2x.png"
-                      alt="#"
-                    />
-                  </picture>
-                </div>
-
+                <h4 class="move-left high-down">High-Fidelity</h4>
+                <div class="dark-stripe horizontal-stripe"></div>
+                <picture class="high-fidelity">
+                  <source
+                    srcset="img/Vela/project-img-1x/high-fidelity-1x.png"
+                    media="(max-width:639px)"
+                  />
+                  <img
+                    class="in-front"
+                    src="img/Vela/project-img-2x/high-fidelity-2x.png"
+                    alt="#"
+                  />
+                </picture>
+              </div>
             </div>
           </section>
           <section
@@ -764,7 +779,9 @@
                     <h4>P6</h4>
                   </div>
                 </div>
-                <div class="flex-sm flex-med flex-lg usability-quotes margin-bottom-sm">
+                <div
+                  class="flex-sm flex-med flex-lg usability-quotes margin-bottom-sm"
+                >
                   <div class="box-shadow-light border-radius usability-task">
                     <h4 class="text-center">Task: Create a New Account</h4>
                     <div class="p1 box-shadow-light border-radius">
@@ -895,7 +912,9 @@
                   </div>
                 </div>
               </div>
-              <div class="horizontal-stripe white-bg box-shadow-light error-box">
+              <div
+                class="horizontal-stripe white-bg box-shadow-light error-box"
+              >
                 <div class="center-inside-container">
                   <h3>Notable Feedback</h3>
                   <ul>
@@ -943,9 +962,11 @@
                 </p>
               </div>
               <div class="horizontal-stripe row">
-                <div class="center-inside-container flex-sm flex-med flex-lg iterate">
+                <div
+                  class="center-inside-container flex-sm flex-med flex-lg iterate"
+                >
                   <div class="frame-iterate">
-                    <div class="flex-sm flex-med flex-lg  wireframe-box">
+                    <div class="flex-sm flex-med flex-lg wireframe-box">
                       <h3 class="version-num">V1</h3>
                       <picture class="final-wireframes">
                         <source
@@ -966,7 +987,7 @@
                     </p>
                   </div>
                   <div class="frame-iterate">
-                    <div class="flex-sm flex-med flex-lg  wireframe-box">
+                    <div class="flex-sm flex-med flex-lg wireframe-box">
                       <h3 class="version-num">V2</h3>
                       <picture class="final-wireframes">
                         <source
@@ -987,7 +1008,7 @@
                     </p>
                   </div>
                   <div class="frame-iterate">
-                    <div class="flex-sm flex-med flex-lg  wireframe-box">
+                    <div class="flex-sm flex-med flex-lg wireframe-box">
                       <h3 class="version-num">V3</h3>
                       <picture class="final-wireframes">
                         <source
@@ -1013,13 +1034,11 @@
               </div>
             </div>
           </section>
-        </div>
-      </section>
+        </section>
 
-      <!--add promo video here somehow-->
+        <!--add promo video here somehow-->
 
-      <section id="wrap-up">
-        <div class="container">
+        <section id="wrap-up">
           <h2>Next<span class="dark-teal"> Steps</span></h2>
           <div>
             <p>
@@ -1046,7 +1065,9 @@
             <h3 class="text-center">New Hypothesis</h3>
             <p>I plan on implementing changes based on the new hypothesis:</p>
           </div>
-          <div class="persona-textbox light-teal border-radius box-shadow-light">
+          <div
+            class="persona-textbox light-teal border-radius box-shadow-light"
+          >
             By providing alternative displays options for weather data, users
             who have difficulty understanding weather data through numbers will
             gain a better understanding of weather data.
@@ -1073,16 +1094,18 @@
             will also be able to change the units of measurement to ones they
             are more familiar with.
           </p>
-        </div>
-      </section>
+        </section>
+      </div>
     </main>
 
     <footer id="contact-me">
       <div class="container">
         <div>
           <h2>Get in Touch</h2>
-          <a class= "contact-btn" href="mailto:karafronk at gmail dot com">Email me</a>
-      </div>
+          <a class="contact-btn" href="mailto:karafronk at gmail dot com"
+            >Email me</a
+          >
+        </div>
         <div>
           <a href="https://www.linkedin.com/in/karlana-fronk" target="_blank">
             <img

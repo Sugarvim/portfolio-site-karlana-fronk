@@ -17,7 +17,7 @@
 
 /* || General Rules */
 
-/* || sizing & spacing */
+/* #region || sizing & spacing  */
 * {
   box-sizing: border-box;
 }
@@ -34,15 +34,9 @@
   margin-bottom: 6vw;
 }
 
-.container {
-  /* (defunct 80% + 6w)i stg 1vw is 1% of the screen so 80% + 6vw is 86% 
-  which means there is 14% left, 
-  so 7vw (% works inside the container, so if the container is smaller it won't work right) on each side... */
-  margin: 0 7vw;
-  position: relative;
-}
+
 .center-inside-container {
-  max-width: calc(100% - 24vw );
+  max-width: calc(100% - 24vw);
   margin: 0 auto;
 }
 
@@ -50,11 +44,12 @@ img {
   width: 100%;
 }
 
-/* || text rules */
+/* #endregion */
+
+/* #region || text rules */
 h1 {
   font-family: "Marmelad", serif;
 }
-
 h4 {
   margin: 2% 0 1%;
   font-size: 1.17em;
@@ -78,14 +73,19 @@ h4 {
   font-weight: 600;
 }
 
+.white-txt{
+color: white;
+}
+
 h1 + span {
   font-size: large;
   font-weight: 500;
   display: inline-block;
   margin-bottom: 2vh;
 }
+/* #endregion */
 
-/* || display rules */
+/* #region || display rules */
 .inline-block {
   display: inline-block;
 }
@@ -100,7 +100,7 @@ h1 + span {
   display: flex;
   flex-direction: column;
   position: relative;
-  align-items:center
+  align-items: center;
 }
 .grid {
   display: grid;
@@ -142,8 +142,9 @@ h1 + span {
 .col-12 {
   width: 100%;
 }
+/* #endregion */
 
-/* || decorative elements */
+/* #region || decorative elements */
 
 .border-radius {
   border-radius: 25px;
@@ -167,8 +168,9 @@ h1 + span {
   border: 2px solid var(--pink);
   border-radius: 10px;
 }
+/* #endregion */
 
-/* || Main elements */
+/* #region|| Main elements */
 header {
   background-color: var(--off-white);
   padding: 0 4% 0 7%;
@@ -197,6 +199,12 @@ body {
   overflow-x: hidden;
 }
 
+.container {
+  margin: 3vh 3vw 3%;
+  padding: 0 0 5vh;
+}
+
+/* #endregion */
 /* || icons */
 img[src*="icon.svg"],
 #contact-me .icon {
@@ -210,7 +218,7 @@ header svg {
   margin-top: 1vh;
 }
 
-/* || Navbar */
+/* #region || Navbar */
 nav {
   position: absolute;
   right: 5vw;
@@ -226,6 +234,8 @@ nav ul {
 .navtoggle.responsive {
   position: relative;
 }
+/* #endregion */
+
 /* decorative borders for intro */
 .border-pink {
   border: 3px solid var(--pink);
@@ -240,7 +250,7 @@ nav ul {
   padding: 3px;
 }
 
-/* || index css */
+/* #region || index css */
 
 #hero-section {
   padding: 5% 0;
@@ -258,7 +268,9 @@ nav ul {
 #contact-me h2 {
   margin-bottom: 0.5rem;
 }
-/* || about css */
+/* #endregion */
+
+/* #region || about css */
 .my-story {
   background-color: var(--off-white);
   padding: 3vh 3vw;
@@ -291,8 +303,9 @@ nav ul {
   align-items: center;
   margin-top: 8vh;
 }
+/* #endregion */
 
-/* links / || interactive */
+/* #region links / || interactive */
 @keyframes color-change {
   0% {
     fill: var(--pink);
@@ -340,8 +353,9 @@ a.logo svg g {
 a.logo:hover {
   transform: scale(1.25);
 }
+/* #endregion */
 
-/* || buttons */
+/* #region || buttons */
 .btn {
   background-color: white;
   color: var(--warm-black);
@@ -372,12 +386,15 @@ a.logo:hover {
 a.contact-btn:hover {
   color: white;
 }
+/* #endregion */
 
-/* small screen size */
+/* #region small screen size */
 @media screen and (max-width: 639px) {
   main {
     padding-top: 80px;
   }
+
+  /* #region || Navbar */
   .navtoggle li {
     padding: 10px 10px;
   }
@@ -419,6 +436,7 @@ a.contact-btn:hover {
   .navtoggle li a.icon {
     font-size: 1.8rem;
   }
+  /* #endregion */
 
   nav li a.icon {
     padding: 10px 20px;
@@ -457,14 +475,14 @@ a.contact-btn:hover {
     float: left;
   }
 }
+/* #endregion */
 
-/* medium device size */
+/* #region medium device size */
 @media screen and (min-width: 640px) and (max-width: 1023px) {
-  main {
-    margin: 0 3vw 3%;
-    padding: 0 0 5vh;
+  .container {
+    margin: 0 5vw;
   }
-
+  
   header.box-shadow-dark {
     position: static;
     box-shadow: none;
@@ -525,14 +543,15 @@ a.contact-btn:hover {
     display: table;
   }
 }
+/* #endregion */
 
-/* large screen size */
+/* #region large screen size */
 @media screen and (min-width: 1024px) {
   .border-yellow {
     margin: 0;
   }
-  main {
-    margin: 0 7vw 3%;
+ .container  {
+    margin: 0 14vw 3%;
     padding: 0 0 5vh;
   }
 
@@ -598,3 +617,4 @@ a.contact-btn:hover {
     width: 50%;
   }
 }
+/* #endregion */

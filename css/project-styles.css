@@ -1,6 +1,6 @@
 /* || general css */
 :root {
-  --light-teal: #eefeff;
+  --light-teal: #E8FAFC;
   --medium-teal: #9bc3da;
   --grey: #5e6b81;
   --cool-black: #1e1e1e;
@@ -47,7 +47,9 @@ main {
   background-color: #fff;
   color: var(--cool-black);
 }
-
+.vela-intro-container{
+  margin: 0 7vw;
+}
 /* || teal transition stripe */
 .light-teal-stripe {
   background-color: var(--light-teal);
@@ -425,7 +427,7 @@ div.persona-container > h4 {
 /* #endregion */
 
 
-/* || small screen size */
+/* #region || small screen size */
 @media screen and (-webkit-min-device-pixel-ratio: 1) and (max-width: 639px) {
   /* || design thinking small */
   .ellipse {
@@ -510,8 +512,9 @@ div.persona-container > h4 {
     padding: 3vh 3vw 3vw;
   }
 }
+/* #endregion */
 
-/* || medium width size */
+/* #region || medium width size */
 @media screen and (-webkit-min-device-pixel-ratio: 1) and (min-width: 639px) and (max-width: 1023px) {
   #introduction {
     margin: 5vh 4vw;
@@ -622,6 +625,7 @@ div.persona-container > h4 {
   align-items: normal;
   align-content: space-evenly;
 }
+/* #endregion */
 
 /* || large screen size */
 @media screen and (-webkit-min-device-pixel-ratio: 1) and (min-width: 1024px) {
@@ -629,9 +633,6 @@ div.persona-container > h4 {
     max-width: 80%;
   }
 
-  main > * {
-    margin: 10vh 5vw;
-  }
   #introduction {
     margin-top: 8vh;
   }
