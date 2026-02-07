@@ -368,7 +368,8 @@ dd {
     border-radius: 50% 50% 0 0;
   }
   .capsule-container p {
-    width: 452px;
+    width: auto;
+    padding: 0 90px;
   }
 
   .the-problem {
@@ -377,10 +378,14 @@ dd {
   }
   .the-problem p:first-of-type {
     width: 495px;
+    padding:0;
   }
   .the-problem picture {
     margin-top: 2vh;
     width: 60%;
+  }
+  .the-problem p:last-child{
+    padding:0;
   }
   .goal-line {
     margin-top: 5vh;
@@ -388,12 +393,15 @@ dd {
   /* #endregion */
 
   /* #region .css-challenges */
-  p.img-to-html {
-    width: 480px;
-    padding: 10px;
-  }
+
   .css-challenges p {
-    width: 500px;
+    width: auto;
+    max-height: 8rem;
+    padding: 0 70px;
+  }
+    p.img-to-html {
+    width: auto;
+    padding: 10px;
   }
   .compare-imgs div:first-of-type {
     margin-right: 10vw;
