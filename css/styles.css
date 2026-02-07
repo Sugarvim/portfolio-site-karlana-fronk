@@ -34,7 +34,6 @@
   margin-bottom: 6vw;
 }
 
-
 .center-inside-container {
   max-width: calc(100% - 24vw);
   margin: 0 auto;
@@ -73,8 +72,8 @@ h4 {
   font-weight: 600;
 }
 
-.white-txt{
-color: white;
+.white {
+  color: white;
 }
 
 h1 + span {
@@ -162,11 +161,12 @@ h1 + span {
 
 .btn-border-yellow {
   border: 2px solid var(--yellow);
-  border-radius: 10px;
 }
 .btn-border-pink {
   border: 2px solid var(--pink);
-  border-radius: 10px;
+}
+.btn-border-teal {
+  border: 2px solid var(--teal);
 }
 /* #endregion */
 
@@ -217,7 +217,6 @@ header svg {
   width: 60px;
   margin-top: 1vh;
 }
-
 /* #region || Navbar */
 nav {
   position: absolute;
@@ -258,13 +257,34 @@ nav ul {
   width: 100%;
   text-align: center;
 }
-
-.project-box {
+.project-section {
+  flex-direction: row;
+  justify-content: flex-start;
+  column-gap: 3vw;
+}
+.project-section p {
+  width: 360px;
+}
+.project-box1,
+.project-box2 {
+  display: flex;
+  align-items: center;
+}
+.project-box1 {
   border: 10px solid var(--off-white);
-  border-radius: 25px;
   outline: 2px solid var(--pink);
   padding: 3vw;
 }
+.project-box2 {
+  border: 10px solid var(--off-white);
+  outline: 2px solid var(--teal);
+  padding: 3vw;
+}
+
+h2 + div {
+  row-gap: 5vh;
+}
+
 #contact-me h2 {
   margin-bottom: 0.5rem;
 }
@@ -276,10 +296,14 @@ nav ul {
   padding: 3vh 3vw;
   margin-bottom: 3vh;
 }
+.skills {
+  flex-flow: wrap;
+  justify-content: space-around;
+}
 
-.skills ul {
-  padding-left: 2vw;
-  margin-top: 0;
+.skills h2 {
+  width: 100%;
+  margin-bottom: 0;
 }
 
 .col-6 {
@@ -290,19 +314,12 @@ nav ul {
   margin-bottom: 0.5rem;
 }
 
-.me-picture {
+#about-me picture {
   position: relative;
   width: 80%;
   margin-bottom: 2vh;
 }
 
-.about-flex {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 8vh;
-}
 /* #endregion */
 
 /* #region links / || interactive */
@@ -388,6 +405,11 @@ a.contact-btn:hover {
 }
 /* #endregion */
 
+@media screen and (-webkit-min-device-pixel-ratio: 1) and (min-width: 320px) and (max-width: 450px) {
+  .skills {
+    flex-flow: column;
+  }
+}
 /* #region small screen size */
 @media screen and (max-width: 639px) {
   main {
@@ -463,9 +485,6 @@ a.contact-btn:hover {
   [class*="col-"] {
     width: auto;
   }
-  .skills h2 {
-    text-align: center;
-  }
   #project-section .col-6,
   #vela-project .col-6 {
     width: auto;
@@ -482,7 +501,7 @@ a.contact-btn:hover {
   .container {
     margin: 0 5vw;
   }
-  
+
   header.box-shadow-dark {
     position: static;
     box-shadow: none;
@@ -504,13 +523,19 @@ a.contact-btn:hover {
     display: inline-block;
   }
 
+  .about {
+    align-items: center;
+  }
+  .skills {
+    flex-flow: wrap;
+    justify-content: space-around;
+  }
   .skills h2 {
-    text-align: center;
     margin-bottom: 1vh;
     margin-top: 0;
   }
 
-  .me-picture {
+  #about-me picture {
     width: 60%;
   }
 
@@ -522,7 +547,8 @@ a.contact-btn:hover {
   .col-5 {
     width: auto;
   }
-  .project-box {
+  .project-box1,
+  .project-box2 {
     margin-top: 3vh;
   }
 
@@ -550,7 +576,7 @@ a.contact-btn:hover {
   .border-yellow {
     margin: 0;
   }
- .container  {
+  .container {
     margin: 0 14vw 3%;
     padding: 0 0 5vh;
   }
@@ -581,11 +607,11 @@ a.contact-btn:hover {
     display: none;
   }
 
-  .me-picture {
+  #about-me picture {
     width: 40%;
   }
 
-  [class*="col-"] {
+  /* [class*="col-"] {
     float: left;
     padding: 2vh 2vw;
     position: relative;
@@ -598,11 +624,24 @@ a.contact-btn:hover {
   .col-5 {
     width: 41.66%;
     padding: 2vh 2vw;
-  }
+  } */
   .skills h2 {
     margin: 0;
+    text-align: initial;
   }
-
+  .skills {
+    flex-flow: nowrap column;
+    margin-top: 3vh;
+    margin-left: 3vw;
+  }
+  .skills div {
+    width: 250px;
+  }
+  .about {
+    flex-direction: row;
+    align-items: baseline;
+    margin-top: 2vh;
+  }
   .skills .col-6:last-child h3 {
     margin-top: 0;
   }
