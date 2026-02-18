@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en" dir="ltr">
   <head>
-      <title>Documentation of Coding: Vela Project Page</title>
+    <title>Documentation of Coding: Vela Project Page</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Karlana Fronk" />
@@ -107,16 +107,30 @@
             </div>
           </div>
           <div class="horizontal-stripe light-teal border-radius-sm">
-            <dl>
-              <dt>Tools:</dt>
-              <dd>Figma, VScode, Github</dd>
+            <ul>
+              
+              <li>
+                <hgroup>
+                <h3>Tools:</h3>
+                <p>Figma, VScode, Github</p>
+                </hgroup>
+              </li>
+              
+              <li>
+                <hgroup>
+                <h3>Role:</h3>
+                <p>Frontend Development</p>
+                </hgroup>
+              </li>
+              
+              <li>
+                <hgroup>
+                <h3>Duration:</h3>
+                <p>Three weeks</p>
+                </hgroup>
+              </li>
 
-              <dt>Role:</dt>
-              <dd>Frontend Development</dd>
-
-              <dt>Duration:</dt>
-              <dd>Three weeks</dd>
-            </dl>
+            </ul>
           </div>
         </section>
 
@@ -224,7 +238,9 @@
                       container break out of its boundaries and reach the edge
                       of the page.
                     </p>
-                    <p class="medium dark-blue text-center">The answer lay in negative margins.</p>
+                    <p class="medium dark-blue text-center">
+                      The answer lay in negative margins.
+                    </p>
                     <picture>
                       <source
                         srcset="
@@ -260,49 +276,49 @@
                       caused an issue where the bottom description would move
                       when the screen size changed.
                     </p>
-                    
-                      <picture>
-                        <source
-                          srcset="
-                            img/coding-vela-page/code-img-1x/misaligned-elements-1x.png
-                          "
-                          media="(max-width:639px)"
-                        />
-                        <img
-                          src="img/coding-vela-page/code-img-2x/misaligned-elements-2x.png"
-                          alt="two screenshots side by side with a transparent rectangle overlapping both images, showing that the images are misaligned"
-                        />
-                      </picture>
 
-                      <p>
-                        I resolved this by using
-                        <span class="dark-blue medium">absolute positioning</span> to move the
-                        description outside the group, making it unable to be
-                        affected by the other elements
-                      </p>
-                    
+                    <picture>
+                      <source
+                        srcset="
+                          img/coding-vela-page/code-img-1x/misaligned-elements-1x.png
+                        "
+                        media="(max-width:639px)"
+                      />
+                      <img
+                        src="img/coding-vela-page/code-img-2x/misaligned-elements-2x.png"
+                        alt="two screenshots side by side with a transparent rectangle overlapping both images, showing that the images are misaligned"
+                      />
+                    </picture>
+
+                    <p>
+                      I resolved this by using
+                      <span class="dark-blue medium">absolute positioning</span>
+                      to move the description outside the group, making it
+                      unable to be affected by the other elements
+                    </p>
 
                     <h3>Absolutely <span>not</span> centered</h3>
                     <p>
-                      To make images overlap, I often relied on <span class="medium">position:
-                      absolute </span>to move the element outside of the group,
-                      allowing it to be positioned independently. This method
-                      did not work when I needed an element centered vertically.
+                      To make images overlap, I often relied on
+                      <span class="medium">position: absolute </span>to move the
+                      element outside of the group, allowing it to be positioned
+                      independently. This method did not work when I needed an
+                      element centered vertically.
                     </p>
-                    
-                      <picture class="center-wireframes">
-                        <source
-                          srcset="
-                            img/coding-vela-page/code-img-1x/elements-not-aligned-1x.png
-                          "
-                          media="(max-width:639px)"
-                        />
-                        <img
-                          src="img/coding-vela-page/code-img-2x/elements-not-centered-2x.png"
-                          alt="two lines of phone screens with a colored stripe behind each line. The phone screens are not centered with the colored stripes"
-                        />
-                      </picture>
-                    
+
+                    <picture class="center-wireframes">
+                      <source
+                        srcset="
+                          img/coding-vela-page/code-img-1x/elements-not-aligned-1x.png
+                        "
+                        media="(max-width:639px)"
+                      />
+                      <img
+                        src="img/coding-vela-page/code-img-2x/elements-not-centered-2x.png"
+                        alt="two lines of phone screens with a colored stripe behind each line. The phone screens are not centered with the colored stripes"
+                      />
+                    </picture>
+
                     <p>
                       To maintain consistency with varied screen sizes, I used
                       relative units of measurement to position the absolute
@@ -310,21 +326,23 @@
                       the screen size the shape of the page changed, resulting
                       in the elements not being centered.
                     </p>
-                    <p class="text-center medium dark-blue">A grid gives good results.</p>
-                    
-                      <picture class="center-wireframes">
-                        <source
-                          srcset="
-                            img/coding-vela-page/code-img-1x/elements-with-grid-1x.png
-                          "
-                          media="(max-width:639px)"
-                        />
-                        <img
-                          src="img/coding-vela-page/code-img-2x/elements-with-grid-2x.png"
-                          alt="same as the previous image but the line of phones screens is centered over the colored stripe."
-                        />
-                      </picture>
-                    
+                    <p class="text-center medium dark-blue">
+                      A grid gives good results.
+                    </p>
+
+                    <picture class="center-wireframes">
+                      <source
+                        srcset="
+                          img/coding-vela-page/code-img-1x/elements-with-grid-1x.png
+                        "
+                        media="(max-width:639px)"
+                      />
+                      <img
+                        src="img/coding-vela-page/code-img-2x/elements-with-grid-2x.png"
+                        alt="same as the previous image but the line of phones screens is centered over the colored stripe."
+                      />
+                    </picture>
+
                     <p>
                       A grid display allowed elements to overlap within the same
                       row eliminating the need for absolute positioning and
@@ -338,7 +356,6 @@
         </div>
 
         <section id="closing-thoughts">
-          
           <div class="capsule-down capsule-shape"></div>
           <div class="capsule-down capsule-container">
             <div class="flex-column">
@@ -371,7 +388,7 @@
                 I can face the challenges and achieve success.
               </p>
             </div>
-                      <div class="capsule-shape capsule-bottom"></div>
+            <div class="capsule-shape capsule-bottom"></div>
           </div>
         </section>
       </div>
