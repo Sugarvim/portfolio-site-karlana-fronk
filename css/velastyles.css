@@ -2,9 +2,10 @@
 :root {
   --off-white: #fffaf1;
   --black: #351b00;
-  --light-teal: #f5ffff;
   --teal: #7feae9;
-  --teal-text: #00507d;
+  --light-teal: #E1FAFB;
+  --medium-teal: #9BC3DA;
+  --teal-text: #00507d; /*dark blue/teal*/
   --pink: #fd7a8e;
   --pink-text: #781313;
   --yellow: #ffc81a;
@@ -15,6 +16,38 @@
 }
 .white{
   background-color: white;
+}
+.background-decor{
+  background-image: linear-gradient(to right,
+  white 0%,
+  white 50%,
+  var(--teal-text) 50%,
+var(--teal-text)100%
+  );
+}
+.decor-ellipse{
+  position: absolute;
+  background-color: var(--medium-teal);
+  width: 100%;
+  height: 60vw;
+  border-radius: 50%;
+
+}
+.on-top{
+  position: relative;
+
+}
+.fit-ellipse{
+  height: 30vw;
+  margin-top: 5vw;
+  position: relative;
+  display: inline-block;
+}
+.white-bg{
+  background-color: white;
+}
+.light-blue-bg{
+  background-color: var(--light-teal);
 }
 h1,
 h2 {
@@ -49,9 +82,11 @@ main {
 
 .bust-out {
   margin: auto calc(50% - 50vw);
-  transform: translateX(calc(50vw - 50%));
+  /* transform: translateX(calc(50vw - 50%)); */
 }
-
+.bust-out-left{
+  margin-left:calc(50% - 50vw);
+}
 .bust-out .inside-bust-out {
   padding: 0 1em;
   max-width: calc(0.8 * (100% - 6vw));
@@ -264,13 +299,7 @@ img[src*="accuweather-icon"] {
 .goal-four {
   background: rgb(0 80 125 / 46%);
 }
-.goal-box {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  margin-bottom: 2vh;
-}
+
 #user-interviews img[src*="icon.svg"] {
   max-width: 3vw;
   height: auto;
@@ -282,32 +311,6 @@ img[src*="accuweather-icon"] {
 }
 .icon-location-b {
   width: 10%;
-}
-.ellipse-user-left,
-.ellipse-user-right {
-  border-radius: 9999px;
-  display: inline-block;
-  position: absolute;
-}
-.ellipse-user-left {
-  width: 22.575%;
-  padding-top: 22.575%;
-}
-.ellipse-user-right {
-  width: 33%;
-  padding-top: 33%;
-}
-.ellipse-jim {
-  background-color: #ade4bc;
-}
-.ellipse-steve {
-  background-color: #97cbd2;
-}
-.ellipse-skip {
-  background-color: #e6e7ae;
-}
-.ellipse-jeff {
-  background-color: #efbe74;
 }
 
 .text-user,
@@ -420,7 +423,7 @@ div.persona-container h4 {
 
 .med-stripe {
   position: relative;
-  background-color: #78a2ba;
+  background-color: var(--medium-teal);
   padding-top: 16vh;
   grid-area: 2/-1;
 }
@@ -712,10 +715,7 @@ align-items: normal;
     width: 4vw;
     padding-top: 4vw;
   }
-  .goal-box {
-    height: 35vh;
-    justify-content: flex-end;
-  }
+
 
   .col-7 {
     width: 58.33%;

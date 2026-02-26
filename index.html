@@ -55,9 +55,9 @@
     <main>
         <section id="hero-section">
             <div class="container">
-                <div class="border-pink">
-                    <div class="border-yellow">
-                        <div class="border-teal">
+                <div class="border-pink border-radius">
+                    <div class="border-yellow border-radius">
+                        <div class="border-teal border-radius">
                             <h1>Hi, my name is Karlana</h1>
                             <span>I'm a UX designer - weaving beautiful designs and effective solutions together</span>
                         </div>
@@ -68,8 +68,9 @@
         <section id="project-section">
             <div class="container">
                 <h2>My Project(s)</h2>
-                <div class="row">
-                    <div class="project-box col-6 col-7">
+                <div class="flex-column">
+                <div class="flex-column project-section">
+                    <div class="project-box1 border-radius">
                         <picture>
                             <source srcset="img/Vela/project-img-1x/vela-project-image-1x.jpg"
                                 media="(max-width:767px)">
@@ -77,13 +78,31 @@
                                 alt="Two screens of Vela app displayed on phones">
                         </picture>
                     </div>
-                    <div class="col-6 col-5">
+                    <div>
                         <h3>Vela</h3>
                         <p>Vela is a specialized weather app that supplies weather forecast data with the intent of
                             assisting wind and water sport participants in making informed decisions.
                         </p>
-                        <a href="vela.html" class="button">View Project</a>
+                        <a href="vela.html" class="btn btn-border-pink border-radius-sm">View Project</a>
                     </div>
+                </div>
+                <div class="flex-column project-section">
+                    <div class="project-box2 border-radius">
+                        <picture>
+                            <source srcset="img/Vela/project-img-1x/vela-project-image-1x.jpg"
+                                media="(max-width:767px)">
+                            <img src="img/Vela/project-img-2x/vela-project-image-2x.jpg"
+                                alt="Two screens of Vela app displayed on phones">
+                        </picture>
+                    </div>
+                    <div>
+                        <h3>Vela</h3>
+                        <p>Vela is a specialized weather app that supplies weather forecast data with the intent of
+                            assisting wind and water sport participants in making informed decisions.
+                        </p>
+                        <a href="vela.html" class="btn btn-border-teal border-radius-sm">View Project</a>
+                    </div>
+                </div>
                 </div>
             </div>
         </section>
@@ -93,7 +112,7 @@
         <div class="container">
             <div>
                 <h2>Get in Touch</h2>
-                <a class= "contact-button" href="mailto:karafronk at gmail dot com">Email me</a>
+                <a class= "btn contact-btn" href="mailto:karafronk at gmail dot com">Email me</a>
             </div>
             <div>
                 <a href="https://www.linkedin.com/in/karlana-fronk" target="_blank">

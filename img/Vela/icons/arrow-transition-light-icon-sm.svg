@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="15.8871"
+   height="27.600008"
+   fill="none"
+   version="1.1"
+   viewBox="0 0 15.8871 27.600008"
+   id="svg847"
+   sodipodi:docname="arrow-transition-light-icon-sm.svg"
+   inkscape:version="1.0.2 (e86c8708, 2021-01-15)">
+  <defs
+     id="defs851" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="776"
+     inkscape:window-height="480"
+     id="namedview849"
+     showgrid="false"
+     inkscape:zoom="6.3122375"
+     inkscape:cx="32.783753"
+     inkscape:cy="4.3728557"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg847" />
+  <metadata
+     id="metadata843">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <path
+     d="M 0.6075,0.60753 C 0.2185,0.99665 0,1.52434 0,2.07453 c 0,0.55022 0.2185,1.0779 0.6075,1.467 l 10.271,10.271 -10.271,10.271 c -0.3779,0.3913 -0.5871,0.9155 -0.5824,1.4595 0.0048,0.5441 0.22300001,1.0645 0.6077,1.4492 0.3847,0.3848 0.9052,0.603 1.4492,0.6077 0.5441,0.0047 1.0682,-0.2044 1.4596,-0.5824 l 11.738,-11.738 c 0.389,-0.3891 0.6075,-0.9168 0.6075,-1.467 0,-0.5502 -0.2185,-1.0779 -0.6075,-1.467 L 3.5416,0.60753 C 3.1525,0.21853 2.6247999,0 2.0746,0 1.5243,0 0.9967,0.21853 0.6075,0.60753 Z"
+     fill="#00507d"
+     fill-opacity="0.5"
+     id="path845"
+     style="stroke-width:1" />
+</svg>

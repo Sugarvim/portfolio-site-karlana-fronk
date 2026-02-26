@@ -18,7 +18,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
-    <link rel="stylesheet" type="text/css" href="css/velastyles.css" />
+    <link rel="stylesheet" type="text/css" href="css/project-styles.css" />
     <script
       src="https://kit.fontawesome.com/e2137e9ec3.js"
       crossorigin="anonymous"
@@ -71,13 +71,13 @@
     <main>
       <section id="introduction">
         <!-- Top section - project, role, tools and picture-->
-        <div class="space-under-small">
-          <div class="row">
-            <div class="col-7 col-8 intro-img">
+        <div class="container">
+          <div class="vela-intro-container grid margin-bottom-sm">
+            <div class="intro-img">
               <picture>
                 <source
                   srcset="img/Vela/project-img-1x/vela-project-image-1x.jpg"
-                  media="(max-width:767px)"
+                  media="(max-width:639px)"
                 />
                 <img
                   src="img/Vela/project-img-2x/vela-project-image-2x.jpg"
@@ -85,36 +85,38 @@
                 />
               </picture>
             </div>
-            <div class="col-4 col-5">
+
+            <div class="project-details grid">
               <div>
-                <h1 class="text-left vela-head">Vela</h1>
-                <h2 class="sub-heading text-left">
-                  A weather app for wind and water sport enthusiasts
-                </h2>
+                <h1 class="text-left">
+                  Vela
+                  <br />
+                  <span class="sub-heading text-left">
+                    A weather app for wind and water sport enthusiasts
+                  </span>
+                </h1>
               </div>
-              <div class="row intro-top">
-                <div class="col-6 left-edge">
-                  <h3 class="semibold bottom-border">My Role:</h3>
-                  <ul>
-                    <li>Researcher</li>
-                    <li>UX Designer</li>
-                    <li>UI Designer</li>
-                  </ul>
-                </div>
-                <div class="col-6 right-edge">
-                  <h3 class="semibold bottom-border">Project:</h3>
-                  <p>CareerFoundry UX Immersion Course Project</p>
-                </div>
+
+              <div>
+                <h3 class="semibold bottom-border">My Role:</h3>
+                <ul>
+                  <li>Researcher</li>
+                  <li>UX Designer</li>
+                  <li>UI Designer</li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="semibold bottom-border">Project:</h3>
+                <p>CareerFoundry UX Immersion Course Project</p>
               </div>
             </div>
-          </div>
-          <div class="col-8 inline-flex">
-            <h3 class="semibold">Tools:</h3>
-            <div class="icons">
+
+            <div class="software-icons">
+              <h3 class="semibold">Tools:</h3>
               <picture>
                 <source
                   srcset="img/Vela/project-img-1x/tools-icons-1x.png"
-                  media="(max-width:767px)"
+                  media="(max-width:639px)"
                 />
                 <img
                   src="img/Vela/project-img-2x/tools-icons-2x.png"
@@ -123,136 +125,128 @@
               </picture>
             </div>
           </div>
-        </div>
 
-        <!-- what is Vela -->
-        <div class="container">
-          <div class="space-under">
-            <h2>
-              <b>What is</b><span class="green"><b> Vela?</b></span>
-            </h2>
-            <p>
-              Vela is a specialized weather app that supplies weather forecast
-              data with the intent of assisting wind and water sport
-              participants in making informed decisions.
-            </p>
-          </div>
-          <div class="row space-under-small">
-            <div class="col-6 col-4 the-problem box-shadow-dark border">
-              <h2>The Problem</h2>
+          <!-- what is Vela -->
+          <div>
+            <div class="margin-bottom">
+              <h2>
+                <b>What is</b><span class="dark-teal"><b> Vela?</b></span>
+              </h2>
               <p>
-                <span class="medium"
-                  >The difference between a good or a bad time often rides on
-                  the weather.</span
-                ><br /><br />
-                Being aware of meteorological factors, such as temperature and
-                wind, is essential for those who go out on the water. But many
-                sources do not provide the necessary weather information for
-                wind and water enthusiasts; while those that do, present it in a
-                way that is confusing for the casual person.
+                Vela is a specialized weather app that supplies weather forecast
+                data with the intent of assisting wind and water sport
+                participants in making informed decisions.
               </p>
             </div>
-            <div class="grid col-6 col-8">
+            <div class="vela-overview flex-column margin-bottom-sm">
               <div>
-                <h2>
-                  Problem <span class="green"><b>Statement</b></span>
-                </h2>
+                <h3 class="faux-h">The Problem</h3>
+                <p>
+                  <span class="medium"
+                    >The difference between a good or a bad time often rides on
+                    the weather.</span
+                  >
+                  <br /><br />
+                  Being aware of meteorological factors, such as temperature and
+                  wind, is essential for those who go out on the water. But many
+                  sources do not provide the necessary weather information for
+                  wind and water enthusiasts; while those that do, present it in
+                  a way that is confusing for the casual person.
+                </p>
+              </div>
+
+              <div>
+                <h3 class="faux-h">
+                  Problem <span class="dark-teal"><b>Statement</b></span>
+                </h3>
                 <p>
                   Casual water sport participants need a way to easily
                   understand weather conditions because water activities/safety
                   are dependent on shifting weather conditions.
                 </p>
               </div>
-              <div>
-                <h2>Hypothesis</h2>
-                <p>
-                  By offering specialized weather information in an accessible
-                  way, Vela can differentiate itself from other weather apps and
-                  target a wider audience.
-                </p>
-              </div>
             </div>
-          </div>
-        </div>
 
-        <!--design thinking-->
-        <h2><span class="green">Design Thinking</span> Process</h2>
-        <div class="flex space-under">
-          <a href="#understand">
-            <div class="ellipse-text">
-              <div class="ellipse box-shadow-light">
-                <img
-                  src="img/Vela/icons/understand-icon.svg"
-                  alt="green icon face with a question mark"
-                />
-              </div>
-              <h3>Understand</h3>
+            <!--design thinking-->
+            <h2><span class="dark-teal">Design Thinking</span> Process</h2>
+            <div class="flex thinking-process">
+              <a href="#understand">
+                <div class="flex-column text-center">
+                  <div class="ellipse box-shadow-light">
+                    <img
+                      src="img/Vela/icons/understand-icon.svg"
+                      alt="teal icon face with a question mark"
+                    />
+                  </div>
+                  <p>Understand</p>
+                </div>
+              </a>
+
+              <img
+                src="img/Vela/icons/arrow-transition-dark-icon-sm.svg"
+                alt="teal arrow pointing to the right"
+              />
+
+              <a href="#define">
+                <div class="flex-column text-center">
+                  <div class="ellipse box-shadow-light">
+                    <img
+                      src="img/Vela/icons/define-icon.svg"
+                      alt="computer window with magnifying glass over it"
+                    />
+                  </div>
+                  <p>Define</p>
+                </div>
+              </a>
+              <!-- give aria label to ignore arrows -->
+
+              <img
+                src="img/Vela/icons/arrow-transition-med-icon-sm.svg"
+                alt="teal arrow pointing to the right"
+              />
+
+              <a href="#ideate">
+                <div class="flex-column text-center">
+                  <div class="ellipse box-shadow-light">
+                    <img
+                      src="img/Vela/icons/ideate-icon.svg"
+                      alt="Teal lightbulb"
+                    />
+                  </div>
+                  <p>Ideate</p>
+                </div>
+              </a>
+
+              <img
+                src="img/Vela/icons/arrow-transition-light-icon-sm.svg"
+                alt="Teal arrow pointing to the right"
+              />
+
+              <a href="#design">
+                <div class="flex-column text-center">
+                  <div class="ellipse box-shadow-light">
+                    <img
+                      src="img/Vela/icons/design-icon.svg"
+                      alt="Paintbrush in front of a circle and square"
+                    />
+                  </div>
+                  <p>Design</p>
+                </div>
+              </a>
             </div>
-          </a>
-          <div>
-            <img
-              src="img/Vela/icons/arrow-transition-dark-icon.svg"
-              alt="green arrows pointing to the right"
-            />
           </div>
-          <a href="#define">
-            <div class="ellipse-text">
-              <div class="ellipse box-shadow-light">
-                <img
-                  src="img/Vela/icons/define-icon.svg"
-                  alt="computer window with magnifying glass over it"
-                />
-              </div>
-              <h3>Define</h3>
-            </div>
-          </a>
-          <div>
-            <img
-              src="img/Vela/icons/arrow-transition-med-icon.svg"
-              alt="green arrows pointing to the right"
-            />
-          </div>
-          <a href="#ideate">
-            <div class="ellipse-text">
-              <div class="ellipse box-shadow-light">
-                <img
-                  src="img/Vela/icons/ideate-icon.svg"
-                  alt="green lightbulb"
-                />
-              </div>
-              <h3>Ideate</h3>
-            </div>
-          </a>
-          <div>
-            <img
-              src="img/Vela/icons/arrow-transition-light-icon.svg"
-              alt="green arrows pointing to the right"
-            />
-          </div>
-          <a href="#design">
-            <div class="ellipse-text">
-              <div class="ellipse box-shadow-light">
-                <img
-                  src="img/Vela/icons/design-icon.svg"
-                  alt="paintbrush in front of a circle and square"
-                />
-              </div>
-              <h3>Design</h3>
-            </div>
-          </a>
         </div>
       </section>
 
-      <section id="understand">
-        <div class="container">
-          <div>
-            <h2 class="space-under">
-              <span class="green">Understand</span> Phase
-            </h2>
-          </div>
+      <div class="container">
+        <section id="understand">
+          <h1 class="margin-bottom">
+            <span class="dark-teal">Understand</span> Phase
+          </h1>
+
           <section id="competitive-research">
             <div>
-              <div class="space-under">
+              <div class="margin-bottom">
                 <h3>Competitive Research</h3>
                 <p>
                   To get an understanding of the current market of weather apps
@@ -260,8 +254,8 @@
                   analysis of several competitors.
                 </p>
               </div>
-              <div class="competitive">
-                <div class="box-shadow-light windy border no-shrink">
+              <div class="weather-container grid">
+                <div class="grid weather-grid box-shadow-dark border-radius">
                   <h4>Windy.app</h4>
                   <img
                     src="img/Vela/icons/windy-app-icon.png"
@@ -269,35 +263,28 @@
                   />
                   <p>
                     Windy.app fosters a community of serious weather enjoyers
-                    through its detailed dissemination of weather and weather
-                    related phenomenon.
+                    through its detailed dissemination of weather phenomenon.
                   </p>
                   <div class="text-center">
-                    <h4 class="medium">Strengths</h4>
+                    <h5 class="medium">Strengths</h5>
                     <div
-                      class="box-shadow-light border competitive-padding light-blue"
+                      class="box-shadow-light border-radius flex-item-padding windy-teal"
                     >
                       <ul>
-                        <li>
-                          Has easy to understand guides to understand weather
-                          phenomenon
-                        </li>
-                        <li>
-                          Offers a wealth of information with the ability to
-                          customize visuals
-                        </li>
+                        <li>Easy to understand guides on weather phenomenon</li>
+                        <li>Offers a wealth of information</li>
+                        <li>Able to customize visuals</li>
                       </ul>
                     </div>
                   </div>
                   <div class="text-center">
-                    <h4 class="medium">Weaknesses</h4>
+                    <h5 class="medium">Weaknesses</h5>
                     <div
-                      class="box-shadow-light border competitive-padding mid-blue"
+                      class="box-shadow-light border-radius flex-item-padding windy-teal-dark"
                     >
                       <ul>
                         <li>
-                          Specialized data is overwhelming unless the user is
-                          educated about the weather
+                          Specialized data is overwhelming for casual users
                         </li>
                         <li>Intrusive subscription screen</li>
                       </ul>
@@ -305,21 +292,20 @@
                   </div>
                 </div>
 
-                <div class="box-shadow-light accuweather borde no-shrink">
+                <div class="grid weather-grid box-shadow-dark border-radius">
                   <h4>Accuweather</h4>
                   <img
                     src="img/Vela/icons/icons8-accuweather-icon.svg"
                     alt="accuweather icon"
                   />
                   <p>
-                    With their Superior Accuracy<sup>tm</sup> in weather data,
-                    AccuWeather provides important weather information to the
+                    Accuweather provides essential weather information to the
                     wider public with a clear and easy to understand interface.
                   </p>
                   <div class="text-center">
-                    <h4 class="medium">Strengths</h4>
+                    <h5 class="medium">Strengths</h5>
                     <div
-                      class="box-shadow-light border competitive-padding light-orange"
+                      class="box-shadow-light border-radius flex-item-padding light-orange"
                     >
                       <ul>
                         <li>Superior Accuracy<sup>tm</sup></li>
@@ -330,9 +316,9 @@
                     </div>
                   </div>
                   <div class="text-center">
-                    <h4 class="medium">Weaknesses</h4>
+                    <h5 class="medium">Weaknesses</h5>
                     <div
-                      class="box-shadow-light border competitive-padding mid-orange"
+                      class="align-self-start box-shadow-light border-radius flex-item-padding mid-orange"
                     >
                       <ul>
                         <li>Lacks explanation of weather data</li>
@@ -342,9 +328,9 @@
                   </div>
                 </div>
               </div>
-              <div class="light-blue-stripe bust-out space-under">
-                <div class="inside-bust-out">
-                  <h3 class="green sub-heading">Key Insight Derived</h3>
+              <div class="light-teal-stripe horizontal-stripe margin-bottom">
+                <div class="center-inside-container">
+                  <h3 class="sub-heading dark-teal">Key Insight Derived</h3>
                   <ul>
                     <li>
                       Presenting a simplified summary of weather conditions
@@ -362,7 +348,7 @@
           </section>
           <section id="user-interviews">
             <div>
-              <div class="space-under">
+              <div class="margin-bottom">
                 <h3>User Interviews</h3>
                 <p>
                   To get an in depth look into what users are looking for in a
@@ -370,127 +356,111 @@
                   interviews with potential users.
                 </p>
               </div>
-              <div class="space-under flex-goals">
-                <h3>Research Goals</h3>
-                <div class="goal box-shadow-light goal-one">
-                  To learn what different weather conditions mean to the user.
+              <div class="margin-bottom">
+                <h4>Research Goals</h4>
+                <div class="research-goals">
+                  <ul class="margin-bottom grid">
+                    <li>
+                      <div></div>
+                      To learn what different weather conditions mean to the
+                      user.
+                    </li>
+                    <li>
+                      <div></div>
+                      To learn how the user typically obtains information about
+                      the weather.
+                    </li>
+                    <li>
+                      <div></div>
+                      To learn the user's engagement level with wind/water
+                      sports.
+                    </li>
+                    <li>
+                      <div></div>
+                      To learn how to introduce new people to wind/water sports.
+                    </li>
+                  </ul>
                 </div>
-                <div class="goal box-shadow-light goal-two">
-                  To learn how the user typically obtains information about the
-                  weather.
-                </div>
-                <div class="goal box-shadow-light goal-three">
-                  To learn the user's engagement level with wind/water sports.
-                </div>
-                <div class="goal box-shadow-light goal-four">
-                  To learn how to introduce new people to wind/water sports.
-                </div>
-              </div>
-              <div>
-                <h3>Participants</h3>
-                <div class="grid space-under">
-                  <div class="row">
-                    <div class="goal-box col-7">
-                      <div
-                        class="box-shadow-light border quote quote-left quote-down"
-                      >
-                        “When I was two months old I was on a boat. My father
-                        had been boating since he was sixteen. He's always had a
-                        boat. So I grew up on boats.”
-                      </div>
-                      <div>
-                        <div class="ellipse-user-left ellipse-jim"></div>
-                        <img
-                          class="icon-location"
-                          src="img/Vela/icons/boat-icon.svg"
-                          alt="black boat icon"
-                        />
-                      </div>
-                      <div class="text-user">
-                        <h4><b>Jim</b></h4>
-                        <p>45-55</p>
-                        <p>Computer Sciences</p>
-                      </div>
+
+                <h4>Participants</h4>
+                <div class="grid participants">
+                  <div class="flex interview-participant border-radius-sm">
+                    <p>
+                      <span>Jim</span>
+                      <br />
+                      45-55 <br />
+                      Computer Sciences
+                    </p>
+                    <div class="flex-column activity-icon-box box-shadow-light">
+                      <img
+                        src="img/Vela/icons/boat-icon.svg"
+                        alt="black boat icon"
+                      />
+                      <p>Boating</p>
                     </div>
-                    <div class="col-5 goal-box">
-                      <div
-                        class="box-shadow-light border quote quote-right quote-down"
-                      >
-                        I didn't start getting into water sports until I was
-                        close to thirty. I learned to windsurf - that got me
-                        into sailing.
-                      </div>
-                      <div>
-                        <div class="ellipse-user-right ellipse-steve"></div>
+                  </div>
+
+                  <div class="flex interview-participant border-radius-sm">
+                    <p>
+                      <span class="text-lg">Steve</span>
+                      <br />
+                      65-75 <br />
+                      Retired
+                    </p>
+                    <div class="flex-column activity-icon-box box-shadow-light">
+                      <img
+                        src="img/Vela/icons/sail-icon.svg"
+                        alt="black sailboat icon"
+                      />
+                      <p>Sailing</p>
+                    </div>
+                  </div>
+
+                  <div class="flex interview-participant border-radius-sm">
+                    <p>
+                      <span class="text-lg">Skip</span>
+                      <br />
+                      75-85 <br />
+                      Fishing and Sailing Instructor
+                    </p>
+                    <div class="flex-column activity-icon-box box-shadow-light">
+                      <div class="flex-column">
                         <img
-                          class="icon-location"
                           src="img/Vela/icons/sail-icon.svg"
                           alt="black sailboat icon"
                         />
+                        <p>Sailing</p>
                       </div>
-                      <div class="text-user-right">
-                        <h4><b>Steve</b></h4>
-                        <p>65-75</p>
-                        <p>Retired</p>
+                      <div class="flex-column">
+                        <img
+                          src="img/Vela/icons/fish-icon.svg"
+                          alt="black fish icon"
+                        />
+                        <p>Fishing</p>
                       </div>
                     </div>
                   </div>
-                  <div class="row">
-                    <div class="col-7 goal-box">
-                      <div class="box-shadow-light border quote quote-left">
-                        My dad also liked to fish and as a child took me
-                        fishing. In adult life I met a woman who introduced me
-                        to sailing. From that point on I continued my fishing
-                        caree as well as my sailing career.”
-                      </div>
-                      <div>
-                        <div class="ellipse-user-left ellipse-skip"></div>
-                        <div class="inline-block">
-                          <img
-                            class="icon-location"
-                            src="img/Vela/icons/sail-icon.svg"
-                            alt="black sailboat icon"
-                          />
-                          <img
-                            class="icon-location-b"
-                            src="img/Vela/icons/fish-icon.svg"
-                            alt="black fish icon"
-                          />
-                        </div>
-                      </div>
-                      <div class="text-user">
-                        <h4><b>Skip</b></h4>
-                        <p>75-85</p>
-                        <p>Fishing and Sailing Instructor</p>
-                      </div>
-                    </div>
-                    <div class="col-5 goal-box">
-                      <div
-                        class="box-shadow-light border quote quote-right quote-jeff"
-                      >
-                        “When I was a child and my parents sent me for canoe
-                        lessons on the Charles river.”
-                      </div>
-                      <div>
-                        <div class="ellipse-user-right ellipse-jeff"></div>
-                        <img
-                          class="icon-location"
-                          src="img/Vela/icons/kayak-icon.svg"
-                          alt="black kayak icon"
-                        />
-                      </div>
-                      <div class="text-user-right">
-                        <h4><b>Jeff</b></h4>
-                        <p>55-65</p>
-                        <p>Non-Profit Executive</p>
-                      </div>
+
+                  <div class="flex interview-participant border-radius-sm">
+                    <p>
+                      <span class="text-lg">Jeff</span>
+                      <br />
+                      55-65 <br />
+                      Non-Profit Executive
+                    </p>
+                    <div class="flex-column activity-icon-box box-shadow-light">
+                      <img
+                        src="img/Vela/icons/kayak-icon.svg"
+                        alt="black kayak icon"
+                      />
+                      <p>Kayaking</p>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="light-blue-stripe bust-out space-under">
-                <div class="inside-bust-out">
-                  <h3 class="green sub-heading">Key Insight Derived</h3>
+              <div class="light-teal-stripe horizontal-stripe margin-bottom">
+                <div class="center-inside-container">
+                  <h3 class="dark-teal sub-heading">Key Insight Derived</h3>
                   <ul>
                     <li>
                       People want reassurance about the weather to remain safe.
@@ -511,14 +481,12 @@
               </div>
             </div>
           </section>
-        </div>
-      </section>
+        </section>
 
-      <section id="define">
-        <div class="container">
+        <section id="define">
           <div>
             <h2>
-              Define <span class="green"><b>Phase</b></span>
+              Define <span class="dark-teal"><b>Phase</b></span>
             </h2>
           </div>
 
@@ -526,7 +494,7 @@
             <div>
               <div>
                 <h3>User Persona</h3>
-                <p class="space-under">
+                <p class="margin-bottom">
                   With the insights derived from the user interviews, I created
                   user personas to create a more personable image of the
                   research and create a focal point for team members to
@@ -535,207 +503,237 @@
               </div>
               <div>
                 <div>
-                  <div class="row">
-                    <div class="persona-block space-under">
-                      <div
-                        class="persona-container col-5 box-shadow-light border"
-                      >
-                        <div class="clip-circle">
-                          <picture>
-                            <source
-                              srcset="img/Vela/project-img-1x/kip-1x.jpg"
-                              media="(max-width:767px)"
-                            />
-                            <img
-                              class="center-image-kip"
-                              src="img/Vela/project-img-2x/kip-2x.jpg"
-                              alt="a colored pencil line drawing of an old man smiling"
-                            />
-                          </picture>
-                        </div>
-                        <h4 class="medium green text-center">Kip</h4>
-                        <div class="persona-box">
-                          <div>
-                            <p class="medium">Age</p>
-                            <p class="medium">Occupation</p>
-                            <p class="medium">Location</p>
-                          </div>
-                          <div class="text-center">
-                            <p>74</p>
-                            <p>Retired</p>
-                            <p>Massachusetts</p>
-                          </div>
+                  <div class="grid persona-block" id="Kip">
+                    <div
+                      class="grid persona-container box-shadow-dark border-radius"
+                    >
+                      <h4 class="medium">Kip</h4>
+                      <div class="clip-circle">
+                        <picture>
+                          <source
+                            srcset="img/Vela/project-img-1x/kip-1x.jpg"
+                            media="(max-width:639px)"
+                          />
+                          <img
+                            class="center-persona-img"
+                            src="img/Vela/project-img-2x/kip-2x.jpg"
+                            alt="a colored pencil line drawing of an old man smiling"
+                          />
+                        </picture>
+                      </div>
+
+                      <div class="flex text-center persona-personal-details">
+                        <div>
+                          <p class="medium">Age:</p>
+                          <p>74</p>
                         </div>
                         <div>
-                          <h4 class="medium green text-center">About</h4>
-                          <p>
-                            Kip is enjoying his retirement by the coast where he
-                            enjoys the peace of the ocean and boating during the
-                            summer. He wants to spend more time with his
-                            grandkids and is thinking of taking them out on a
-                            boating trip. Kip is unsure, as he is worried about
-                            the unpredictable nature of weather and the danger
-                            that comes with it.
-                          </p>
+                          <p class="medium">Occupation:</p>
+                          <p>Retired</p>
+                        </div>
+                        <div>
+                          <p class="medium">Location:</p>
+                          <p>Massachusetts</p>
                         </div>
                       </div>
-                      <div class="col-7 persona-space">
-                        <div class="persona persona-quote box-shadow-light">
-                          <h4 class="medium green">Quotes</h4>
-                          <p class="medium">
-                            “People die everyday out on the water due to
-                            something in the weather.”
-                          </p>
-                          <p class="medium">
-                            "I'd love to see something that rates the day - good
-                            for going out or not.”
-                          </p>
-                        </div>
-                        <div class="persona box-shadow-light">
-                          <h4 class="medium green">Goals/Needs</h4>
-                          <ul>
-                            <li>A way to know about safety on the water</li>
-                            <li>An accurate method for knowing the weather</li>
-                            <li>Warnings for storms/potential dangers</li>
-                            <li>Feel confident going out onto the water</li>
-                          </ul>
-                        </div>
-                        <div class="persona box-shadow-light">
-                          <h4 class="medium green">Frustrations</h4>
-                          <ul>
-                            <li>Not technologically proficient</li>
-                            <li>
-                              Gets confused with too much information presented
-                            </li>
-                            <li>
-                              Looking for an app that has a focus on safety
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="persona box-shadow-light">
-                          <h4 class="medium green">Motivations</h4>
-                          <ul>
-                            <li>Spend more time with grandkids</li>
-                            <li>
-                              Know about the weather so he doesn't have to worry
-                              about dangers
-                            </li>
-                          </ul>
-                        </div>
+                      <div
+                        class="flex-column medium persona-quote border-radius"
+                      >
+                        <h4 class="medium dark-teal">Quotes</h4>
+                        <p>
+                          “People die everyday out on the water due to something
+                          in the weather.”
+                        </p>
+                        <p>
+                          "I'd love to see something that rates the day - good
+                          for going out or not.”
+                        </p>
+                      </div>
+                      <button
+                        id="kip-btn"
+                        class="btn expand-info-btn box-shadow-light"
+                      >
+                        <i class="fa-solid fa-chevron-right"></i>
+                        Details &nbsp
+                        <i class="fa-solid fa-chevron-right"></i>
+                      </button>
+                    </div>
+
+                    <div class="flex-column persona-about">
+                      <div>
+                        <h4 class="medium dark-teal text-center">About</h4>
+                        <p>
+                          Kip is enjoying his retirement by the coast where he
+                          enjoys the peace of the ocean and boating during the
+                          summer. <br />
+                          He wants to spend more time with his grandkids and is
+                          thinking of taking them out on a boating trip. Kip is
+                          unsure, as he is worried about the unpredictable
+                          nature of weather and the danger that comes with it.
+                        </p>
+                      </div>
+                      <div
+                        class="persona-textbox border-radius box-shadow-light"
+                      >
+                        <h4 class="medium dark-teal">Goals/Needs</h4>
+                        <ul>
+                          <li>A way to know about safety on the water</li>
+                          <li>An accurate method for knowing the weather</li>
+                          <li>Warnings for storms/potential dangers</li>
+                          <li>Feel confident going out onto the water</li>
+                        </ul>
+                      </div>
+                      <div
+                        class="persona-textbox border-radius box-shadow-light"
+                      >
+                        <h4 class="medium dark-teal">Frustrations</h4>
+                        <ul>
+                          <li>Not technologically proficient</li>
+                          <li>
+                            Gets confused with too much information presented
+                          </li>
+                          <li>Looking for an app that has a focus on safety</li>
+                        </ul>
+                      </div>
+                      <div
+                        class="persona-textbox border-radius box-shadow-light"
+                      >
+                        <h4 class="medium dark-teal">Motivations</h4>
+                        <ul>
+                          <li>Spend more time with grandkids</li>
+                          <li>
+                            Know about the weather so he doesn't have to worry
+                            about dangers
+                          </li>
+                        </ul>
                       </div>
                     </div>
                   </div>
-                  <div class="row">
-                    <div class="persona-block">
-                      <div
-                        class="persona-container col-5 box-shadow-light border"
-                      >
-                        <div class="clip-circle">
-                          <picture>
-                            <source
-                              srcset="img/Vela/project-img-1x/lock-1x.jpg"
-                              media="(max-width:767px)"
-                            />
-                            <img
-                              class="center-image-lock"
-                              src="img/Vela/project-img-2x/lock-2x.jpg"
-                              alt="a colored pencil line drawing of a man with a hand to his face staring at something while thinking"
-                            />
-                          </picture>
-                        </div>
-                        <h4 class="medium green text-center">Lock</h4>
-                        <div class="persona-box">
-                          <div>
-                            <p class="medium">Age</p>
-                            <p class="medium">Occupation</p>
-                            <p class="medium">Location</p>
-                          </div>
-                          <div class="text-center">
-                            <p>38</p>
-                            <p>Electrical Engineer</p>
-                            <p>South Carolina</p>
-                          </div>
+
+                  <div class="grid persona-block" id="Lock">
+                    <div
+                      class="grid persona-container box-shadow-dark border-radius"
+                    >
+                      <h4 class="medium dark-teal">Lock</h4>
+                      <div class="clip-circle">
+                        <picture>
+                          <source
+                            srcset="img/Vela/project-img-1x/lock-1x.jpg"
+                            media="(max-width:639px)"
+                          />
+                          <img
+                            class="center-persona-img"
+                            src="img/Vela/project-img-2x/lock-2x.jpg"
+                            alt="a colored pencil line drawing of a man with a hand to his face staring at something while thinking"
+                          />
+                        </picture>
+                      </div>
+
+                      <div class="flex text-center persona-personal-details">
+                        <div>
+                          <p class="medium">Age:</p>
+                          <p>38</p>
                         </div>
                         <div>
-                          <h4 class="medium green text-center">About</h4>
-                          <p>
-                            Lock has enjoyed fishing since he was a child after
-                            being introduced to it by his father. As an
-                            electrical engineer, Lock's job takes up most of his
-                            week, however he makes sure to spend a day on the
-                            weekend fishing alone or with friends. He enjoys the
-                            peace and challenge of fishing and seeks out
-                            knowledge to improve his fishing techniques.
-                          </p>
+                          <p class="medium">Occupation:</p>
+                          <p>Electrical Engineer</p>
+                        </div>
+                        <div>
+                          <p class="medium">Location:</p>
+                          <p>South Carolina</p>
                         </div>
                       </div>
-                      <div class="col-7 persona-space">
-                        <div class="persona persona-quote box-shadow-light">
-                          <h4 class="medium green">Quotes</h4>
-                          <p class="medium">
-                            “I do a thorough analysis of all the weather apps I
-                            have.”
-                          </p>
-                          <p class="medium">
-                            “I don't go out on the water unless I check the
-                            forecast.”
-                          </p>
-                        </div>
-                        <div class="persona box-shadow-light">
-                          <h4 class="medium green">Goals/Needs</h4>
-                          <ul>
-                            <li>
-                              An app that provides data on meteorological
-                              activities
-                            </li>
-                            <li>
-                              An app that allows him to find new fishing spots -
-                              new ideas for fishing
-                            </li>
-                            <li>
-                              An app that does not have superfluous information
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="persona box-shadow-light">
-                          <h4 class="medium green">Frustrations</h4>
-                          <ul>
-                            <li>
-                              Apps don't provide all the information he needs
-                            </li>
-                            <li>Paywalls that restrict information</li>
-                          </ul>
-                        </div>
-                        <div class="persona box-shadow-light">
-                          <h4 class="medium green">Motivations</h4>
-                          <ul>
-                            <li>
-                              Wants to spend a peaceful time out on the water
-                            </li>
-                            <li>
-                              Wants to steer clear of unfavorable weather
-                              conditions
-                            </li>
-                          </ul>
-                        </div>
+
+                      <div class="flex-column persona-quote border-radius">
+                        <h4 class="medium dark-teal">Quotes</h4>
+                        <p class="medium">
+                          “I do a thorough analysis of all the weather apps I
+                          have.”
+                        </p>
+                        <p class="medium">
+                          “I don't go out on the water unless I check the
+                          forecast.”
+                        </p>
+                      </div>
+                      <button
+                        id="lock-btn"
+                        class="btn expand-info-btn box-shadow-light"
+                      >
+                        <i class="fa-solid fa-chevron-right"></i>
+                        Details &nbsp
+                        <i class="fa-solid fa-chevron-right"></i>
+                      </button>
+                    </div>
+
+                    <div class="flex-column persona-about">
+                      <h4 class="medium dark-teal text-center">About</h4>
+                      <p>
+                        Lock has enjoyed fishing since he was a child after
+                        being introduced to it by his father.<br />
+                        As an electrical engineer, Lock's job takes up most of
+                        his week, however he makes sure to spend a day on the
+                        weekend fishing alone or with friends.<br />
+                        He enjoys the peace and challenge of fishing and seeks
+                        out knowledge to improve his fishing techniques.
+                      </p>
+
+                      <div
+                        class="persona-textbox border-radius box-shadow-light"
+                      >
+                        <h4 class="medium dark-teal">Goals/Needs</h4>
+                        <ul>
+                          <li>
+                            An app that provides data on meteorological
+                            activities
+                          </li>
+                          <li>
+                            An app that allows him to find new fishing spots -
+                            new ideas for fishing
+                          </li>
+                          <li>
+                            An app that does not have superfluous information
+                          </li>
+                        </ul>
+                      </div>
+                      <div
+                        class="persona-textbox border-radius box-shadow-light"
+                      >
+                        <h4 class="medium dark-teal">Frustrations</h4>
+                        <ul>
+                          <li>
+                            Apps don't provide all the information he needs
+                          </li>
+                          <li>Paywalls that restrict information</li>
+                        </ul>
+                      </div>
+                      <div
+                        class="persona-textbox border-radius box-shadow-light"
+                      >
+                        <h4 class="medium dark-teal">Motivations</h4>
+                        <ul>
+                          <li>
+                            Wants to spend a peaceful time out on the water
+                          </li>
+                          <li>
+                            Wants to steer clear of unfavorable weather
+                            conditions
+                          </li>
+                        </ul>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div></div>
               </div>
             </div>
           </section>
-        </div>
-      </section>
+        </section>
 
-      <section id="ideate">
-        <div class="container">
-          <h2>Ideate<span class="green"> Phase</span></h2>
+        <section id="ideate">
+          <h2>Ideate<span class="dark-teal"> Phase</span></h2>
           <section id="information-architecture">
             <div>
               <h3>Information Architecture</h3>
-              <p class="space-under">
+              <p class="margin-bottom">
                 To understand the way in which information would flow and be
                 presented, I created a sitemap where I outlined what screens
                 Vela would have and how they would relate to one another.
@@ -743,7 +741,7 @@
               <picture>
                 <source
                   srcset="img/Vela/project-img-1x/sitemap-1x.png"
-                  media="(max-width:767px)"
+                  media="(max-width:639px)"
                 />
                 <img
                   src="img/Vela/project-img-2x/sitemap-2x.png"
@@ -752,17 +750,15 @@
               </picture>
             </div>
           </section>
-        </div>
-      </section>
+        </section>
 
-      <section id="design">
-        <div class="container">
-          <h2>Design<span class="green"> Phase</span></h2>
-          <section id="wireframes" class="space-under">
+        <section id="design">
+          <h2>Design<span class="dark-teal"> Phase</span></h2>
+          <section id="wireframes" class="margin-bottom">
             <div>
               <div>
                 <h3>Wireframes</h3>
-                <p class="space-under">
+                <p class="margin-bottom">
                   After figuring out what screens were needed for the app, I
                   created visual mock-ups of the screens. Starting with
                   low-fidelity sketches which allowed for quicker revisions and
@@ -771,249 +767,186 @@
                 </p>
               </div>
               <!--do image alts later-->
-              <div class="flex-wireframe">
-                <div class="wireframe">
-                  <h4 class="move-left move-low">Low-Fidelity</h4>
-                  <div class="light-stripe bust-out"></div>
-                  <picture class="low-fidelity">
-                    <source
-                      srcset="img/Vela/project-img-1x/low-fidelity-1x.png"
-                      media="(max-width:767px)"
-                    />
-                    <img
-                      class="in-front"
-                      src="img/Vela/project-img-2x/low-fidelity-2x.png"
-                      alt="#"
-                    />
-                  </picture>
 
-                  <h4 class="move-left mid-down">Mid-Fidelity</h4>
-                  <div class="med-stripe bust-out"></div>
-                  <picture class="med-fidelity">
-                    <source
-                      srcset="img/Vela/project-img-1x/mid-fidelity-1x.png"
-                      media="(max-width:767px)"
-                    />
-                    <img
-                      class="in-front"
-                      src="img/Vela/project-img-2x/mid-fidelity-2x.png"
-                      alt="#"
-                    />
-                  </picture>
+              <div class="grid wireframe-img-block">
+                <h4>Low-Fidelity</h4>
+                <div
+                  class="light-teal-bg wireframes-stripe horizontal-stripe"
+                ></div>
+                <picture class="flex">
+                  <source
+                    srcset="img/Vela/project-img-1x/low-fidelity-1x.png"
+                    media="(max-width:639px)"
+                  />
+                  <img
+                    class="in-front"
+                    src="img/Vela/project-img-2x/low-fidelity-2x.png"
+                    alt="#"
+                  />
+                </picture>
 
-                  <h4 class="move-left high-down">High-Fidelity</h4>
-                  <div class="dark-stripe bust-out"></div>
-                  <picture class="high-fidelity">
-                    <source
-                      srcset="img/Vela/project-img-1x/high-fidelity-1x.png"
-                      media="(max-width:767px)"
-                    />
-                    <img
-                      class="in-front"
-                      src="img/Vela/project-img-2x/high-fidelity-2x.png"
-                      alt="#"
-                    />
-                  </picture>
-                </div>
+                <h4>Mid-Fidelity</h4>
+                <div
+                  class="medium-teal-bg wireframes-stripe horizontal-stripe"
+                ></div>
+                <picture class="flex">
+                  <source
+                    srcset="img/Vela/project-img-1x/mid-fidelity-1x.png"
+                    media="(max-width:639px)"
+                  />
+                  <img
+                    class="in-front"
+                    src="img/Vela/project-img-2x/mid-fidelity-2x.png"
+                    alt="#"
+                  />
+                </picture>
+
+                <h4>High-Fidelity</h4>
+                <div
+                  class="dark-teal-bg wireframes-stripe horizontal-stripe"
+                ></div>
+                <picture class="flex">
+                  <source
+                    srcset="img/Vela/project-img-1x/high-fidelity-1x.png"
+                    media="(max-width:639px)"
+                  />
+                  <img
+                    class="in-front"
+                    src="img/Vela/project-img-2x/high-fidelity-2x.png"
+                    alt="#"
+                  />
+                </picture>
               </div>
             </div>
           </section>
+
           <section
             id="usability-testing"
-            class="usability-background bust-out space-under"
+            class="usability-background horizontal-stripe margin-bottom"
           >
             <div class="container">
-              <h2 class="usability-head">
-                Usability <span class="green"> Testing</span>
-              </h2>
-              <p class="space-under-small">
+              <h2>Usability <span class="dark-teal"> Testing</span></h2>
+              <p class="margin-bottom-sm">
                 After creating a functioning prototype that outlined the basic
                 features of the app, I conducted usability tests to reveal if
                 the prototype worked as intended and to uncover potential
                 underlying issues.
               </p>
               <div>
-                <h4>Participants</h4>
-                <div class="flex space-under-small">
-                  <div
-                    class="p1 text-center box-shadow-light border participant-box"
-                  >
-                    <h4>P1</h4>
+                <h3>Participants</h3>
+                <div class="flex testing-participants margin-bottom-sm">
+                  <div class="p1 text-center box-shadow-dark participant-box">
+                    <p>P1</p>
                   </div>
-                  <div
-                    class="p2 text-center box-shadow-light border participant-box"
-                  >
-                    <h4>P2</h4>
+                  <div class="p2 text-center box-shadow-dark participant-box">
+                    <p>P2</p>
                   </div>
-                  <div
-                    class="p3 text-center box-shadow-light border participant-box"
-                  >
-                    <h4>P3</h4>
+                  <div class="p3 text-center box-shadow-dark participant-box">
+                    <p>P3</p>
                   </div>
-                  <div
-                    class="p4 text-center box-shadow-light border participant-box"
-                  >
-                    <h4>P4</h4>
+                  <div class="p4 text-center box-shadow-dark participant-box">
+                    <p>P4</p>
                   </div>
-                  <div
-                    class="p5 text-center box-shadow-light border participant-box"
-                  >
-                    <h4>P5</h4>
+                  <div class="p5 text-center box-shadow-dark participant-box">
+                    <p>P5</p>
                   </div>
-                  <div
-                    class="p6 text-center box-shadow-light border participant-box"
-                  >
-                    <h4>P6</h4>
+                  <div class="p6 text-center box-shadow-dark participant-box">
+                    <p>P6</p>
                   </div>
                 </div>
-                <div class="flex usability-quotes space-under-small">
-                  <div class="box-shadow-light border usability-task">
-                    <h4 class="text-center">Task: Create a New Account</h4>
-                    <div class="p1 box-shadow-light border">
-                      <ul>
-                        <li>Confused by the lack of detail</li>
-                        <li>
-                          Tapped on the person icon to create an account instead
-                          of the settings icon
-                        </li>
-                        <li>
-                          Had difficulty locating the 'no account?' button
-                        </li>
-                      </ul>
+                <div class="flex-column usability-quotes margin-bottom-sm">
+                  <div class="task flex-column">
+                    <div
+                      class="box-shadow-dark border-radius usability-task white-bg"
+                    >
+                      <h4 class="text-center">Task: Create a New Account</h4>
                     </div>
-                    <div class="p2 box-shadow-light border">
-                      <ul>
-                        <li>
-                          Found the lines of the grids to be busy and wanted to
-                          see charts as a visual display
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="p3 box-shadow-light border">
-                      <ul>
-                        <li>
-                          Went to select the person icon for creating an account
-                          instead of the settings icon
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="p4 box-shadow-light border">
-                      <ul>
-                        <li>
-                          Had difficulty locating buttons during the first task
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="p6 box-shadow-light border">
-                      <ul>
-                        <li>
-                          Tried to click on the person icon at first rather than
-                          the settings icon
-                        </li>
-                      </ul>
+                    <div
+                      class="flex-column test-feedback medium white-bg box-shadow-light border-radius-sm"
+                    >
+                      <p>Errors</p>
+                      <div class="flex-column results-box text-center">
+                        <p>Selected incorrect icons</p>
+                        <div class="flex participant-marker medium">
+                          <div class="p1">P1</div>
+                          <div class="p3">P3</div>
+                          <div class="p4">P4</div>
+                          <div class="p6">P6</div>
+                        </div>
+                      </div>
+                      <div class="flex-column results-box text-center">
+                        <p>Visuals caused confusion</p>
+                        <div class="flex participant-marker medium">
+                          <div class="p1">P1</div>
+                          <div class="p2">P2</div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div class="box-shadow-light border usability-task">
-                    <h4 class="text-center">
-                      Scenario: Search for Surfing Spots
-                    </h4>
-                    <div class="p1 box-shadow-light border">
-                      <ul>
-                        <li>
-                          Wanted activity search to be distinct from the extra
-                          filters
-                        </li>
-                        <li>
-                          Wasn't sure what the map key was due to lack of color
-                          and numbers
-                        </li>
-                      </ul>
+
+                  <div class="task flex-column">
+                    <div
+                      class="box-shadow-dark border-radius usability-task white-bg"
+                    >
+                      <h4 class="text-center">
+                        Scenario: Search for Surfing Spots
+                      </h4>
                     </div>
-                    <div class="p2 box-shadow-light border">
-                      <ul>
-                        <li>
-                          Was unable to immediately find the activity search
-                          button on the map page
-                        </li>
-                        <li>
-                          Unable to identify the map key with it in greyscale
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="p4 box-shadow-light border">
-                      <ul>
-                        <li>
-                          Paid more attention to the feasibility of certain
-                          ideas - ie the resources required to create certain
-                          ideas
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="p6 box-shadow-light border">
-                      <ul>
-                        <li>
-                          Tried to change the location via the search bar rather
-                          than go to the map
-                        </li>
-                        <li>
-                          Got stuck on the second task trying to find where to
-                          search for activities
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="box-shadow-light border usability-task">
-                    <h4 class="text-center">
-                      Scenario: Find Detailed Weather Forecast
-                    </h4>
-                    <div class="p1 box-shadow-light border">
-                      <ul>
-                        <li>
-                          Would like to see assessment indicators on the
-                          forecast chart
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="p2 box-shadow-light border">
-                      <ul>
-                        <li>
-                          Found the third task impossible due to the lack of
-                          interactivity
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="p5 box-shadow-light border">
-                      <ul>
-                        <li>
-                          For the third task, focused on finding information on
-                          windsurfing rather than the wind forecast
-                        </li>
-                        <li>
-                          Thought the activity assessment indicator could work
-                          as a third tab where all activities are displayed
-                        </li>
-                      </ul>
+                    <div
+                      class="flex-column test-feedback medium white-bg box-shadow-light border-radius-sm"
+                    >
+                      <p>Errors</p>
+                      <div class="flex-column results-box text-center">
+                        <p>Confusion with map key</p>
+                        <div class="flex participant-marker medium">
+                          <div class="p1">P1</div>
+                          <div class="p2">P2</div>
+                        </div>
+                      </div>
+                      <div class="flex-column results-box text-center">
+                        <p>Difficulty finding the 'activity search' button</p>
+                        <div class="flex participant-marker medium">
+                          <div class="p1">P1</div>
+                          <div class="p2">P2</div>
+                          <div class="p6">P6</div>
+                        </div>
+                      </div>
+                      <div class="flex-column results-box text-center">
+                        <p>!Search bar did not work in tandem with the map</p>
+                        <div class="flex participant-marker medium">
+                          <div class="p6">P6</div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="bust-out white box-shadow-light error-box">
-                <div class="inside-bust-out">
+              <div
+                class="horizontal-stripe white-bg box-shadow-light error-box"
+              >
+                <div class="center-inside-container">
                   <h3>Notable Feedback</h3>
                   <ul>
                     <li>
-                      Participants had no trouble with the main navigation
+                      Participants tapped the 'Person icon' instead of the
+                      'Settings icon' when trying to make a new account.
                     </li>
+                    <li>Participants found the text difficult to read</li>
                     <li>
                       Participants were unable to discern map key due to the
                       lack of color
                     </li>
-                    <li>Participants found the text difficult to read</li>
+                    <li>
+                      !The lack of functionality of the search bar made the map more difficult to use!
+                    </li>
                   </ul>
                 </div>
-                <div class="inside-bust-out">
+                <!-- <div class="center-inside-container">
                   <h3>Errors</h3>
                   <ul>
+                                        <li>
+                      Participants had no trouble with the main navigation
+                    </li>
                     <li>
                       Participants did not know to go to the map to search for
                       an activity.
@@ -1026,103 +959,94 @@
                       Participants had difficulty locating the 'no account'
                       button while trying to make a new account.
                     </li>
-                    <li>
-                      Participants tapped the 'Person icon' instead of the
-                      'Settings icon' when trying to make a new account.
-                    </li>
                   </ul>
-                </div>
+                </div> -->
               </div>
             </div>
           </section>
           <section id="wireframe-iterations">
-            <div class="container">
-              <div>
-                <h3>Wireframe Iterations</h3>
-                <p class="space-under-small">
-                  Through tester feedback and by consulting material design
-                  guidelines, Vela went through several iterations.
-                </p>
-              </div>
-              <div class="bust-out row">
-                <div class="inside-bust-out flex iterate">
-                  <div class="frame-iterate">
-                    <div class="flex wireframe-box">
-                      <h3 class="version-num">V1</h3>
-                      <picture class="final-wireframes">
-                        <source
-                          srcset="img/Vela/project-img-1x/home-screen-V1-1x.png"
-                          media="(max-width:767px)"
-                        />
-                        <img
-                          src="img/Vela/project-img-2x/home-screen-V1-2x.png"
-                          alt="#"
-                        />
-                      </picture>
-                    </div>
-                    <p>
-                      Version 1 was the first attempt at high fidelity
-                      wireframes. I chose more subdued colors because I did not
-                      want to evoke any strong emotions that could distract the
-                      user.
-                    </p>
-                  </div>
-                  <div class="frame-iterate">
-                    <div class="flex wireframe-box">
-                      <h3 class="version-num">V2</h3>
-                      <picture class="final-wireframes">
-                        <source
-                          srcset="img/Vela/project-img-1x/home-screen-V2-1x.png"
-                          media="(max-width:767px)"
-                        />
-                        <img
-                          src="img/Vela/project-img-2x/home-screen-V2-2x.png"
-                          alt="#"
-                        />
-                      </picture>
-                    </div>
-                    <p>
-                      With Version 2, I increased the overall saturation to
-                      create a stronger emotional response. I removed all the
-                      outlines to create a more open design and rounded the
-                      edges of the boxes for a softer feel.
-                    </p>
-                  </div>
-                  <div class="frame-iterate">
-                    <div class="flex wireframe-box">
-                      <h3 class="version-num">V3</h3>
-                      <picture class="final-wireframes">
-                        <source
-                          srcset="img/Vela/project-img-1x/home-screen-V3-1x.png"
-                          media="(max-width:767px)"
-                        />
-                        <img
-                          src="img/Vela/project-img-2x/home-screen-V3-2x.png"
-                          alt="#"
-                        />
-                      </picture>
-                    </div>
-                    <p>
-                      In Version 3, I referenced the Material Design guidelines
-                      and found that the overall contrast of my app was poor, so
-                      I adjusted the color scheme, again. I also aligned the
-                      design using grids to create a more consistency. To
-                      increase readability of the text, I changed the body text
-                      font to Tahoma.
-                    </p>
-                  </div>
+            <div>
+              <h3>Wireframe Iterations</h3>
+              <p class="margin-bottom-sm">
+                Through tester feedback and by consulting material design
+                guidelines, Vela went through several iterations.
+              </p>
+            </div>
+            <div class="">
+              <div class="flex-column iterate margin-bottom">
+                <div class="frame-iterate border-radius-sm">
+                  <p class="semibold">Version 1</p>
+
+                  <picture class="wireframe-box">
+                    <source
+                      srcset="img/Vela/project-img-1x/home-screen-V1-1x.png"
+                      media="(max-width:639px)"
+                    />
+                    <img
+                      src="img/Vela/project-img-2x/home-screen-V1-2x.png"
+                      alt="#"
+                    />
+                  </picture>
+
+                  <p>
+                    The first attempt at high fidelity wireframes. I chose more
+                    subdued colors because I did not want to evoke any strong
+                    emotions that could distract the user.
+                  </p>
+                </div>
+
+                <div class="frame-iterate border-radius-sm">
+                  <p class="semibold">Version 2</p>
+
+                  <picture class="wireframe-box">
+                    <source
+                      srcset="img/Vela/project-img-1x/home-screen-V2-1x.png"
+                      media="(max-width:639px)"
+                    />
+                    <img
+                      src="img/Vela/project-img-2x/home-screen-V2-2x.png"
+                      alt="#"
+                    />
+                  </picture>
+
+                  <p>
+                    I increased the overall saturation to create a stronger
+                    emotional response. I removed all the outlines to create a
+                    more open design and rounded the edges of the boxes for a
+                    softer feel.
+                  </p>
+                </div>
+
+                <div class="frame-iterate border-radius-sm">
+                  <p class="semibold">Version 3</p>
+                  <picture class="wireframe-box">
+                    <source
+                      srcset="img/Vela/project-img-1x/home-screen-V3-1x.png"
+                      media="(max-width:639px)"
+                    />
+                    <img
+                      src="img/Vela/project-img-2x/home-screen-V3-2x.png"
+                      alt="#"
+                    />
+                  </picture>
+
+                  <p>
+                    I referenced the Material Design guidelines and found that
+                    the overall contrast of my app was poor, so I adjusted the
+                    color scheme, again. I also aligned the design using grids
+                    to create a more consistency. To increase readability of the
+                    text, I changed the body text font to Tahoma.
+                  </p>
                 </div>
               </div>
             </div>
           </section>
-        </div>
-      </section>
+        </section>
 
-      <!--add promo video here somehow-->
+        <!--add promo video here somehow-->
 
-      <section id="wrap-up">
-        <div class="container">
-          <h2>Next<span class="green"> Steps</span></h2>
+        <section id="wrap-up">
+          <h2>Next<span class="dark-teal"> Steps</span></h2>
           <div>
             <p>
               This project helped me develop a deeper understanding of the
@@ -1145,10 +1069,10 @@
               efforts so that I can continue learning and improving.
             </p>
             <br />
-            <h3>New Hypothesis</h3>
+            <h3 class="text-center">New Hypothesis</h3>
             <p>I plan on implementing changes based on the new hypothesis:</p>
           </div>
-          <div class="persona box-shadow-light">
+          <div class="persona-textbox border-radius box-shadow-light">
             By providing alternative displays options for weather data, users
             who have difficulty understanding weather data through numbers will
             gain a better understanding of weather data.
@@ -1175,18 +1099,16 @@
             will also be able to change the units of measurement to ones they
             are more familiar with.
           </p>
-        </div>
-      </section>
+        </section>
+      </div>
     </main>
 
     <footer id="contact-me">
       <div class="container">
         <div>
           <h2>Get in Touch</h2>
-
-          Email:
-          <a class="contact-button" href="mailto:karafronk at gmail dot com"
-            >my email address</a
+          <a class="contact-btn" href="mailto:karafronk at gmail dot com"
+            >Email me</a
           >
         </div>
         <div>

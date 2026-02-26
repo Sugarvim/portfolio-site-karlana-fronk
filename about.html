@@ -3,9 +3,17 @@
 
 <head>
     <title>About Page</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#FFFAF1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Karlana Fronk" />
+    <meta
+      name="keywords"
+      content="Karlana, Karlana Fronk, Boston area, Massachusetts, UX design, UI design, Frontend development"
+    />
+    <meta
+      name="description"
+      content="Karlana Fronk is a UX/UI designer in the Boston area. "
+    />
     <link href="img/favicon.ico" rel="shortcut icon">
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
@@ -53,16 +61,16 @@
                     <h1>About Me</h1>
                 </div>
                 <div>
-                    <div class="about-flex">
-                        <picture class="me-picture">
+                    <div class="portrait text-center">
+                        <picture class="inline-block">
                             <source srcset="img/img-1X/portrait-1X.jpg" media="(max-width:767px)">
-                            <img class="me" src="img/img-2x/portrait-2X.jpg"
+                            <img class="border-radius" src="img/img-2x/portrait-2X.jpg"
                                 alt="an oil painting of a young woman with short hair smiling at the viewer">
                         </picture>
                     </div>
-                    <div class="row">
-                        <div>
-                            <div class="my-story col-7">
+                    <div class="about flex-column">
+                        
+                            <div class="my-story border-yellow border-radius">
                                 <h2 class="inline">My Story</h2>
                                 <p>
                                     Hi, my name is Karlana and I'm based in the Boston area. I've always enjoyed making
@@ -77,13 +85,13 @@
                                     things, I enjoy challenges and learning new things.
 
                                 </p>
-                                <a class="download-button" href="files/resume-compressed.pdf" target="_blank">Download my Resume</a>
+                                <a class="btn download-btn btn-border-yellow border-radius-sm" href="files/resume-compressed.pdf" target="_blank">Download my Resume</a>
                             </div>
-                        </div>
-                        <div class="skills col-5">
-                            <h2>Skills and Tools</h2>
-                            <div class="row">
-                                <div class="col-6">
+                        
+                        <div class="flex skills">
+                            <h2 class="text-center">Skills and Tools</h2>
+                            
+                                <div>
                                     <h3>Relevant Skills</h3>
                                     <ul>
                                         <li>User Research</li>
@@ -92,7 +100,7 @@
                                         <li>Frontend Development</li>
                                     </ul>
                                 </div>
-                                <div class="col-6">
+                                <div>
                                     <h3>Tools I Use</h3>
                                     <ul>
                                         <li>Figma</li>
@@ -101,7 +109,7 @@
                                         <li>Keynote</li>
                                     </ul>
                                 </div>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -114,7 +122,7 @@
         <div class="container">
             <div>
                 <h2>Get in Touch</h2>
-                 <a class="contact-button" href="mailto:karafronk at gmail dot com">Email me</a>
+                 <a class="btn contact-btn" href="mailto:karafronk at gmail dot com">Email me</a>
             </div>
             <div>
                 <a href="https://www.linkedin.com/in/karlana-fronk" target="_blank">
