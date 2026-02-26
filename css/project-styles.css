@@ -1232,13 +1232,123 @@ img[src*="accuweather-icon"] {
   /* #endregion */
 
   /* #region || user persona large */
-  .clip-circle {
-    left: 22.5vw;
+.persona-block {
+    display: flex;
+    gap: 3vw;
   }
-  .expand-persona-info {
-    grid-row: 1/2;
+  .persona-container {
+    grid-template-columns: 50vw minmax(30vw, 40vw);
+    grid-template-rows: minmax(6vh, 9vh) 40vw;
+    gap: 2vh 0;
+  }
+  .persona-container > h4 {
+    grid-area: 1/1/2/3;
+  }
+  .clip-circle {
+    justify-self: center;
+    grid-area: 2/1/3/2;
+    clip-path: circle(18vw at 50% 50%);
+  }
+  .center-persona-img {
+    width: 45vw;
+    top: 6vh;
+  }
+  #user-persona .persona-block:first-of-type .center-persona-img {
+    left: 3vw;
+  }
+  .persona-personal-details {
+    grid-area: 2/2/3/3;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 25vw 3vw 2vw;
+  }
+  .persona-personal-details > div {
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .persona-personal-details > div p:first-child {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 5px;
+  }
+  .persona-personal-details > div p:nth-child(2) {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: right;
+  }
+  .persona-quote {
+    grid-area: 3/1/4/3;
+  }
+
+  .expand-info-btn {
+    grid-area: 1/1/2/3;
+    justify-content: center;
     justify-self: flex-end;
-    width: 100px;
+    width: 20vw;
+    border-radius: 25px 25px 0 0;
+    border: 2px solid #89aec3;
+    color: var(--dark-med-blue);
+  }
+  .expand-info-btn i{
+    transform: initial;
+  }
+  .expand-info-btn.open i{
+    transform: rotate(180deg);
+  }
+ 
+  .expand-info-btn [class*="fa-chevron"]:first-of-type {
+    display: none;
+  }
+
+  .persona-about {
+    /* background-color: #f3f5f8; */
+    display: none;
+    margin-top: 0;
+    padding: 0 0 0 10px;
+    border: none;
+  }
+  .persona-textbox ul {
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding-left: 3vw;
+  }
+
+  /* shrink */
+  .persona-block.shrink .persona-container {
+    grid-template-columns: minmax(40vw, 40vw);
+    grid-template-rows: minmax(6vh, 9vh) 38vw;
+    gap: 2vh;
+  }
+  .persona-block.shrink h4:first-of-type {
+    grid-area: 1/1/2/2;
+  }
+  .persona-block.shrink .clip-circle {
+    grid-area: 2/1/3/2;
+    clip-path: circle(18vw at 50% 50%);
+    align-self: center;
+  }
+  .persona-block.shrink .center-persona-img {
+    top: 5vw;
+    left: 6.5vh;
+    right: 10vw;
+    width: 50vw;
+  }
+  .persona-block.shrink .persona-personal-details {
+    grid-area: 3/1/4/2;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 3vw;
+  }
+  .persona-block.shrink .persona-quote {
+    border: 2px solid var(--medium-teal);
+    grid-area: 4/1/5/2;
+  }
+  .persona-block.shrink .expand-info-btn {
+    grid-area: 1/1/2/2;
+    justify-self: flex-end;
+    width: 120px;
     border-radius: 25px 25px 0 0;
     border: 2px solid #89aec3;
   }
