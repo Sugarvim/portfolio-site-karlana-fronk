@@ -76,11 +76,11 @@ h2 {
 }
 
 /* project information */
-.horizontal-stripe.light-teal {
+.horizontal-stripe.light-teal-bg {
   position: relative;
   z-index: 1;
 }
-.horizontal-stripe.light-teal ul {
+.horizontal-stripe.light-teal-bg ul {
   display: flex;
   flex-flow: column wrap;
   max-height: 8rem;
@@ -343,7 +343,7 @@ li p {
   .intro-box p {
     width: 520px;
   }
-  #introduction .horizontal-stripe.light-teal {
+  #introduction .horizontal-stripe.light-teal-bg {
     max-width: 90%;
     margin-left: calc(50% - 50vw);
   }
@@ -447,7 +447,7 @@ li p {
     width: 80%;
     margin-left: 10%;
   }
-  #introduction .horizontal-stripe.light-teal {
+  #introduction .horizontal-stripe.light-teal-bg {
     max-width: 95%;
     margin-left: calc(50% - 50vw);
   }
