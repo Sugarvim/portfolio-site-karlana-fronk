@@ -612,7 +612,7 @@ nav ul {
     max-height: initial;
   }
   .project-section img {
-    width: 100%;
+    width: 30vw;
   }
   .project-section div:nth-child(2) {
     margin: 0;
